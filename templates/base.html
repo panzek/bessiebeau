@@ -9,25 +9,48 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
+    <title>Bessie + Beau {% block extra_title %} {% endblock %}</title>
+
+      {% block extra_meta %}
+      {% endblock %}
 
     <!-- Bootstrap CSS -->
     {% block corecss %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
-    <!-- JavaScript  -->
+    {% block extra_css %}
+    {% endblock %}
+
+    <!-- JavaScript -->
     {% block corejs%}
+      <script src="https://kit.fontawesome.com/57e22c6356.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     {% endblock %}
   
-    <title>Bessie + Beau</title>
+    {% block extra_js %}
+    {% endblock %}
+
   </head>
   <body>
+    <header class="container-fluid fixed-top"></header>
     <h1>Bessie + Beau</h1>
 
+    {% if messages %}
+      <div class="message-container"></div>
+    {% endif %}
+    
+    {% block page_header %}
+    {% endblock %}
+
     {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
     {% endblock %}
     
   </body>
