@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['bessiebeau.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -79,10 +79,10 @@ TEMPLATES = [
     {
             'BACKEND': 'django.template.backends.django.DjangoTemplates',
             'DIRS': [
-                os.path.join(BASE_DIR, 'templates'),
+                os.path.join(BASE_DIR, 'templates'),                                                                                                                                                                                                                                                                 
                 os.path.join(BASE_DIR, 'templates', 'allauth'),
             ],
-            'APP_DIRS': True,
+            'APP_DIRS': True,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
             'OPTIONS': {
                 'context_processors': [
                     'django.template.context_processors.debug',
