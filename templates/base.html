@@ -39,10 +39,10 @@
   <body>
     <header class="container-fluid fixed-top">
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-              <a href="" class="nav-link main-logo-link">
-                  <h2 class="logo-font text-black my-0"><strong>Bessie + Beau</strong></h2>
-              </a>
+          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-center">
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <img src="{% static 'img/bessie-beau.png' %}" width="150px" alt="Bessie + Beau logo">
+            </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="">
@@ -59,7 +59,7 @@
               </form>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+              <ul class="list-inline list-unstyled text-center text-lg-right text-lg-center my-0">
                   <li class="list-inline-item dropdown">
                       <a class="text-black nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
