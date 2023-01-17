@@ -59,3 +59,24 @@
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+
+/* Forms  */
+.sing-in-form_or-divider {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 0 12px;
+    
+}
+
+.sing-in-form_or-divider:before, 
+.sing-in-form_or-divider:after {
+    background-color: lightgray;
+    content: '';
+    height: 1px;
+    width: 45%; 
+}
+
+/* .login-or {
+    text: bold;
+} */
