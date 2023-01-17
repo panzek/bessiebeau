@@ -58,6 +58,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
 
+    'crispy_forms',
+    'storages',
+
     'home',
 ]
 
@@ -78,6 +81,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'bessie_beau.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
