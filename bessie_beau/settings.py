@@ -68,6 +68,14 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
+
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 6
+
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
@@ -188,5 +196,18 @@ if 'USE_AWS' in os.environ:
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
+if 'DEVELOPMENT' is os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.Emailbackend'
+    DEFAULT_FROM_EMAIL = 'bessiebeau@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.Emailbackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
