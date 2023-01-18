@@ -10,11 +10,12 @@
 
 <hr>
   <h2 class="logo-font text-center">{% trans "Sign In" %}</h2>
-<hr>
 
-<p>{% blocktrans with site.name as site_name %}
-  Don't have a {{ site_name }} account yet, then <a href="{{ signup_url }}">sign up</a> 
-  first.{% endblocktrans %}
+
+<p class="signin-intro text-center">{% blocktrans with site.name as site_name %}
+  Log in now to unlock your exclusive access to products and offers.<br>
+  Not registered yet? 
+  <a href="{{ signup_url }}">Create a {{ site_name }} Account</a>{% endblocktrans %}
 </p>
 
 <form class="login" method="POST" action="{% url 'account_login' %}">
