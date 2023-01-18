@@ -98,10 +98,10 @@ TEMPLATES = [
     {
             'BACKEND': 'django.template.backends.django.DjangoTemplates',
             'DIRS': [
-                os.path.join(BASE_DIR, 'templates'),                                                                                                                                                                                                                                                                 
+                os.path.join(BASE_DIR, 'templates'),                                                                                                                                                                                                                                                                
                 os.path.join(BASE_DIR, 'templates', 'allauth'),
             ],
-            'APP_DIRS': True,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            'APP_DIRS': True,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
             'OPTIONS': {
                 'context_processors': [
                     'django.template.context_processors.debug',
@@ -201,7 +201,7 @@ if 'DEVELOPMENT' is os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'bessiebeau@example.com'
 else:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
