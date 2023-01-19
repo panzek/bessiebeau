@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.apple',
-    'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
 
     'django_extensions',
@@ -64,6 +63,7 @@ INSTALLED_APPS = [
     'storages',
 
     'home',
+    'profiles',
 ]
 
 SITE_ID = 1
