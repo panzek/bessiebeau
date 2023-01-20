@@ -14,7 +14,7 @@ class UserProfile(models.Model):
     town_or_city = models.CharField(max_length=50, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
     postcode = models.CharField(max_length=20, null=True, blank=True)
-    country = CountryField(blank_label='Country*', null=True, blank=True)
+    country = CountryField(blank_label='Select Country*', null=True, blank=True)
     profile_image = models.ImageField(upload_to='profile/', null=True, blank=True)
 
     def __str__(self):
