@@ -75,10 +75,6 @@
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <hr>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% elif not request.user.is_superuser %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <hr>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% endif %}
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
