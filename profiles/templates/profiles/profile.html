@@ -2,5 +2,12 @@
 {% load static %}
 
 {% block content %}
-<h1 class="display-4 bg-primary text-white"> User Profile</h1>
+<div class="container">
+    <div class="'row">
+        <div class="col">
+            <h1>{{ request.user }} User Profile</h1>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
