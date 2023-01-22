@@ -52,7 +52,7 @@
                         <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
                         <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
                         <div class="btn-group btn-group-justified" style="width: 20rem;">
-                            <a href="" class="btn btn-info">Edit</a>
+                            <a href="{% url 'edit_profile' %}" class="btn btn-info">Edit</a>
                         </div>               
                     </div>
                 </div>
