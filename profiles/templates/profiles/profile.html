@@ -1,13 +1,95 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="'row">
-        <div class="col">
-            <h1>{{ request.user }} User Profile</h1>
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-4" style="width: 18rem;">
+            <h3 class="display-4 my-5">
+                My Account 
+            </h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="">My Address</a></li>
+              <li class="list-group-item"><a href="">Account Information</a></li>
+              <li class="list-group-item"><a href="">My Orders</a></li>
+              <li class="list-group-item"><a href="">My Payment Method</a></li>
+            </ul>
+            <div class="card-footer">
+                <a href="{% url 'account_logout' %}">Logout</a>
+            </div>
+          </div>
+        <div class="col-8 my-5 text-left">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 border bg-light">Account1</div>
+                </div>
+                <div class="col">
+                  <div class="p-3 border bg-light">Account2</div>
+                </div>
+            </div>
+            <h1 class="display-4 mt-5">
+                My Account
+            </h1>
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3">
+                        <h3>
+                            Account Information
+                        </h3>
+                        <hr class="divider bg-dark">
+                        <p class="card-text">First Name: {{ profile.first_name }} </p>
+                        <p class="card-text">Last Name: {{ profile.last_name }}</p>
+                        <p class="card-text">Phone Number: {{ profile.phone_number }}</p> 
+                        <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
+                        <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
+                        <div class="btn-group btn-group-justified" style="width: 20rem;">
+                            <a href="" class="btn btn-info">Edit</a>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3">
+                        <h3>
+                            Address Book
+                        </h3>
+                        <hr class="divider bg-dark">
+                        <div class="row">
+                            <div class="col-6">
+                                <h6>
+                                    Default Billing Address
+                                </h6>
+                                <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
+                                <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
+                                <div class="btn-group btn-group-justified" style="width: 20rem;">
+                                    <a href="" class="btn btn-info">Edit Address</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h6>
+                                    Default Shipping Address
+                                </h6>
+                                <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
+                                <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
+                                <div class="btn-group btn-group-justified" style="width: 20rem;">
+                                    <a href="" class="btn btn-info">Edit Address</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
