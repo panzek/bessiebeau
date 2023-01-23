@@ -18,7 +18,7 @@
                 <h3 class="card-title">Edit Your Profile</h3>
             </div><br>
             <div class="text-center">
-                <form method="POST">
+                <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div>

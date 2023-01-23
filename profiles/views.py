@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import UserProfile
 from .forms import UserProfileForm
 
@@ -17,14 +17,16 @@ def edit_profile(request):
     """ A view to render edit user Profile page """
 
     if request.method == 'POST':
-        form = UserProfileForm(request.POST, request.FILES)
+        form = UserProfileForm(
+                request.POST, 
+                request.FILES, 
+                instance=request.user.userprofile
+            )
         if form.is_valid:
-            profile = form.save(commit=False)
-            profile.email = request.user.email
-            profile.username = request.user.username
-            profile.save()
+            form.save()
+            return redirect('/profile/')
     else:
-        form = UserProfileForm()
+        form = UserProfileForm(instance=request.user.userprofile)
     
     context = {
         'form': form

@@ -26,7 +26,17 @@
             <div class="card-footer">
                 <a href="{% url 'account_logout' %}">Logout</a>
             </div>
-          </div>
+            <div class="card border-light mt-5 mx-auto" style="max-width: 18rem;">
+                <div class="card-header font-weight-bold">Profile Photo</div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <img src="{{ profile.profile_image }}" class="card-img-top" alt="...">
+                  </p>
+                </div>
+                <div class="card-footer bg-transparent border-success text-center">Upload Photo</div>
+              </div>
+           
+        </div>
         <div class="col-8 my-5 text-left">
             <div class="row gx-5">
                 <div class="col">
