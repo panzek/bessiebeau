@@ -28,11 +28,23 @@
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                <a href="" class="dropdown-item">Product Management</a>
-            <a href="" class="dropdown-item">My Profile</a>
-            <a href="" class="dropdown-item">Logout</a>
-            <a href="" class="dropdown-item">Register</a>
-            <a href="" class="dropdown-item">Login</a>
+    {% if request.user.is_authenticated %}
+        {% if request.user.is_superuser %}
+            <a href="" class="dropdown-item">Product Management</a>
+            <hr>
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <hr>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+        {% elif not request.user.is_superuser %}
+            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <hr>
+            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+        {% endif %}
+        {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+            <hr>
+            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+    {% endif %}
     </div>
 </li>
 <li class="list-inline-item">
