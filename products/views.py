@@ -15,4 +15,4 @@ def all_products(request):
         'products': products
     }
 
-    return render(request, all_products.html, context)
+    return render(request, 'products/products.html', context)
