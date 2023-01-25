@@ -75,4 +75,26 @@
         </div>
     </div>
 </div>
+<div class="shadow-sm rounded-0 border-black">
+    <a class="d-flex h-100" id="btn-link">
+        <i class="fa-solid fa-arrow-up-from-bracket fa-2x mx-auto my-auto"></i>
+    </a>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+<script type="text/javascript">
+    
+    const btn = document.getElementById('btn-link');
+
+    btn.addEventListener('click', () => window.scrollTo(
+        {
+            top: 0,
+            behavior: 'smooth',
+        }
+    ));
+
+</script>
+
 {% endblock %}
