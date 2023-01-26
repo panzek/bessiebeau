@@ -110,7 +110,7 @@ def edit_product(request, product_id):
     
     product = get_object_or_404(Product, id=product_id)
     if request.method == 'POST':
-        """ A view for store owner to update products to the store """
+        """ A view for store owner to update products in the store """
    
         form = ProductForm(request.POST, request.FILES, instance=product)
 
@@ -131,3 +131,12 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """ A view for store owner to delete products in the store """
+
+    product = get_object_or_404(Product, id=product_id)
+    product.delete()
+    messages.success(request, 'Product successfully deleted!')
+    return redirect('/')
