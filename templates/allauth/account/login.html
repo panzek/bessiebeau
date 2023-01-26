@@ -8,9 +8,9 @@
 
 {% block inner_content %}
 
-<hr>
-  <h2 class="logo-font text-center">{% trans "Sign In" %}</h2>
-
+  <div class="sign-in-form_or-divider">
+    <h2 class="login-or mx-auto font-weight-bold">{% trans "Sign In" %}</h2>
+  </div>
 
 <p class="signin-intro text-center">{% blocktrans with site.name as site_name %}
   Log in now to unlock your exclusive access to products and offers.<br>
@@ -31,7 +31,7 @@
   <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
 </form>
 
-<div class="sing-in-form_or-divider">
+<div class="sign-in-form_or-divider">
   <span class="login-or mx-auto font-weight-bold">{% trans 'or' %}</span>
 </div>
 
