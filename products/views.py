@@ -74,6 +74,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 def add_product(request):
     """ A view for store owner to add products to the store """
 
@@ -95,6 +96,38 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form
+    }
+
+    return render(request, template, context)
+
+
+def edit_product(request, product_id):
+    """ A view for store owner to add products to the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can edit products')
+        return redirect(reverse('home'))
+    
+    product = get_object_or_404(Product, id=product_id)
+    if request.method == 'POST':
+        """ A view for store owner to update products to the store """
+   
+        form = ProductForm(request.POST, request.FILES, instance=product)
+
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Successfully updated product!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid')
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'You are editing {product.name}')
+
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'product': product,
     }
 
     return render(request, template, context)
