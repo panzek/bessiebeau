@@ -41,7 +41,7 @@
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a class="navbar-brand" href="{% url 'home' %}">
-              <img src="{% static 'img/bessie-beau.png' %}" width="150px" alt="Bessie + Beau logo">
+              <img src="{% static 'bessie-beau.png' %}" width="150px" alt="Bessie + Beau logo">
             </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -88,7 +88,7 @@
                       </div>
                   </li>
                   <li class="list-inline-item">
-                      <a class="text-black" href="">
+                      <a class="text-black" href="{% url 'view_cart' %}">
                           <div class="text-center">
                               <div><i class="fa-solid fa-cart-shopping"></i></div>
                               <p class="my-0">
@@ -110,8 +110,8 @@
           </nav>
       </div>
       <div id="delivery-banner" class="row text-center">
-          <div class="col bg-black text-white">
-              <h4 class="logo-font my-1"></h4>                
+          <div class="col bg-dark text-white">
+              <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }} </h4>                
           </div>            
       </div>
     </header>

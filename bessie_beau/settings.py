@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'storages',
 
+    'cart',
     'home',
     'products',
     'profiles',
@@ -110,6 +111,7 @@ TEMPLATES = [
                     'django.contrib.auth.context_processors.auth',
                     'django.contrib.messages.context_processors.messages',
                     'django.template.context_processors.media',
+                    'cart.contexts.cart_contents'
                 ],
             },
     },
@@ -195,6 +197,10 @@ MEDIAFILES_LOCATION = 'media'
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
+# To be used to calculate delivery cost 
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
+
 # Email Backend setup for sending emails 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -212,4 +218,5 @@ else:
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
