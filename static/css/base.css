@@ -61,7 +61,7 @@
 }
 
 /* Forms  */
-.sing-in-form_or-divider {
+.sign-in-form_or-divider {
     display: flex;
     align-items: center;
     margin: 16px 0;
@@ -69,8 +69,8 @@
     
 }
 
-.sing-in-form_or-divider:before, 
-.sing-in-form_or-divider:after {
+.sign-in-form_or-divider:before, 
+.sign-in-form_or-divider:after {
     background-color: lightgray;
     content: '';
     height: 1px;
