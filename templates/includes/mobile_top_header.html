@@ -53,9 +53,14 @@
 </li>
 <li class="list-inline-item">
     <a class="nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
-        <div class="text-center">
+        <div class="text-center text-black">
             <div><i class="fa-solid fa-cart-shopping"></i></div>
             <p class="my-0">
+                {% if grand_total %}
+                    €{{ grand_total|floatformat:2 }}
+                    {% else %}
+                        €0.00
+                {% endif %}
             </p>
         </div>
     </a>
