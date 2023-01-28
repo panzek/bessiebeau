@@ -19,6 +19,10 @@ body{
     color: black;
 }
 
+.haute-couture{
+    font-size: 2rem;
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content {
