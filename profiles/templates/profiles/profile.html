@@ -23,11 +23,15 @@
             <div class="card-footer">
                 <a class="text-dark" href="{% url 'account_logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </div>
-            <div class="card border-light mt-5 mx-auto" style="max-width: 18rem;">
-                <div class="card-header font-weight-bold"><i class="fa-solid fa-image-polaroid-user"></i> Profile Photo</div>
+            <div class="card border-1 mt-2 mx-auto" style="max-width: 18rem;">
+                <div class="card-header text-center font-weight-bold">Profile Photo</div>
                 <div class="card-body">
-                  <p class="card-text">
-                    <img src="{{ MEDIA_URL }}bessie-beau.png" width="150px" alt="{{ user }}Profile Photo">
+                  <p class="card-text text-center">
+                    {% if profile.profile_image %}
+                     <img src="{{ profile.profile_image.url }}" width="200px" alt="{{ user }}Profile Photo">
+                    {% else %}
+                     <img src="{{ MEDIA_URL }}noimage.png" width="200px" alt="{{ user }}Profile Photo">
+                    {% endif %}
                   </p>
                 </div>
                 <div class="card-footer bg-transparent border-success text-center">Upload Photo</div>
