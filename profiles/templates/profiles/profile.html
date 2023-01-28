@@ -11,42 +11,31 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid h-100">
-    <div class="row h-100">
-        <div class="col-4" style="width: 18rem;">
-            <h3 class="display-4 my-5">
-                My Account 
-            </h3>
+<div class="container-fluid h-100 mx-auto profile-container">
+    <div class="row w-100 h-100">
+        <div class="col-4" >
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="">My Address</a></li>
-              <li class="list-group-item"><a href="">Account Information</a></li>
-              <li class="list-group-item"><a href="">My Orders</a></li>
-              <li class="list-group-item"><a href="">My Payment Method</a></li>
+              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-address-card"></i> My Address</a></li>
+              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-user"></i> Account Information</a></li>
+              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-cart-shopping"></i> My Orders</a></li>
+              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-credit-card"></i> My Payment Method</a></li>
             </ul>
             <div class="card-footer">
-                <a href="{% url 'account_logout' %}">Logout</a>
+                <a class="text-dark" href="{% url 'account_logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </div>
             <div class="card border-light mt-5 mx-auto" style="max-width: 18rem;">
-                <div class="card-header font-weight-bold">Profile Photo</div>
+                <div class="card-header font-weight-bold"><i class="fa-solid fa-image-polaroid-user"></i> Profile Photo</div>
                 <div class="card-body">
                   <p class="card-text">
-                    <img src="{{ profile.profile_image }}" class="card-img-top" alt="...">
+                    <img src="{{ MEDIA_URL }}bessie-beau.png" width="150px" alt="{{ user }}Profile Photo">
                   </p>
                 </div>
                 <div class="card-footer bg-transparent border-success text-center">Upload Photo</div>
               </div>
            
         </div>
-        <div class="col-8 my-5 text-left">
-            <div class="row gx-5">
-                <div class="col">
-                    <div class="p-3 border bg-light">Account1</div>
-                </div>
-                <div class="col">
-                  <div class="p-3 border bg-light">Account2</div>
-                </div>
-            </div>
-            <h1 class="display-4 mt-5">
+        <div class="col-8">
+            <h1 class="display-4 text-center card-footer">
                 My Account
             </h1>
             <div class="row gx-5">

@@ -24,26 +24,30 @@
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
-            <p class="my-0">My Account</p>
+            {% if request.user.is_authenticated %}
+                <p class="my-0">Hi, {{ user }}</p>
+            {% else %}
+                <p class="my-0">Account</p>
+            {% endif %}
         </div>
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
-    {% if request.user.is_authenticated %}
+        {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
-            <a href="" class="dropdown-item">Product Management</a>
+            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
             <hr>
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+            <a href="{% url 'profile' %}" class="dropdown-item"><i class="fa-solid fa-user"></i> My Account</a>
             <hr>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
         {% elif not request.user.is_superuser %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <hr>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="{% url 'profile' %}" class="dropdown-item"><i class="fa-solid fa-user"></i> My Account</a>
+            <hr class="my-0">
+            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
         {% endif %}
         {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <hr>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fa-solid fa-users"></i> Register</a>
+            <hr class="my-0">
+            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fa-solid fa-lock"></i> Login</a>
     {% endif %}
     </div>
 </li>
