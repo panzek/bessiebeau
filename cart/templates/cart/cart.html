@@ -133,4 +133,5 @@
 {% block postloadjs %}
 {{ block.super }}
     {% include 'products/includes/quantity_input_script.html' %}
+    <script src="{% static 'cart/js/update_qty.js' %}"></script>
 {% endblock %}

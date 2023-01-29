@@ -19,8 +19,15 @@ body{
     color: black;
 }
 
+/* homepage  */
 .haute-couture{
     font-size: 2rem;
+}
+
+/* buttons  */
+.remove-item,
+.update-link {
+    cursor: pointer;
 }
 
 /* Allauth form formatting */
