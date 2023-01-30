@@ -25,13 +25,6 @@
     color: #aab7c4;
 }
 
-fieldset {
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 1;
-}
-
 .fieldset-label {
     position: relative;
     right: .5rem;
