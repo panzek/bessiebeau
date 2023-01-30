@@ -88,7 +88,7 @@
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
-                            <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h6><strong>Cart Total: €{{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                             {% if free_delivery_delta > 0 %}
@@ -106,7 +106,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-dark rounded-1 btn-lg">
+                            <a href="{% url 'checkout' %}" class="btn btn-dark rounded-1 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
@@ -117,7 +117,7 @@
                 </table>
             </div>
             {% else %}
-                <p class="my-5">Your bag is empty.</p>
+                <p class="my-5">Your cart is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
@@ -133,7 +133,7 @@
 {% block postloadjs %}
 {{ block.super }}
     {% include 'products/includes/quantity_input_script.html' %}
-<script>
+<script type="text/javascript">
         // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
