@@ -90,13 +90,16 @@
                             </div>
                         </div>
                         <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-1 mt-5">
+                            <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-1 mt-2">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-dark rounded-1 text-uppercase mt-5" value="Add to Cart">
+                            <!-- <input type="submit" class="btn btn-dark rounded-1 text-uppercase mt-5" value="Add to Wishlist"> -->
+                            <a href="#" class="btn btn-primary rounded-1 text-uppercase mt-2" role="button" aria-pressed="true">
+                                <i class="fa-solid fa-heart"></i> Add to Wishlist</a>
+                            <input type="submit" class="btn btn-dark rounded-1 text-uppercase mt-2 w-55" value="Add to Cart">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         {% endwith %}
