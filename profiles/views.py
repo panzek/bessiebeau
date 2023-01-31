@@ -1,10 +1,12 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from .models import UserProfile, User
 from checkout.models import Order
 from .forms import UserProfileForm
+from products.models import Product
+from profiles.models import WishList
 
 
 
@@ -69,12 +71,14 @@ def order_history(request, order_number):
 
     return render(request, 'checkout/checkout_success.html', context)
 
-
+# Wishlist views 
 @login_required(login_url='/accounts/login/')
 def wishlist(request):
+    """ A wishlist view """
 
+    wish_items = WishList.objects.filter(user=request.user)
     context = {
-        'wishlist': wishlist,
+        'wish_items': wish_items,
     }
 
     return render(request, 'profiles/wishlist.html', context)

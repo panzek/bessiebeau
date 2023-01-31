@@ -43,4 +43,4 @@ class WishList(models.Model):
     quantity = models.SmallIntegerField(default=1)
 
     def __str__(self):
-        return f'(self.quantity) of (self.product)' 
+        return f'{self.quantity} of {self.product}' 

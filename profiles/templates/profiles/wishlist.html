@@ -11,37 +11,44 @@
 
 {% block content %}
 <div class="container h-100">
-    <h1>
+    <h3>
         My Wish List
-    </h1>
-    <!-- <hr class="w-50"> -->
+    </h3>
     <div class="row h-100">
-        <div class="col-12 text-right">
-            <table class="table table-bordered">
+        <div class="col-12 col-lg-6t table-responsive">
+            <table class="table table-sm table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">Image</th>
                     <th scope="col">Product</th>
                     <th scope="col">Quantity</th>
-                    <th scope="col"></th>
+                    <th scope="col">Button </th>
                   </tr>
                 </thead>
                 <tbody>
+                {% for item in wish_items %}
                   <tr>
-                    <td >{{ item.product.image }}</td>
                     <td>
-                        <p>{{ item.product.image }}</p>
-                        <p>{{ item.product.size }}</p>
-                        <p>{{ item.product.price }}</p>
+                        {% if item.product.image %}
+                        <img src="{{ item.product.image.url }}" width="200px"  height="250px" alt="{{ product.name }}Product Photo">
+                        {% else %}
+                        <img src="{{ MEDIA_URL }}noimage.png" width="100px" alt="{{ user }}Profile Photo">
+                        {% endif %}
                     </td>
                     <td>
-                        <p>{{ item.product.quantity }}</p>
+                        <p>{{ item.size }}</p>
+                        <p>€{{ item.product.price }}</p>
                     </td>
+                    <td>
+                        <p>{{ item.quantity }}</p>
+                    </td>
+                    
                     <td>
                         <a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Edit</a>
                         <a href="#" class="btn btn-danger btn-sm" role="button" aria-pressed="true">Delete</a>
                     </td>
                   </tr>
+                  {% endfor %}
                 </tbody>
               </table>
         </div>
