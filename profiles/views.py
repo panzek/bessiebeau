@@ -68,3 +68,13 @@ def order_history(request, order_number):
     }
 
     return render(request, 'checkout/checkout_success.html', context)
+
+
+@login_required(login_url='/accounts/login/')
+def wishlist(request):
+
+    context = {
+        'wishlist': wishlist,
+    }
+
+    return render(request, 'profiles/wishlist.html', context)

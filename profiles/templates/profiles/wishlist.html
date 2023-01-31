@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container h-100">
+    <h1>
+        My Wish List
+    </h1>
+    <!-- <hr class="w-50"> -->
+    <div class="row h-100">
+        <div class="col-12 text-right">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td >{{ item.product.image }}</td>
+                    <td>
+                        <p>{{ item.product.image }}</p>
+                        <p>{{ item.product.size }}</p>
+                        <p>{{ item.product.price }}</p>
+                    </td>
+                    <td>
+                        <p>{{ item.product.quantity }}</p>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm" role="button" aria-pressed="true">Delete</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
