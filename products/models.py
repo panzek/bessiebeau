@@ -22,7 +22,7 @@ class Product(models.Model):
     """
 
     category = models.ForeignKey(
-            'Category', 
+            Category, 
             null=True, 
             blank=True, 
             on_delete=models.SET_NULL
