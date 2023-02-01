@@ -12,7 +12,7 @@
 {% block content %}
 <!-- Hero Image  -->
 <div id="hero-image pt-0 text-center" > 
-    <img src="{{ MEDIA_URL }}hero-image.jpg" width="100%" alt="Bessie + Beau Hero Image">
+    <!-- <img src="{{ MEDIA_URL }}hero-image.jpg" width="100%" alt="Bessie + Beau Hero Image"> -->
 </div>
 <!-- Main section  -->
 <div class="main-container h-100 mr-5 my-5" >
@@ -34,4 +34,47 @@
         </div>
     </div>
 </div>
+
+<!-- Testimonials  -->
+  <div class="container" >
+    <h3 class="card-title card-footer text-center">Testimonials</h3>
+    <div class="row w-100 h-100 mb-5 text mx-auto" >
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body text center">
+              <div><img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" alt="Bessie + Beau logo"></div>
+              <hr>
+              <span class="font-weight-bold">Rebecca Flex</span>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut elementum ante. 
+                Sed tincidunt diam at magna ornare.
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body text center">
+                <div><img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" alt="Bessie + Beau logo"></div>
+                <hr>
+                <span class="font-weight-bold">Rebecca Flex</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut elementum ante. 
+                  Sed tincidunt diam at magna ornare.
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body text center">
+                <div><img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" alt="Bessie + Beau logo"></div>
+                <hr>
+                <span class="font-weight-bold">Rebecca Flex</span>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut elementum ante. 
+                  Sed tincidunt diam at magna ornare.
+              </p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
 {% endblock %}

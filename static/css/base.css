@@ -132,6 +132,25 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+/* Testimonials  */
+  .container img {
+    border-radius: 10%;
+  }
+  
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+
 /* Footer */
 .footer {
     display: flex;
