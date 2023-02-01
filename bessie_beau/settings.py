@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'profiles',
+    'testimonials',
 ]
 
 SITE_ID = 1
