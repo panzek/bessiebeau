@@ -3,10 +3,12 @@ from django.contrib import messages
 from .forms import ContactForm
 
 
-def contact_us(request):
+def contact(request):
     """
     A view to render form in template
     """
+
+    form = ContactForm(request.POST)
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -14,15 +16,16 @@ def contact_us(request):
             form = form.save()
 
             messages.success(request, 'Contact form was successfully submitted')
-            return redirect('')
+            return redirect('home')
         else:
             messages.error(request, 'Failed to submit contact form. Please ensure the form is valid')
     else:
         form = ContactForm()
 
+        template = 'contact/contact.html'
         context = {
             'form': form,
         }
 
-    return render(request, 'contact/contact.html', context)
+    return render(request, template, context)
 
