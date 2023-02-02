@@ -55,7 +55,7 @@
             <div class="card-footer text-center">
               {% if request.user.username %}
                 <small class="ml-3">
-                    <a href="">Edit</a> | 
+                    <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a> | 
                     <a class="text-danger" href="">Delete</a>
                 </small>
             {% endif %}
