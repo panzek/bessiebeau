@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def add_testimonial(request):
+    """ A view to render the cart contents page """
+
+    return render(request, 'testimonials/add_testimonial.html')
+
