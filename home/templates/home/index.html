@@ -39,42 +39,35 @@
   <div class="container" >
     <h3 class="card-title card-footer text-center">Testimonials</h3>
     <div class="row w-100 h-100 mb-5 text mx-auto" >
+      {% for testimonial in testimonials %}
         <div class="col-sm-4">
           <div class="card">
-            <div class="card-body text center">
-              <div><img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" alt="Bessie + Beau logo"></div>
-              <hr>
-              <span class="font-weight-bold">Rebecca Flex</span>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut elementum ante. 
-                Sed tincidunt diam at magna ornare.
-            </p>
+              <div class="card-body text center">
+                {% if profile.profile_image %}
+                <img src="{{ profile.profile_image.url }}" width="150px" alt="{{ user }}Profile Photo">
+                {% else %}
+                  <img src="{{ MEDIA_URL }}noimage.png" width="150px" alt="{{ user }}Profile Photo">
+                {% endif %}
+                  <hr>
+                  <span class="font-weight-bold">{{ testimonial.name }}</span>
+                  <p class="card-text">{{ testimonial.body }}</p>
+              </div>
+            <div class="card-footer text-center">
+              {% if request.user.username %}
+                <small class="ml-3">
+                    <a href="">Edit</a> | 
+                    <a class="text-danger" href="">Delete</a>
+                </small>
+            {% endif %}
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body text center">
-                <div><img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" alt="Bessie + Beau logo"></div>
-                <hr>
-                <span class="font-weight-bold">Rebecca Flex</span>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut elementum ante. 
-                  Sed tincidunt diam at magna ornare.
-              </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body text center">
-                <div><img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" alt="Bessie + Beau logo"></div>
-                <hr>
-                <span class="font-weight-bold">Rebecca Flex</span>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut elementum ante. 
-                  Sed tincidunt diam at magna ornare.
-              </p>
-              </div>
-            </div>
-          </div>
-      </div>
+      
+      {% if forloop.counter|divisibleby:4 %}
+        </div>
+        <div class="row">
+      {% endif %}
+      {% endfor %}
+    </div> 
   </div>
 {% endblock %}
