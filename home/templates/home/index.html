@@ -69,16 +69,17 @@
     <!-- Testimonials section  -->
     <div class="row w-100 testimonials h-100 text mx-auto">
       <div class="col-12">
-        <h3 class="card-title card-footer text-center">Testimonials</h3>
+        <span>
+          <h3 class="card-title card-footer">Customer Testimonials</h3>
       </div>
       {% for testimonial in testimonials %}
         <div class="col-sm-4">
           <div class="card">
               <div class="card-body text center">
                 {% if profile.profile_image %}
-                <img src="{{ profile.profile_image.url }}" width="150px" alt="{{ user }}Profile Photo">
+                <img src="{{ profile.profile_image.url }}" width="150px" alt="{{ user }}Profile Photo" class="rounded-circle">
                 {% else %}
-                  <img src="{{ MEDIA_URL }}noimage.png" width="150px" alt="{{ user }}Profile Photo">
+                  <img src="{{ MEDIA_URL }}noimage.png" width="150px" alt="{{ user }}Profile Photo" class="rounded-circle">
                 {% endif %}
                   <hr>
                   <span class="font-weight-bold">{{ testimonial.name }}</span>
@@ -87,8 +88,9 @@
             <div class="card-footer text-center">
               {% if request.user.username %}
                 <small class="ml-3">
-                    <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a> | 
-                    <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}">Delete</a>
+                  <a href="{% url 'testimonial' %}">Add testimonial</a> | 
+                  <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a> | 
+                  <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}">Delete</a>
                 </small>
             {% endif %}
             </div>

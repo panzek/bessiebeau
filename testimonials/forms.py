@@ -7,6 +7,8 @@ class TestimonialForm(forms.ModelForm):
     A form for customers to write their testimonial
     """
 
+    body = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 5}))
+    
     class Meta:
         model = Testimonial
         fields = (

@@ -29,6 +29,10 @@ body{
     top: 40%;
 }
 
+.header-container {
+    margin: 40px 0;
+}
+
 .testimonials {
     margin: 40px 0;
 }
