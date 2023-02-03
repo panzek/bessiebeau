@@ -87,19 +87,19 @@ def wishlist(request):
 # Add to wishlist view 
 @login_required(login_url='/accounts/login/')
 def add_to_wishlist(request, id=None):
-    """ A view for user to add item to wishlist """
-
-    if request.method == 'POST':
-        product_id = request.POST.get('product.id')
-        product = Product.objects.get(id=product_id)
-        
+    """ 
+    A view for user to add item to wishlist 
+    """
+    
+    product = Product.objects.get(id=id)
+    wish_item = None
+    try:
         wish_item = WishList.objects.get(user=request.user, product=product)
-        print(wish_item)
-        if wish_item:
-            wish_item.quantity += 1
-            wish_item.save()
-            
-        else:
-            wish_item = WishList.objects.create(user=request.user, product=product)
-            
+    except WishList.DoesNotExist:
+        wish_item = None
+    if wish_item:
+        wish_item.quantity += 1
+        wish_item.save()
+    else:
+        wish_item = WishList.objects.create(user=request.user, product=product, quantity=1)
     return redirect('wishlist')
