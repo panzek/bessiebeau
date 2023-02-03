@@ -87,12 +87,14 @@
               </div>
             <div class="card-footer text-center">
               {% if request.user.username %}
-                <small class="ml-3">
-                  <a href="{% url 'testimonial' %}">Add testimonial</a> | 
-                  <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a> | 
+              <small class="ml-3">
+                <a href="{% url 'testimonial' %}">Add testimonial</a> |
+                {% if request.user.username or request.user.is_superuser == testimonial.user.username %}
+                  <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a> |
                   <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}">Delete</a>
-                </small>
-            {% endif %}
+                {% endif %}
+              </small>
+          {% endif %}
             </div>
           </div>
         </div>

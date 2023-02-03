@@ -26,7 +26,7 @@
                 <p>Share your thoughts with other customers</p>
                 <p>Reviewing as: {{ user.username }}</p>
                 <form method="POST">
-                  <input type="hidden" name="restaurant" value="{{ restaurant.pk }}">
+                  <input type="hidden" name="product" value="{{ product.pk }}">
                     {% csrf_token %}
                     {{ form | crispy }}
                   <div>

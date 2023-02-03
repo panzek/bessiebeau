@@ -13,7 +13,9 @@ def add_testimonial(request):
 
         form = TestimonialForm(request.POST)
         if form.is_valid():
-            form.save()
+            testimonial = form.save(commit=False)
+            testimonial.user = request.user
+            testimonial.save()
             return redirect(reverse('home'))
     
     form = TestimonialForm()
@@ -31,7 +33,7 @@ def edit_testimonial(request, testimonial_id):
     testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
     user = get_object_or_404(UserProfile, user=request.user)
 
-    if not request.user != testimonial.user:
+    if request.user != testimonial.user:
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -55,7 +57,7 @@ def delete_testimonial(request, testimonial_id):
 
     testimonial = get_object_or_404(Testimonial, pk=testimonial_id)
 
-    if not request.user != testimonial.user:
+    if request.user != testimonial.user:
         return redirect(reverse('home'))
 
     testimonial.delete()

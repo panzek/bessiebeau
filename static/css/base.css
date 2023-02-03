@@ -15,9 +15,7 @@ body{
 
 }
 
-.main-container {
-    flex: 1 0 auto;
-}
+/* Header and hero image  */
 
 #hero-inage {
     position: relative;
@@ -31,6 +29,11 @@ body{
 
 .header-container {
     margin: 40px 0;
+}
+
+/* main  */
+.main-container {
+    flex: 1 0 auto;
 }
 
 .testimonials {
