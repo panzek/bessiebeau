@@ -37,8 +37,8 @@
                     </td>
                     <td>
                         <p class="font-weight-bold">{{ item.product.name }}</p>
-                        <p>{{ item.product.size }}</p>
-                        <p>€{{ item.product.price }}</p>
+                        <p>{{ item.product.size.size }}</p>
+                        <p>€{{ item.get_item_price }}</p>
                     </td>
                     <td>
                         <p class="font-weight-bold">{{ item.quantity }}</p>
