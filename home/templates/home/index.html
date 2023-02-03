@@ -10,20 +10,24 @@
 {% endblock %} 
 
 {% block content %}
-<!-- Hero Image  -->
-<div id="hero-image pt-0 text-center" > 
-    <!-- <img src="{{ MEDIA_URL }}hero-image.jpg" width="100%" alt="Bessie + Beau Hero Image"> -->
-</div>
-<!-- Main section  -->
-<div class="main-container h-100 mr-5 my-5" >
-    <div class="row h-100">
-        <div class="col-12 my-5 text-right">
+<div>
+  <!-- Hero Image  -->
+  <div id="hero-image pt-0 text-center" > 
+      <img src="{{ MEDIA_URL }}hero-image.jpg" class="img-fluid" max-width="100%" height="auto" alt="Bessie + Beau Hero Image">
+  </div>
+  <!-- Main section  -->
+
+  <!-- Testimonials  -->
+  <div class="container" >
+    <div class="row w-100 h-100 mb-5 text mx-auto" >
+      <div class="hero-image-text h-100 mx-1 my-5" >
+        <div class="col-12 mt-5">
             <span class="haute-couture my-5">
                 Haute Couture
             </span>
             <div>
                 <h1 class="font-weight-bold text-uppercase">
-                    Just For <br>Women
+                    Just For Women
                 </h1>
             </div>
             <div class="mt-2">
@@ -32,13 +36,41 @@
                 </h4>
             </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Testimonials  -->
-  <div class="container" >
-    <h3 class="card-title card-footer text-center">Testimonials</h3>
-    <div class="row w-100 h-100 mb-5 text mx-auto" >
+    <!-- Beauty Spotlight Section  -->
+    <div class="container w-100 mt-5" >
+      <div class="col-12 mt-5 pt-4 text-center">
+        <span class="haute-couture my-5">
+          <h3 class="card-title card-footer text-center">Beauty Spotlight</h3>
+          <hr>
+        </span>
+        <div class="row pb-4 ">
+          <div class="col-md-4">
+            <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
+              <h5>Pick from our featured Restaurants</h5>
+            <hr>
+          </div>
+          <div class="col-md-4">
+            <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
+              <h5>Make a booking by providing date, time, and number of guests</h5>
+            <hr>
+          </div>
+          <div class="col-md-4 fa-3x">
+            <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
+              <h5>Looking forward to seeing you</h5>
+              <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials section  -->
+    <div class="row w-100 testimonials h-100 text mx-auto">
+      <div class="col-12">
+        <h3 class="card-title card-footer text-center">Testimonials</h3>
+      </div>
       {% for testimonial in testimonials %}
         <div class="col-sm-4">
           <div class="card">
@@ -70,4 +102,5 @@
       {% endfor %}
     </div> 
   </div>
+</div>
 {% endblock %}
