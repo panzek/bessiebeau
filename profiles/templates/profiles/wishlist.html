@@ -13,6 +13,7 @@
 <div class="main-container h-100 mx-auto my-5">
     <div class="row h-100 header-container my-5">
         <div class="col-12 col-lg-6t table-responsive">
+            {% if wish_items %}
             <h3>
                 My Wish List
             </h3>
@@ -30,7 +31,7 @@
                   <tr>
                     <td>
                         {% if item.product.image %}
-                            <img src="{{ item.product.image.url }}" width="200px"  height="250px" alt="{{ product.name }}Product Photo">
+                            <img src="{{ item.product.image.url }}" width="100px" alt="{{ product.name }}Product Photo">
                         {% else %}
                             <img src="{{ MEDIA_URL }}noimage.png" width="100px" alt="{{ user }}Profile Photo">
                         {% endif %}
@@ -62,6 +63,10 @@
                   {% endfor %}
                 </tbody>
               </table>
+              {% else %}
+              <hr>
+                <h3 class="my-5">Your wishlist is empty.</h3>
+            {% endif %}
         </div>
     </div>
 </div>
