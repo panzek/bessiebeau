@@ -84,7 +84,7 @@ def wishlist(request):
 
     return render(request, 'profiles/wishlist.html', context)
 
-# Add to wishlist view 
+# Add item to wishlist view 
 @login_required(login_url='/accounts/login/')
 def add_to_wishlist(request, id=None):
     """ 
@@ -102,4 +102,16 @@ def add_to_wishlist(request, id=None):
         wish_item.save()
     else:
         wish_item = WishList.objects.create(user=request.user, product=product, quantity=1)
+    return redirect('wishlist')
+
+# Delete items from wishlist view 
+@login_required(login_url='/accounts/login/')
+def delete_from_wishlist(request, id=None):
+    """ 
+    A view for the user to delete item in wishlist 
+    """
+    
+    product = Product.objects.get(id=id)
+    wish_item = WishList.objects.get(user=request.user, product=product)
+    wish_item.delete()
     return redirect('wishlist')
