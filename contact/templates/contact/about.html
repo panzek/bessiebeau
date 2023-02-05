@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container pb-5 my-5">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %} 
+
+{% block content %}
+<div class="main-container h-100 w-25 mx-auto my-5" >
+    <div class="row h-100 border rounded header-container">
+        <div class="col-12 my-2">
+            <div class="card-header text-center">
+                <h4>About Bessie + Beau</h4>
+            </div>
+            <div class="card-body">
+                <p>
+                    Bessie+Beau is a top luxury fashion & beauty store. We partner with carefully selected merchants to offer high-end brands at affordable prices 
+                </p>
+                <p>
+                    <strong>Bessie + Beau, Dublin, Ireland</strong>
+                </p> 
+                <a class="navbar-brand" href="{% url 'products' %}">Click here to continue shopping</a>
+            </div>
+        </div>  
+    </div>
+</div>
+{% endblock %}

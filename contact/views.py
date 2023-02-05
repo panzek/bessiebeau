@@ -41,3 +41,12 @@ def contact(request):
 
     return render(request, template, context)
 
+
+def about(request):
+    """
+    A view to render an About page
+    """
+
+    context = {}
+    return render(request, 'contact/aboutt.html', context)
+

@@ -130,6 +130,27 @@ body{
     width: 35%; 
 }
 
+/* .form-message {
+    align-items: center;
+    background-color: rgb(241, 248, 233);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 40px;
+    height: 100vh;
+    border-top: 2px solid;
+    margin: 0 auto;
+} */
+
+.thank-you {
+    width: 100%;
+}
+
+.thank-you i {
+    margin: 20px;
+}
+
+/* End forms  */
+
 .unauthorise-user {
     margin-top: 20%;
 }
