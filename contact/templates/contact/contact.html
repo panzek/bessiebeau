@@ -15,22 +15,21 @@
   <div class="row h-100 border rounded header-container">
       <div class="col-12 my-2 text-center">
           <div class="card-header">
-              Contact Us
+              <h4>Get In Touch</h4>
           </div>
           <div class="card-body">
               <div class="alert alert-success" role="alert">
                <!-- Success or error message goes here  -->
               </div>
               <form  action="{% url 'contact' %}" method="POST">
-                <input type="hidden" name="" value="">
                   {% csrf_token %}
                   {{ form | crispy }}
                 <div>
-                    <button type="submit" style="width: 23rem;" class="btn btn-primary">Submit</button>
+                    <button type="submit" style="width: 23rem;" class="btn btn-primary">Send</button>
                 </div>
               </form>
           </div>
-      </div>
+      </div>  
   </div>
 </div>
 {% endblock %}

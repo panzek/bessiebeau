@@ -7,7 +7,7 @@ class ContactForm(forms.ModelForm):
     A form for customers to send messages to store owner
     """
 
-    message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 5}))
+    message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 3}))
     
     class Meta:
         model = Contact
