@@ -21,5 +21,15 @@ def privacy_policy(request):
     """
 
     context = {}
+
     return render(request, 'home/privacy_policy.html', context)
 
+# Refund Policy 
+def refund_policy(request):
+    """
+    A view to render Refund Policy page
+    """
+
+    context = {}
+
+    return render(request, 'home/refund_policy.html', context)
