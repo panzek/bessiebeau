@@ -130,6 +130,14 @@ body{
     width: 35%; 
 }
 
+/* Mailchimp  */
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:600px;
+}
+
 /* .form-message {
     align-items: center;
     background-color: rgb(241, 248, 233);
@@ -141,13 +149,6 @@ body{
     margin: 0 auto;
 } */
 
-.thank-you {
-    width: 100%;
-}
-
-.thank-you i {
-    margin: 20px;
-}
 
 /* End forms  */
 
