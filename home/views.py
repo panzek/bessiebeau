@@ -24,6 +24,7 @@ def privacy_policy(request):
 
     return render(request, 'home/privacy_policy.html', context)
 
+
 # Refund Policy 
 def refund_policy(request):
     """
@@ -33,3 +34,14 @@ def refund_policy(request):
     context = {}
 
     return render(request, 'home/refund_policy.html', context)
+
+
+# Terms of service  
+def terms_of_service(request):
+    """
+    A view to render Terms of Service page
+    """
+
+    context = {}
+
+    return render(request, 'home/terms_of_service.html', context)
