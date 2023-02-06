@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container pb-5 my-5">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %} 
+
+{% block content %}
+<div class="main-container h-100 w-50 mx-auto my-5" >
+    <div class="row h-100 border rounded header-container">
+        <div class="col-12 my-2">
+            <div class="card-header text-center">
+                <h1>Delivery &amp; Returns</h1>
+            </div>
+            <div class="card-body">
+                <h2>Delivery</h2>
+                <ul>
+                    <li>Standard delivery within Europe takes approximately within 5 to 6 working days 
+                        (7-15 working days in selected countries outside Europe), this may vary by location 
+                        and even <a href="{% url 'products' %}"><strong>product</strong></a>, and may be sent 
+                        to you in different parcels;
+                    </li>
+                    <li>All items purchased with us are sent to you directly by our merchants. Getting your 
+                        order to you quickly is our priority and we’ve worked hard with our merchants to 
+                        provide efficient delivery;
+                    </li>
+                    <li>If you’ve purchased multiple items from different <a href="https://www.frenchconnection.com/" target="_blank">brands</a>, 
+                        you’ll receive a parcel from each of them. Don’t worry, you’ll get a confirmation email and text message, and tracking 
+                        reference for each of your parcels which you can use to track when your goods will arrive.
+                    </li>
+                </ul>
+                
+                <h2>Returns</h2>
+                <ul>
+                    <li>You have 14 days from the date of delivery to return orders. Buyer pays return postage;</li>
+                    <li>If you've received a damaged item, please contact us immediately and we'll do everything possible to help;</li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+</div>
+{% endblock %}

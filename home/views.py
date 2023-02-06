@@ -45,3 +45,13 @@ def terms_of_service(request):
     context = {}
 
     return render(request, 'home/terms_of_service.html', context)
+
+# Delivery and Returns 
+def delivery_returns(request):
+    """
+    A view to render Delivery and Returns page
+    """
+
+    context = {}
+
+    return render(request, 'home/delivery_returns.html', context)
