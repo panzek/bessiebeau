@@ -12,3 +12,14 @@ def index(request):
     }
 
     return render(request, 'home/index.html', context)
+
+
+# Privacy Policy 
+def privacy_policy(request):
+    """
+    A view to render Privacy Policy page
+    """
+
+    context = {}
+    return render(request, 'home/privacy_policy.html', context)
+
