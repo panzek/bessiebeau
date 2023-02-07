@@ -75,7 +75,7 @@
                   <li class="list-inline-item dropdown">
                       <a class="text-black nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
-                              <div><i class="fas fa-user fa-lg"></i></div>
+                              <div><i class="fas fa-user fa-lg" aria-hidden="true"></i></div>
                               {% if request.user.is_authenticated %}
                                 <p class="my-0">Hi {{ user | capfirst }}!</p>
                               {% else %}
@@ -88,18 +88,30 @@
                             {% if request.user.is_superuser %}
                                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 <hr>
-                                <a href="{% url 'profile' %}" class="dropdown-item"><i class="fa-solid fa-user"></i> My Account</a>
+                                <a href="{% url 'profile' %}" class="dropdown-item">
+                                    <i class="fa-solid fa-user" aria-hidden="true"></i> My Account
+                                </a>
                                 <hr>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">
+                                    <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout
+                                </a>
                             {% elif not request.user.is_superuser %}
-                                <a href="{% url 'profile' %}" class="dropdown-item"><i class="fa-solid fa-user"></i> My Account</a>
+                                <a href="{% url 'profile' %}" class="dropdown-item">
+                                    <i class="fa-solid fa-user" aria-hidden="true"></i> My Account
+                                </a>
                                 <hr class="my-0">
-                                <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">
+                                    <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout
+                                </a>
                             {% endif %}
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fa-solid fa-users"></i> Register</a>
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">
+                                    <i class="fa-solid fa-users" aria-hidden="true"></i> Register
+                                </a>
                                 <hr class="my-0">
-                                <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fa-solid fa-lock"></i> Login</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">
+                                    <i class="fa-solid fa-lock" aria-hidden="true"></i> Login
+                                </a>
                         {% endif %}
                       </div>
                   </li>
@@ -107,7 +119,7 @@
                   <li class="list-inline-item">
                     <a class="text-black nav-link" href="{% url 'wishlist' %}">
                         <div class="text-center">
-                            <div><i class="fa-solid fa-heart"></i></div>
+                            <div><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
                             <p class="my-0">
                               WishList
                             </p>
@@ -118,7 +130,7 @@
                   <li class="list-inline-item">
                       <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
                           <div class="text-center">
-                              <div><i class="fa-solid fa-cart-shopping"></i></div>
+                              <div><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
                               <p class="my-0">
                                 {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}

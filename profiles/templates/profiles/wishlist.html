@@ -52,12 +52,12 @@
                             {% csrf_token %}
                             <input type="hidden" name="product_id" value="{{ item.product_id}}">
                             <a href="{% url 'product_detail' item.product.id %}" class="btn btn-primary btn-sm my-2 btn-block" role="button" aria-pressed="true">
-                                <i class="fa-regular fa-eye"></i> View Product</a>
+                                <i class="fa-regular fa-eye" aria-hidden="true"></i> View Product</a>
                         </div>
                         <div>
                             <input type="hidden" name="product_id" value="{{ item.product_id}}">
                             <a href="{% url 'delete_from_wishlist' item.product.id %}" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">
-                                <i class="fa-regular fa-trash-can"></i> Remove</a>
+                                <i class="fa-regular fa-trash-can" aria-hidden="true"></i> Remove</a>
                         </div>
                   
                     </td>
