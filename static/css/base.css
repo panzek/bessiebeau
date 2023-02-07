@@ -15,18 +15,7 @@ body{
 
 }
 
-/* Header and hero image  */
-
-#hero-inage {
-    position: relative;
-    width: 100%;
-}
-
-.hero-image-text {
-    position: absolute;
-    top: 40%;
-}
-
+/* Header  */
 .header-container {
     margin: 45px 0;
 }
@@ -170,22 +159,71 @@ a.category-badge > span.badge:hover {
   .container img {
     border-radius: 10%;
   }
-  
+
+  /* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+
   
   /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+
+  /* Screen sizes equal to or less than 500px wide */
   @media (max-width: 500px) {
     .container {
       text-align: center;
     }
   
     .container img {
-      margin: auto;
-      float: none;
-      display: block;
+        display: block;
+        float: none;
+        margin: auto;
     }
+
+     /* Hero image */
+     #hero-image-mobile {
+        position: relative;
+    }
+    
+    .hero-image-text {
+        left: 13.75rem;
+        position: absolute;
+        top: 45%;
+    }
+
+    #hero-image {
+        display: none;
+    } 
   }
 
-/* Footer */
-.footer {
-    text-align: center;
+
+/* Landscape  */
+/* Screen sizes equal to or larger than 612px wide */
+@media screen and (min-width: 612px) 
+and (orientation: landscape) {
+
+    /* Hero image */
+    #hero-image {
+        position: relative;
+    }
+    
+    .hero-image-text {
+        position: absolute;
+        top: 55%;
+        left: 12.5rem;
+    }
+
+    #hero-image-mobile {
+        display: none;
+    } 
+
+    .home-btn {
+        width: 70%;
+    }
+
 }

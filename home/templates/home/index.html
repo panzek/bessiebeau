@@ -14,13 +14,17 @@
 {% block content %}
 <div>
   <!-- Hero Image  -->
-  <div id="hero-image pt-0 text-center" > 
-      <img src="{{ MEDIA_URL }}hero-image.jpg" class="img-fluid" max-width="100%" height="auto" alt="Bessie + Beau Hero Image">
+  <div class="pt-0 text-center"> 
+      <img src="{{ MEDIA_URL }}hero-image-mobile.jpg" id="hero-image-mobile" class="img-fluid" alt="Bessie + Beau Hero Image">
+      <img src="{{ MEDIA_URL }}hero-image.jpg" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image">
   </div>
+  <!-- <div class="pt-0 text-center" > 
+    <img src="{{ MEDIA_URL }}hero-image.jpg" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image">
+  </div> -->
   <!-- Main section  -->
 
   <!-- Hero image text  -->
-  <div class="container" >
+  <div class="container container-mobile" >
     <div class="row w-100 h-100 mb-5 text mx-auto" >
       <div class="hero-image-text h-100 mx-1 my-5" >
         <div class="col-12 mt-5">
@@ -34,7 +38,7 @@
             </div>
             <div class="mt-2">
                 <h4>
-                    <a href="{% url 'products' %}" class="btn btn-lg btn-dark text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" class="btn btn-lg home-btn btn-dark text-uppercase py-3">Shop Now</a>
                 </h4>
             </div>
         </div>
@@ -43,7 +47,7 @@
   </div>
 
     <!-- Beauty Spotlight Section  -->
-    <div class="container w-100 mt-5" >
+    <div class="container w-100 " >
       <div class="col-12 mt-5 pt-4 text-center">
         <span class="my-5">
           <h3 class="card-title card-footer text-center">Beauty Spotlight</h3>
