@@ -18,10 +18,6 @@
       <img src="{{ MEDIA_URL }}hero-image-mobile.jpg" id="hero-image-mobile" class="img-fluid" alt="Bessie + Beau Hero Image">
       <img src="{{ MEDIA_URL }}hero-image.jpg" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image">
   </div>
-  <!-- <div class="pt-0 text-center" > 
-    <img src="{{ MEDIA_URL }}hero-image.jpg" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image">
-  </div> -->
-  <!-- Main section  -->
 
   <!-- Hero image text  -->
   <div class="container container-mobile" >
@@ -38,7 +34,7 @@
             </div>
             <div class="mt-2">
                 <h4>
-                    <a href="{% url 'products' %}" class="btn btn-lg home-btn btn-dark text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" class="btn home-btn btn-dark text-uppercase py-3">Shop Now</a>
                 </h4>
             </div>
         </div>
@@ -46,69 +42,140 @@
     </div>
   </div>
 
-    <!-- Beauty Spotlight Section  -->
-    <div class="container w-100 " >
-      <div class="col-12 mt-5 pt-4 text-center">
-        <span class="my-5">
-          <h3 class="card-title card-footer text-center">Beauty Spotlight</h3>
-          <hr>
-        </span>
-        <div class="row pb-4 ">
-          <div class="col-md-4">
-            <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
-              <h5>Pick from our featured Restaurants</h5>
+    <!-- Luxury Brands Section  -->
+    <div class="main-container h-100 w-100 mx-auto my-5" >
+      <div class="row h-100 border-0 header-container text-center">
+          <div class="col-12 my-2">
+            <div class="row pb-4">
+              <div class="col-md-4">
+                <img src="{{ MEDIA_URL }}women-top-brands-bags.webp" class="home-img mb-4" alt="Women Top Brands Bags">
+                <div class="mb-5">
+                  <h5>Women Top Brands Bags</h5>
+                  <h4>
+                      <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Bags</a>
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="{{ MEDIA_URL }}for-the-made-man.webp" class="home-img mb-4" alt="For the Made Man">
+                <div class="mb-5">
+                  <h5>For the Made Man</h5>
+                  <h4>
+                      <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop For Him</a>
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-4 fa-3x">
+                <img src="{{ MEDIA_URL }}women-luxury-shoes.jpg" class="home-img mb-4" alt="Women Tops">
+                  <div class="mb-5">
+                    <h5>Top Hits</h5>
+                    <h4>
+                        <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Shoes</a>
+                    </h4>
+                  </div>
+              </div>
+            </div>
             <hr>
-          </div>
-          <div class="col-md-4">
-            <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
-              <h5>Make a booking by providing date, time, and number of guests</h5>
-            <hr>
-          </div>
-          <div class="col-md-4 fa-3x">
-            <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
-              <h5>Looking forward to seeing you</h5>
-              <hr>
-          </div>
-        </div>
+          </div>  
       </div>
+  </div>
+
+<!-- Beauty Spotlight Section  -->
+  <div class="main-container h-100 w-100 mx-auto my-5" >
+    <div class="row h-100 border-0 header-container text-center">
+        <div class="col-12 my-2">
+          <div class="row pb-4">
+            <div class="col-md-3">
+              <img src="{{ MEDIA_URL }}professional-makeup-brushes.webp" class="mb-0 beauty-spotlight-img" alt="Makeup Brushes">
+                <div class="mb-5">
+                  <h5>Makeup Brushes</h5>
+                  <h4>
+                      <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Now</a>
+                  </h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <img src="{{ MEDIA_URL }}makeup-artist-and-brushes.webp" class="mb-0 beauty-spotlight-img" alt="Bessie + Beau logo">
+              <div class="mb-5">
+                <h5>Women Top Brands Bags</h5>
+                <h4>
+                    <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Now</a>
+                </h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="{{ MEDIA_URL }}health-and-wellness.webp" class="mb-0 beauty-spotlight-img" alt="Health and Wellness">
+              <div class="mb-5">
+                <h5>Health and Wellness</h5>
+                <h4>
+                    <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Now</a>
+                </h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="{{ MEDIA_URL }}professional-makeup-brushes.webp" class="mb-0 beauty-spotlight-img" alt="Makeup Brushes">
+                <div class="mb-5">
+                  <h5>Makeup Brushes</h5>
+                  <h4>
+                      <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Now</a>
+                  </h4>
+                </div>
+            </div>
+          </div>
+          <hr>
+        </div>  
     </div>
+</div>
 
     <div class="main-container h-100 w-100 mx-auto my-5" >
       <div class="row h-100 border-0 header-container text-center">
           <div class="col-12 my-2">
             <div class="row pb-4">
               <div class="col-md-4">
-                <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
-                  <h5>Pick from our featured Restaurants</h5>
-                <hr>
+                <img src="{{ MEDIA_URL }}women-top-brands-bags.webp" class="home-img mb-4" alt="Women Top Brands Bags">
+                <div class="mb-5">
+                  <h5>Women Top Brands Bags</h5>
+                  <h4>
+                      <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Bags</a>
+                  </h4>
+                </div>
               </div>
               <div class="col-md-4">
-                <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
-                  <h5>Make a booking by providing date, time, and number of guests</h5>
-                <hr>
+                <img src="{{ MEDIA_URL }}for-the-made-man.webp" class="home-img mb-4" alt="For the Made Man">
+                <div class="mb-5">
+                  <h5>For the Made Man</h5>
+                  <h4>
+                      <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop For Him</a>
+                  </h4>
+                </div>
               </div>
               <div class="col-md-4 fa-3x">
-                <img src="{{ MEDIA_URL }}bessie-beau.png" width="250px" class="mb-4" alt="Bessie + Beau logo">
-                  <h5>Looking forward to seeing you</h5>
-                  <hr>
+                <img src="{{ MEDIA_URL }}women-luxury-shoes.jpg" class=" home-img mb-4" alt="Women Tops">
+                  <div class="mb-5">
+                    <h5>Top Hits</h5>
+                    <h4>
+                        <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Shoes</a>
+                    </h4>
+                  </div>
               </div>
             </div>
+            <hr>
           </div>  
       </div>
   </div>
 
     <!-- Testimonials section  -->
     <div class="row w-50 testimonials h-100 text mx-auto">
-      <div class="col-12">
+      <div class="col-12 w-50 text-center">
         <span>
           <h3 class="card-title card-footer">Customer Testimonials</h3>
       </div>
       {% for testimonial in testimonials %}
         <div class="col-sm-4">
-          <div class="card">
+          <div>
               <div class="card-body text center">
                 {% if profile.profile_image %}
-                <img src="{{ profile.profile_image.url }}" width="150px" alt="{{ user }}Profile Photo" class="rounded-circle">
+                  <img src="{{ profile.profile_image.url }}" width="150px" alt="{{ user }}Profile Photo" class="rounded-circle">
                 {% else %}
                   <img src="{{ MEDIA_URL }}noimage.png" width="150px" alt="{{ user }}Profile Photo" class="rounded-circle">
                 {% endif %}
@@ -129,13 +196,12 @@
             </div>
           </div>
         </div>
-      
-      {% if forloop.counter|divisibleby:4 %}
+        {% if forloop.counter|divisibleby:4 %}
         </div>
         <div class="row">
-      {% endif %}
+        {% endif %}
       {% endfor %}
-    </div> 
+        </div> 
   </div>
 </div>
 {% endblock %}

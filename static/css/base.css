@@ -155,11 +155,6 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-/* Testimonials  */
-  .container img {
-    border-radius: 10%;
-  }
-
   /* Footer */
 footer {
     display: flex;
@@ -170,11 +165,17 @@ footer {
     width: 100%;
 }
 
-  
+.beauty-spotlight-img {
+    width: 27.5rem;
+    padding: 30px;
+}
+
+ 
   /* Add media queries for responsiveness. This will center both the text and the image inside the container */
 
+  /* Portrait  */
   /* Screen sizes equal to or less than 500px wide */
-  @media (max-width: 500px) {
+  @media (max-width: 540px) {
     .container {
       text-align: center;
     }
@@ -199,12 +200,20 @@ footer {
     #hero-image {
         display: none;
     } 
+
+    .home-img {
+        width: 27.5rem;
+    }
+
+    .home-beauty-btn {
+        width: 200px;
+    }
+    
   }
 
-
 /* Landscape  */
-/* Screen sizes equal to or larger than 612px wide */
-@media screen and (min-width: 612px) 
+/* Screen sizes equal to or larger than 760px wide */
+@media screen and (min-width: 760px) 
 and (orientation: landscape) {
 
     /* Hero image */
@@ -224,6 +233,14 @@ and (orientation: landscape) {
 
     .home-btn {
         width: 70%;
+    }
+
+    .home-beauty-btn {
+        width: 40%;
+    }
+
+    .home-img {
+        width: 37.5rem;
     }
 
 }
