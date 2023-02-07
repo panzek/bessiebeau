@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://bessiebeau.herokuapp.com/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/cart/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=dresses</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=jeans</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=dresses,jeans</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=shoes</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=bags</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=accessories</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=shoes,bags,accessories</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=makeup_polish</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=eyelashes_lipsticks</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=makeup_polish,eyelashes,lipsticks</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=men_shirts</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=men_jeans</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=men_shoes_accessories</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=men_shirts,men_jeans,men_shoes_accessories</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/?category=deals,clearance</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/contact/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/refund_policy/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/terms_of_service/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/how_to_shop/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/delivery_returns/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/user_guide/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/35</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/34</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/30</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/33</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/29</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/31</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/32</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/39</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/53</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/38</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/52</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/37</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/45</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/44</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/49</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/18</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/1</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/36</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/40</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/51</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/25</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/42</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/19</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/41</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/46</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/50</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/13</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/24</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/23</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/48</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/17</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/14</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/16</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/15</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/22</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/21</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/11</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/47</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/43</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/9</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/54</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/6</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/12</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/55</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/3</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/10</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/7</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/4</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/2</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/5</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/26</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/27</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/8</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/28</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/products/product_detail/20</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/35/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/34/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/30/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/33/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/29/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/31/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/32/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/39/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/53/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/38/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/52/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/37/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/45/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/44/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/49/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/18/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/1/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/36/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/40/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/51/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/25/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/42/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/19/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/41/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/46/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/50/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/13/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/24/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/23/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/48/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/17/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/14/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/16/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/15/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/22/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/21/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/11/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/47/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/43/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/9/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/54/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/6/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/12/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/55/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/3/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/10/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/7/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/4/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/2/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/5/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/26/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/27/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/8/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/28/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=/profile/add_to_wishlist/20/</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F35%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F35%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F35%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F34%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F34%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F34%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F30%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F30%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F30%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F33%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F33%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F33%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F29%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F29%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F29%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F31%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F31%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F31%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F32%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F32%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F32%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F39%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F39%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F39%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F53%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F53%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F53%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F38%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F38%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F38%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F52%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F52%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F52%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F37%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F37%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F37%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F45%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F45%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F45%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F44%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F44%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F44%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F49%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F49%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F49%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F18%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F18%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F18%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F1%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F1%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F1%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F36%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F36%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F36%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F40%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F40%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F40%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F51%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F51%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F51%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F25%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F25%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F25%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F42%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F42%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F42%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F19%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F19%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F19%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F41%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F41%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F41%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F46%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F46%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F46%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F50%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F50%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F50%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F13%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F13%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F13%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F24%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F24%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F24%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F23%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F23%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F23%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F48%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F48%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F48%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F17%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F17%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F17%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F14%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F14%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F14%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F16%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F16%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F16%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F15%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F15%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F15%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F22%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F22%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F22%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F21%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F21%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F21%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F11%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F11%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F11%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F47%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F47%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F47%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F43%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F43%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F43%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F9%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F9%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F9%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F54%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F54%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F54%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F6%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F6%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F6%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F12%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F12%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F12%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F55%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F55%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F55%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F3%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F3%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F3%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F10%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F10%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F10%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F7%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F7%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F7%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F4%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F4%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F4%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F2%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F2%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F2%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F5%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F5%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F5%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F26%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F26%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F26%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F27%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F27%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F27%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F8%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F8%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F8%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F28%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F28%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F28%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/signup/?next=%2Fprofile%2Fadd_to_wishlist%2F20%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/apple/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F20%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/google/login/?process=login&amp;next=%2Fprofile%2Fadd_to_wishlist%2F20%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F35%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F34%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F30%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F33%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F29%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F31%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F32%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F39%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F53%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F38%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F52%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F37%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F45%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F44%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F49%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F18%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F1%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F36%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F40%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F51%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F25%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F42%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F19%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F41%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F46%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F50%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F13%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F24%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F23%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F48%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F17%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F14%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F16%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F15%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F22%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F21%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F11%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F47%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F43%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F9%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F54%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F6%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F12%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F55%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F3%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F10%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F7%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F4%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F2%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F5%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F26%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F27%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F8%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F28%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://bessiebeau.herokuapp.com/accounts/login/?next=%2Fprofile%2Fadd_to_wishlist%2F20%2F</loc>
+  <lastmod>2023-02-07T21:02:55+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>
