@@ -1,12 +1,27 @@
 <!-- <footer> -->
   <div class="navbar navbar-expand-lg text-dark bg-light mt-5">
       <div class="container-fluid text-center">
-        <ul class="navbar-nav mx-auto my-3">      
+        <ul class="navbar-nav mx-auto my-2">      
             <li class="nav-item">  
-              <h6>Our Social Networks</h6>             
-              <a href="https://facebook.com/bessie1beau" target="_blank"><i class="fab fa-facebook-square fa-2xl" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
-              <a href="https://instagram.com/bessie1beau" target="_blank"><i class="fab fa-instagram-square fa-2xl" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
-              <a href="https://twitter.com/bessie1beau" target="_blank"><i class="fab fa-github-square fa-2xl" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+              <h4>Our Social Networks</h4>    
+              <a href="https://facebook.com/bessie1beau" target="_blank">
+                <span style="font-size: 2em; color: black;">
+                  <i class="fab fa-facebook-square " aria-hidden="true"></i>
+                </span>
+                <span class="sr-only">Facebook</span>
+              </a>
+              <a href="https://instagram.com/bessie1beau" target="_blank">
+                <span style="font-size: 2em; color: black;">
+                <i class="fab fa-instagram-square" aria-hidden="true"></i>
+              </span>
+                <span class="sr-only">Instagram</span>
+              </a>
+              <a href="https://twitter.com/bessie1beau" target="_blank">
+                <span style="font-size: 2em; color: black;">
+                  <i class="fab fa-github-square" aria-hidden="true"></i>
+                </span>
+                <span class="sr-only">Twitter</span>
+              </a>
             </li> 
         </ul>
       </div>
@@ -45,7 +60,7 @@
                   <ul class="list-group list-group-flush my-0 ">
                     <a href="{% url 'how_to_shop' %}" class="list-group-item bg-transparent border-0 p-0">How to Shop on Bessie + Beau</a>
                     <a href="{% url 'delivery_returns' %}" class="list-group-item bg-transparent border-0 p-0">Delivery &amp; Returns</a>
-                    <a href="#" class="list-group-item bg-transparent border-0 p-0">User Guide</a>
+                    <a href="{% url 'user_guide' %}" class="list-group-item bg-transparent border-0 p-0">User Guide</a>
                     <li class="list-group-item bg-transparent"></li>
                   </ul>
                 </div>

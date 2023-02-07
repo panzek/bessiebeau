@@ -61,9 +61,20 @@ def delivery_returns(request):
 # How to Shop on Bessie + Beau 
 def how_to_shop(request):
     """
-    A view to render Delivery and Returns page
+    A view to render How to Shop on Bessie + Beau page
     """
 
     context = {}
 
     return render(request, 'home/how_to_shop.html', context)
+
+
+# How to Shop on Bessie + Beau 
+def user_guide(request):
+    """
+    A view to render user_guide page
+    """
+
+    context = {}
+
+    return render(request, 'home/user_guide.html', context)
