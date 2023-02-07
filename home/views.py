@@ -46,6 +46,7 @@ def terms_of_service(request):
 
     return render(request, 'home/terms_of_service.html', context)
 
+
 # Delivery and Returns 
 def delivery_returns(request):
     """
@@ -55,3 +56,14 @@ def delivery_returns(request):
     context = {}
 
     return render(request, 'home/delivery_returns.html', context)
+
+
+# How to Shop on Bessie + Beau 
+def how_to_shop(request):
+    """
+    A view to render Delivery and Returns page
+    """
+
+    context = {}
+
+    return render(request, 'home/how_to_shop.html', context)
