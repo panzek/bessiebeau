@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /accounts/
+Disallow: /admin/
 Disallow: /cart/
+Disallow: /profiles/
 Sitemap: https://bessiebeau.herokuapp.com/sitemap.xml
