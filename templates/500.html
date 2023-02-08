@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} 500 - Server Error | Bessie + Beau  {% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %} 
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">500 Page</h5>
+      <p class="card-text">You may want to try some of these useful links.</p>
+      <a href="{% url 'products' %}">Products</a>
+      <a href="">Bags</a>
+      <p>OR</p>
+      <a href="{% url 'home' %}" class="btn btn-primary">Go back Home</a>
+    </div>
+</div>
+{% endblock %}
