@@ -33,8 +33,10 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['bessiebeau.herokuapp.com', 'localhost', '127.0.0.1']
 
-# Application definition
+# Tells Django to store messages in the session 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
+# Application definition
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',

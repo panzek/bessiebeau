@@ -16,9 +16,9 @@ body{
 }
 
 /* Header  */
-.header-container {
+/* .header-container {
     margin: 45px 0;
-}
+} */
 
 /* main  */
 .main-container {
@@ -155,6 +155,23 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
   /* Footer */
 footer {
     display: flex;
@@ -244,3 +261,36 @@ and (orientation: landscape) {
     }
 
 }
+
+ /* fixed top navbar only on medium and up */
+ @media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 124px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
