@@ -29,5 +29,3 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('testimonial/', include('testimonials.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-handler404 = "bessie_beau.views.handle_404"
