@@ -16,10 +16,15 @@
     {% endblock %}
     <title>{% block title %} {% endblock %}</title>
 
-      {% block extra_meta %}
-      {% endblock %}
+    {% block extra_meta %}
+    {% endblock %}
 
-    <!-- Begin Mailchimp Signup Form -->
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ MEDIA_URL }}favicons/android-chrome.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicons/favicon.png">
+        
+    <!-- Mailchimp Signup Form -->
     {% block mailchimpcss %}
         <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     {% endblock %}
