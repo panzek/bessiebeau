@@ -12,15 +12,19 @@
 {% endblock %} 
 
 {% block content %}
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+<div class="card border-0 mx-auto" style="width: 30rem;">
     <div class="card-body">
-      <h5 class="card-title">404 Page</h5>
-      <p class="card-text">You may want to try some of these useful links.</p>
-      <a href="{% url 'products' %}">Products</a>
-      <a href="{% url 'products/bags' %}">Bags</a>
-      <p>OR</p>
-      <a href="{% url 'home' %}" class="btn btn-primary">Go back Home</a>
+      <h5 class="card-title text-center">404 Page</h5>
+      <hr>
+      <p class="card-text">Sorry, nothing is here because this is not the page you're looking for.</p>
+      <p>You may want to try some of these useful links.</p>
+      <u>
+        <li>
+            <a href="{% url 'products' %}">Products</a>
+        </li>
+      </u>
+      <p class="py-3">or</p>
+      <a href="{% url 'home' %}" class="btn text-uppercase border-dark bg-white">Go back Home</a>
     </div>
 </div>
 {% endblock %}
