@@ -1,98 +1,98 @@
 [
-    {
-      "pk": 1,
-      "model": "products.category",
-      "fields": {
-        "name": "accessories",
-        "friendly_name": "Accessories"
-      }
-    },
-    {
-      "pk": 2,
-      "model": "products.category",
-      "fields": {
-        "name": "bags",
-        "friendly_name": "bags"
-      }
-    },
-    {
-      "pk": 3,
-      "model": "products.category",
-      "fields": {
-        "name": "clearance",
-        "friendly_name": "Clearance"
-      }
-    },
-    {
-      "pk": 4,
-      "model": "products.category",
-      "fields": {
-        "name": "dresses",
-        "friendly_name": "Dresses"
-      }
-    },
-    {
-      "pk": 5,
-      "model": "products.category",
-      "fields": {
-        "name": "deals",
-        "friendly_name": "Deals"
-      }
-    },
-    {
-      "pk": 6,
-      "model": "products.category",
-      "fields": {
-        "name": "eyelashes_lipsticks",
-        "friendly_name": "Eyelashes and Lipsticks"
-      }
-    },
-    {
-      "pk": 7,
-      "model": "products.category",
-      "fields": {
-        "name": "jeans",
-        "friendly_name": "Jeans"
-      }
-    },
-    {
-      "pk": 8,
-      "model": "products.category",
-      "fields": {
-        "name": "makeup_polish",
-        "friendly_name": "Makeup and Polish"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.category",
-      "fields": {
-        "name": "men_jeans",
-        "friendly_name": "Men Jeans"
-      }
-    },
-    {
-      "pk": 10,
-      "model": "products.category",
-      "fields": {
-        "name": "men_shoes_accessories",
-        "friendly_name": "Men Shoes and accessories"
-      }
-    },
-    {
-      "pk": 11,
-      "model": "products.category",
-      "fields": {
-        "name": "men_shirts",
-        "friendly_name": "Men Shirts"
-      }
-    },
-    {
-      "pk": 12,
-      "model": "products.category",
-      "fields": {
-        "name": "shoes",
-        "friendly_name": "Shoes"
-      }
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "accessories",
+      "friendly_name": "Accessories"
     }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "bags",
+      "friendly_name": "Bags"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "clearance",
+      "friendly_name": "Clearance"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "dresses",
+      "friendly_name": "Dresses"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "deals",
+      "friendly_name": "Deals"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "eyelashes_lipsticks",
+      "friendly_name": "Eyelashes and Lipsticks"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "jeans",
+      "friendly_name": "Jeans"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "makeup_polish",
+      "friendly_name": "Makeup and Polish"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "men_jeans",
+      "friendly_name": "Men Jeans"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.category",
+    "fields": {
+      "name": "men_shoes_accessories",
+      "friendly_name": "Men Shoes and accessories"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.category",
+    "fields": {
+      "name": "men_shirts",
+      "friendly_name": "Men Shirts"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.category",
+    "fields": {
+      "name": "shoes",
+      "friendly_name": "Shoes"
+    }
+  }
 ]
