@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container header-container mb-5">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -12,29 +12,35 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-    <div class="card mx-auto" style="width: 30rem;">
-        <div class="card-body">
-            <div class="card-header my-5 text-center">
-                <h3 class="card-title">Edit Your Profile</h3>
-            </div><br>
-            <div class="text-center">
-                <form method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form|crispy }}
-                    <div>
-                        <a href="" class="btn btn-secondary cancel-button">Delete Account</a>
-                        <button type="submit" class="btn btn-primary">Save Changes</button>
-                    </div>
-                </form>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">My Profile</h2>
+            <hr>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p class="text-muted">Default Delivery Information</p>
+            <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="float-right">
+                    <a href="" class="btn btn-danger cancel-button">Delete Account</a>
+                <button class="btn btn-dark rounded-0 text-uppercase ">Update Information</button>
+                </div>
+            </form>
+        </div>
 {% else %}
-    <div class="unauthorise-user my-5 text-center">
-        <h1>
-            You must be a registered user to access this page
-        </h1>
-    </div>
-
+        <div class="unauthorise-user my-5 text-center">
+            <h1>
+                You must be a registered user to access this page
+            </h1>
+        </div>
 {% endif %}
+    </div>
+    
+</div>
+
 {% endblock %}

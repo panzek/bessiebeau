@@ -5,7 +5,7 @@
 {% block title %} Profile | Bessie + Beau {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container header-container mb-5">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -13,91 +13,26 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid h-100 mx-auto profile-container">
-    <div class="row w-100 h-100">
-        <div class="col-4" >
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-address-card"></i> My Address</a></li>
-              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-user"></i> Account Information</a></li>
-              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-cart-shopping"></i> My Orders</a></li>
-              <li class="list-group-item"><a class="text-dark" href=""><i class="fa-solid fa-credit-card"></i> My Payment Method</a></li>
-            </ul>
-            <div class="card-footer">
-                <a class="text-dark" href="{% url 'account_logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-            </div>
-            <div class="card border-1 mt-2 mx-auto" style="max-width: 18rem;">
-                <div class="card-header text-center font-weight-bold">Profile Photo</div>
-                <div class="card-body">
-                  <p class="card-text text-center">
-                    {% if profile.profile_image %}
-                     <img src="{{ profile.profile_image.url }}" width="200px" alt="{{ user }}Profile Photo">
-                    {% else %}
-                     <img src="{{ MEDIA_URL }}noimage.png" width="200px" alt="{{ user }}Profile Photo">
-                    {% endif %}
-                  </p>
-                </div>
-                <div class="card-footer bg-transparent border-success text-center">Upload Photo</div>
-              </div>
-           
-        </div>
-        <div class="col-8">
-            <h1 class="display-4 text-center card-footer">
-                My Account
-            </h1>
-            <div class="row gx-5">
-                <div class="col">
-                    <div class="p-3">
-                        <h3>
-                            Account Information
-                        </h3>
-                        <hr class="divider bg-dark">
-                        <p class="card-text">First Name: {{ profile.first_name }} </p>
-                        <p class="card-text">Last Name: {{ profile.last_name }}</p>
-                        <p class="card-text">Phone Number: {{ profile.phone_number }}</p> 
-                        <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
-                        <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
-                        <div class="btn-group btn-group-justified" style="width: 20rem;">
-                            <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Edit</a>
-                        </div>               
-                    </div>
-                </div>
-            </div>
-            <div class="row gx-5">
-                <div class="col">
-                    <div class="p-3">
-                        <h3>
-                            Address Book
-                        </h3>
-                        <hr class="divider bg-dark">
-                        <div class="row">
-                            <div class="col-6">
-                                <h6>
-                                    Default Billing Address
-                                </h6>
-                                <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
-                                <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
-                                <div class="btn-group btn-group-justified" style="width: 20rem;">
-                                    <a href="" class="btn btn-info">Edit Address</a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h6>
-                                    Default Shipping Address
-                                </h6>
-                                <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
-                                <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
-                                <div class="btn-group btn-group-justified" style="width: 20rem;">
-                                    <a href="" class="btn btn-info">Edit Address</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">My Profile</h2>
+            <hr>
         </div>
     </div>
-    <!-- User Order History  -->
-    <div class="row w-100 h-100">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <h5 class="text-muted">Account Information</h5>
+                <p class="card-text">First Name: {{ profile.first_name }} </p>
+                <p class="card-text">Last Name: {{ profile.last_name }}</p>
+                <p class="card-text">Phone Number: {{ profile.phone_number }}</p> 
+                <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
+                <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
+                <div class="btn-group btn-group-justified" style="width: 20rem;">
+                    <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Edit</a>
+                </div>               
+        </div>
         <div class="col-12 col-lg-6">
             <p class="text-muted">Order History</p>
             <div class="order-history table-responsive">
@@ -131,12 +66,29 @@
                                         {% endfor %}
                                     </ul>
                                 </td>
-                                <td>€{{ order.grand_total }}</td>
+                                <td>${{ order.grand_total }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
                 </table>
             </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="card border-1 mt-2 mx-auto" >
+                <div class="card-header text-center font-weight-bold">Profile Photo</div>
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    {% if profile.profile_image %}
+                     <img src="{{ profile.profile_image.url }}" width="200px" alt="{{ user }}Profile Photo">
+                    {% else %}
+                     <img src="{{ MEDIA_URL }}noimage.png" width="200px" alt="{{ user }}Profile Photo">
+                    {% endif %}
+                  </p>
+                </div>
+              </div>
+        </div>
+
     </div>
 </div>
 {% endblock %}
