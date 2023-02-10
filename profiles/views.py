@@ -39,6 +39,7 @@ def profile(request):
 @login_required(login_url='/accounts/login/')
 def edit_profile(request, *args, **kwargs):
     """ A view to render edit user Profile page """
+
     userprofile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -49,7 +50,10 @@ def edit_profile(request, *args, **kwargs):
             )
         if form.is_valid:
             form.save()
+            messages.success(request, 'Successfully updated product!')
             return redirect('/profile/')
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid')
     else:
         form = UserProfileForm(instance=userprofile)
     
