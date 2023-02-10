@@ -3,4 +3,13 @@ from django.contrib import admin
 from testimonials.models import Testimonial
 
 # Register your models here.
-admin.site.register(Testimonial)
+@admin.register(Testimonial)
+class TestimonialAdmin(admin.ModelAdmin):
+    """ Add Testimonial model to admin page"""
+    list_filter = ('created_on', 'approved',)
+    list_display = ('name', 'body', 'created_on', 'approved', 'user',)
+    search_fields = ('name', 'email', 'body',)
+    actions = ['approve_testimonials']
+
+    def approve_reviews(self, request, queryset):
+        queryset.update(approved=True)

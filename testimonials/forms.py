@@ -25,7 +25,7 @@ class TestimonialForm(forms.ModelForm):
             'body': 'Write your testimonial',
         }
 
-        self.fields['email'].widget.attrs['autofocus'] = True
+        self.fields['name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder

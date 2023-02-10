@@ -28,4 +28,4 @@ class Testimonial(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
-        return self.name
+        return f"Testimonial {self.body} by {self.name}"

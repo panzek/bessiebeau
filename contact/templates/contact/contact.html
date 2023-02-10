@@ -5,7 +5,7 @@
 {% block title %} Contact Us | Bessie + Beau {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container pb-5 my-5">
+    <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -13,25 +13,30 @@
 {% endblock %} 
 
 {% block content %}
-<div class="main-container h-100 mx-auto my-5" >
-  <div class="row h-100 border rounded header-container">
-      <div class="col-12 my-2 text-center">
-          <div class="card-header">
-              <h4>Get In Touch</h4>
-          </div>
-          <div class="card-body">
-              <div class="alert alert-success" role="alert">
-               <!-- Success or error message goes here  -->
-              </div>
-              <form  action="{% url 'contact' %}" method="POST">
-                  {% csrf_token %}
-                  {{ form | crispy }}
-                <div>
-                    <button type="submit" style="width: 23rem;" class="btn btn-primary">Send</button>
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto text-center">
+            <hr>
+            <h2 class="mb-4">Get In Touch</h2>
+            <hr class="mb-3">
+        </div>  
+    </div>  
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+            {% if reviewed %}
+                <div class="alert alert-success" role="alert">
                 </div>
-              </form>
-          </div>
-      </div>  
-  </div>
+                {% else %}
+            <form action="{% url 'contact' %}" method="POST" class="form mb-2">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-center my-3">
+                    <a class="btn btn-outline-dark rounded-0" style="width: 25rem;" href="{% url 'home' %}">Cancel</a>
+                    <button type="submit" class="btn btn-info rounded-0" style="width: 25rem;">Send</button>
+                </div>
+            </form>
+            {% endif %}
+        </div>
+    </div>
 </div>
 {% endblock %}

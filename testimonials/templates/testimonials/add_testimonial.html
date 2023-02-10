@@ -3,7 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block page_header %}
-    <div class="container header-container pb-5 my-5">
+    <div class="container header-container pb-5">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -11,31 +11,40 @@
 {% endblock %} 
 
 {% block content %}
-<div class="main-container h-100 mx-auto my-5" >
-    <div class="row h-100 border rounded header-container">
-        <div class="col-12 my-1 text-center">
-            <div class="card-header">
-                <h5><strong>Write a testimonial</strong></h5>
-            </div>
-            <div class="card-body">
-                {% if reviewed %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto text-center">
+            <hr>
+            <h2 class="mb-4">Write a testimonial</h2>
+            <h5 class="text-muted">Share your thoughts with other customers</h5>
+            <hr class="mb-2">
+        </div>  
+    </div>  
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+            {% if reviewed %}
                 <div class="alert alert-success" role="alert">
                   {{ user.username }}, your testimonial is awaiting approval
                 </div>
                 {% else %}
-                <p>Share your thoughts with other customers</p>
-                <p>Reviewing as: {{ user.username }}</p>
-                <form method="POST">
-                  <input type="hidden" name="product" value="{{ product.pk }}">
-                    {% csrf_token %}
-                    {{ form | crispy }}
-                  <div>
-                      <button type="submit" style="width: 23rem;" class="btn btn-primary">Submit</button>
-                  </div>
-                </form>
-                {% endif %}
-            </div>
+                <p class="text-center" >Reviewing as: {{ user.username }}</p>
+            <form method="POST" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                    {% if field.name != 'image' %}
+                        {{ field|as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
+                {% endfor %}
+                <div class="text-right my-3">
+                    <a class="btn btn-outline-dark rounded-0" href="{% url 'home' %}">Cancel</a>
+                    <button class="btn btn-info rounded-0">Add Testimonial</button>
+                </div>
+            </form>
+            {% endif %}
         </div>
     </div>
 </div>
 {% endblock %}
+

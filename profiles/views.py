@@ -13,6 +13,7 @@ from profiles.models import WishList
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
+    
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
