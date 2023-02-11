@@ -34,7 +34,7 @@
             </div>
             <div class="mt-2">
                 <h4>
-                    <a href="{% url 'products' %}" class="btn home-btn btn-dark text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" aria-label="Go to all products page" class="btn home-btn btn-dark text-uppercase py-3">Shop Now</a>
                 </h4>
             </div>
         </div>
@@ -49,7 +49,7 @@
       <div class="mb-5 text-center">
         <h5>Gorgeous and Stylish Dresses</h5>
         <h4>
-            <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Dresses</a>
+            <a href="{% url 'products' %}?category=dresses" aria-label="Go to women dresses page" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Dresses</a>
         </h4>
       </div>
     </div>
@@ -58,7 +58,7 @@
     <div class="mb-5 text-center">
       <h5>Stylish Rugged Jeans</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Jeans</a>
+          <a href="{% url 'products' %}?category=jeans" aria-label="Go to women jeans page" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Jeans</a>
       </h4>
     </div>
     </div>
@@ -67,7 +67,7 @@
     <div class="mb-5 text-center">
       <h5>Women Luxury Tops</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Tops</a>
+          <a href="{% url 'products' %}?category=dresses" aria-label="Go to women tops page" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Tops</a>
       </h4>
     </div>
     </div>
@@ -80,7 +80,7 @@
     <div class="mb-5 text-center">
       <h5>Makeup Brushes</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Make-ups</a>
+          <a href="{% url 'products' %}?category=makeup_polish,eyelashes,lipsticks" aria-label="Go to women makeup, polish and lipsticks page" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Make-ups</a>
       </h4>
     </div>
   </div>
@@ -89,16 +89,16 @@
     <div class="mb-5 text-center">
       <h5>Makeup Artist and Brushes</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Polish</a>
+          <a href="{% url 'products' %}?category=makeup_polish" aria-label="Go to women makeup page" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Polish</a>
       </h4>
     </div>
   </div>
   <div class="col-12 col-md-3 ">
-    <img src="{{ MEDIA_URL }}health-and-wellness.webp" class="img-fluid mb-0 beauty-spotlight-img" alt="Health and Wellness">
+    <img src="{{ MEDIA_URL }}health-and-wellness.webp" aria-label="Go to women health and wellness products page"  class="img-fluid mb-0 beauty-spotlight-img" alt="Health and Wellness">
     <div class="mb-5 text-center">
       <h5>Health and Wellness</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Beauty</a>
+          <a href="{% url 'products' %}?category=makeup_polish,eyelashes,lipsticks" aria-label="Go to women makeup, polish, eyelashes, and lipstick page"  class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Beauty</a>
       </h4>
     </div>
   </div>
@@ -107,7 +107,7 @@
     <div class="mb-5 text-center">
       <h5>Luxury Lipsticks</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Lipsticks</a>
+          <a href="{% url 'products' %}?category=eyelashes_lipsticks" aria-label="Go to women eyelashes and lipsticks page" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Lipsticks</a>
       </h4>
     </div>
   </div>
@@ -120,7 +120,7 @@
     <div class="mb-5 text-center">
       <h5>Women Sunglasses</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Sunglasses</a>
+          <a href="{% url 'products' %}?category=accessories" aria-label="Go to women accessories page" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Sunglasses</a>
       </h4>
     </div>
   </div>
@@ -129,7 +129,7 @@
     <div class="mb-5 text-center">
       <h5>Women Luxury Shoes</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Shoes</a>
+          <a href="{% url 'products' %}?category=shoes" aria-label="Go to women shoes page" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Shoes</a>
       </h4>
     </div>
   </div>
@@ -138,7 +138,7 @@
     <div class="mb-5 text-center">
       <h5>Women Top Brands Bags</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Women Top Brands Bags</a>
+          <a href="{% url 'products' %}?category=bags" aria-label="Go to women bags page" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Women Top Brands Bags</a>
       </h4>
     </div>
   </div>
@@ -164,7 +164,7 @@
       <div class="mb-5 text-center">
         <h5>Men Accessories</h5>
         <h4>
-            <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Men Accessories</a>
+            <a href="{% url 'products' %}?category=men_shoes_accessories" aria-label="Go to men shoes and accessories page"  class="btn home-beauty-btn text-uppercase border border-dark bg-white">Shop Men Accessories</a>
         </h4>
       </div>
   </div>
@@ -173,7 +173,7 @@
     <div class="mb-5">
       <h5>For the Made Man</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop For Him</a>
+          <a href="{% url 'products' %}?category=men_shirts,men_jeans,men_shoes_accessories" aria-label="Go to all men products page" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop For Him</a>
       </h4>
     </div>
   </div>
@@ -182,7 +182,7 @@
     <div class="mb-5">
       <h5>Men Shirts</h5>
       <h4>
-          <a href="{% url 'products' %}" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Men Shirts</a>
+          <a href="{% url 'products' %}?category=men_shirts" aria-label="Go to men shirts page" class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Men Shirts</a>
       </h4>
     </div>
   </div>
@@ -194,7 +194,7 @@
     <span>
       <h3 class="card-title card-footer">Customer Testimonials</h3>
       <div class="text-left ml-5"> 
-        Tell us about <strong>Bessie + Beau.</strong><a href="{% url 'testimonial' %}"> Add your testimonial</a>
+        Tell us about <strong>Bessie + Beau.</strong><a href="{% url 'testimonial' %}" aria-label="Go to add your testimonial page"> Add your testimonial</a>
         <hr class="divider bg-dark">
       </div>
   </div>
@@ -203,8 +203,8 @@
   <div class="col-12 col-md-3 mx-auto py-5">
     <div>
       <div class="card-body mx-auto text center">
-        {% if profile.profile_image %}
-          <img src="{{ profile.profile_image.url }}" class="img-fluid rounded-circle mx-auto" width="200px" alt="{{ user }}Profile Photo" >
+        {% if testimonial.profile_image %}
+          <img src="{{ testimonial.profile_image.url }}" class="img-fluid rounded-circle mx-auto" width="200px" alt="{{ user }}Profile Photo" >
         {% else %}
           <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ user }}Profile Photo" class="rounded-circle">
         {% endif %}
@@ -221,8 +221,8 @@
         {% if request.user.username %}
         <small class="ml-3">
           {% if request.user.username or request.user.is_superuser == testimonial.user.username %}
-            <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a> |
-            <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}">Delete</a>
+            <a href="{% url 'edit_testimonial' testimonial.id %}" aria-label="Go to edit testimonial page">Edit</a> |
+            <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}" aria-label="Go to delete testimonial page">Delete</a>
           {% endif %}
         </small>
         {% endif %}

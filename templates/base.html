@@ -64,7 +64,7 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="{% url 'products' %}">
                   <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search products">
                       <div class="input-group-append">
                           <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                               <span class="icon">
@@ -91,30 +91,30 @@
                       <div class="dropdown-menu border-1" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                <a href="{% url 'add_product' %}" aria-label="Go to product management page" class="dropdown-item">Product Management</a>
                                 <hr>
-                                <a href="{% url 'profile' %}" class="dropdown-item">
+                                <a href="{% url 'profile' %}" aria-label="Go to my account page" class="dropdown-item">
                                     <i class="fa-solid fa-user" aria-hidden="true"></i> My Account
                                 </a>
                                 <hr>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">
+                                <a href="{% url 'account_logout' %}" aria-label="Go to logout page" class="dropdown-item">
                                     <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout
                                 </a>
                             {% elif not request.user.is_superuser %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">
+                                <a href="{% url 'profile' %}" aria-label="Go to my account page" class="dropdown-item">
                                     <i class="fa-solid fa-user" aria-hidden="true"></i> My Account
                                 </a>
                                 <hr class="my-0">
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">
+                                <a href="{% url 'account_logout' %}" aria-label="Go to logout page" class="dropdown-item">
                                     <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout
                                 </a>
                             {% endif %}
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">
+                                <a href="{% url 'account_signup' %}" aria-label="Go to signup page" class="dropdown-item">
                                     <i class="fa-solid fa-users" aria-hidden="true"></i> Register
                                 </a>
                                 <hr class="my-0">
-                                <a href="{% url 'account_login' %}" class="dropdown-item">
+                                <a href="{% url 'account_login' %}" aria-label="Go to login page" class="dropdown-item">
                                     <i class="fa-solid fa-lock" aria-hidden="true"></i> Login
                                 </a>
                         {% endif %}
@@ -122,7 +122,7 @@
                   </li>
                   {% if request.user.is_authenticated %}
                   <li class="list-inline-item">
-                    <a class="text-black nav-link" href="{% url 'wishlist' %}">
+                    <a class="text-black nav-link" href="{% url 'wishlist' %}" aria-label="Go to product wishlist page">
                         <div class="text-center">
                             <div><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
                             <p class="my-0">
@@ -133,7 +133,7 @@
                 </li>
                 {% endif %}
                   <li class="list-inline-item">
-                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
+                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}" aria-label="Go to shopping cart page">
                           <div class="text-center">
                               <div><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
                               <p class="my-0">
