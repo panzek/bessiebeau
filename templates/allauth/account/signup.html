@@ -1,27 +1,46 @@
 {% extends "account/base.html" %}
 
+{% load static %}
 {% load i18n %}
-
 {% load crispy_forms_tags %}
+{% load account socialaccount %}
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
-{% block inner_content %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %} 
 
-<hr>
-<h2 class="logo-font mb-4 text-center">{% trans "Sign Up" %}</h2>
-<hr>
+{% block content %}
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+          <div class="sign-in-form_or-divider">
+            <h2 class="login-or mx-auto font-weight-bold">{% trans "Sign In" %}</h2>
+          </div>
+        
+          <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form|crispy }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Home</a>
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+          <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+            {{ form|crispy }}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
 
+          
+          <div class="text-center my-3">
+            <a class="btn btn-outline-dark rounded-0" style="width: 25rem;" href="{% url 'home' %}">Home</a>
+            <button type="submit" class="btn btn-info rounded-0" style="width: 25rem;">{% trans "Sign Up" %}</button>
+        </div>
+        </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
+

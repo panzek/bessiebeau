@@ -69,8 +69,6 @@ def delete_profile(request, *args, **kwargs):
     """ A view to render delete user Profile """
     
     userprofile = get_object_or_404(UserProfile, user=request.user)
-    # u = User.objects.get(id=1)
-    # u = User.objects.filter(username=userprofile) 
     userprofile.delete()
 
     return render(request, '')

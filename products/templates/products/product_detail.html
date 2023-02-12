@@ -12,10 +12,10 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row header-container">
+<div class="container-fluid py-5">
+    <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="my-5">
+            <div>
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -34,12 +34,12 @@
                 {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            <i class="fas fa-tag mr-1" aria-hidden="true"></i>{{ product.category.friendly_name }}
                         </a>
                     </p>
                 {% endif %}
                 {% if product.rating %}
-                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    <small class="text-muted"><i class="fas fa-star mr-1" aria-hidden="true"></i>{{ product.rating }} / 5</small>
                 {% else %}
                     <small class="text-muted">No Rating</small>
                 {% endif %}
@@ -72,7 +72,7 @@
                                         <button class="decrement-qty btn btn-dark rounded-0" 
                                             data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                             <span class="icon">
-                                                <i class="fas fa-minus"></i>
+                                                <i class="fas fa-minus" aria-hidden="true"></i>
                                             </span>
                                         </button>
                                     </div>
@@ -98,7 +98,7 @@
                             <div class="btn-group w-100">
                                 <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-1 mt-2">
                                     <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
+                                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
@@ -106,7 +106,7 @@
                                 {% csrf_token %}
                                     <input type="hidden" name="product-id" value="{{ product.id}}">
                                     <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-primary rounded-1 text-uppercase mt-2" role="button" aria-pressed="true">
-                                        <i class="fa-solid fa-heart"></i> Add to Wishlist
+                                        <i class="fa-solid fa-heart" aria-hidden="true"></i> Add to Wishlist
                                     </a>
                                 </form>
                             </div>

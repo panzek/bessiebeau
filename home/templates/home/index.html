@@ -45,7 +45,7 @@
   <!-- Women Clothing  Section  -->
   <div class="row mt-1 mb-2 mx-auto">
     <div class="col-12 col-md-4 ">
-      <img src="{{ MEDIA_URL }}gorgeous-and-stylish-dress.webp" class="img-fluid home-img mb-4" alt="Gorgeous and Stylish Dress">
+      <img src="{{ MEDIA_URL }}gorgeous-and-stylish-dress.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="Gorgeous and Stylish Dress">
       <div class="mb-5 text-center">
         <h5>Gorgeous and Stylish Dresses</h5>
         <h4>
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="col-12 col-md-4 ">
-      <img src="{{ MEDIA_URL }}stylish-rugged-jeans.webp" class="img-fluid home-img mb-4" alt="Stylish Rugged Jeans">
+      <img src="{{ MEDIA_URL }}stylish-rugged-jeans.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="Stylish Rugged Jeans">
     <div class="mb-5 text-center">
       <h5>Stylish Rugged Jeans</h5>
       <h4>
@@ -63,7 +63,7 @@
     </div>
     </div>
     <div class="col-12 col-md-4 ">
-      <img src="{{ MEDIA_URL }}women-luxury-tops.webp" class="img-fluid home-img mb-4" alt="Women Luxury Tops">
+      <img src="{{ MEDIA_URL }}women-luxury-tops.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="Women Luxury Tops">
     <div class="mb-5 text-center">
       <h5>Women Luxury Tops</h5>
       <h4>
@@ -76,7 +76,7 @@
 <!-- Women Beauty Spotlight Section  -->
 <div class="row mt-1 mb-2 mx-auto">
   <div class="col-12 col-md-3 ">
-    <img src="{{ MEDIA_URL }}professional-makeup-brushes.webp" class="img-fluid mb-0 beauty-spotlight-img" alt="Makeup Brushes">
+    <img src="{{ MEDIA_URL }}professional-makeup-brushes.webp" width="640" height="360" class="img-fluid mb-0 beauty-spotlight-img" alt="Makeup Brushes">
     <div class="mb-5 text-center">
       <h5>Makeup Brushes</h5>
       <h4>
@@ -85,7 +85,7 @@
     </div>
   </div>
   <div class="col-12 col-md-3 ">
-    <img src="{{ MEDIA_URL }}makeup-artist-and-brushes.webp" class="img-fluid mb-0 beauty-spotlight-img" alt="Makeup-artist-and-brushes">
+    <img src="{{ MEDIA_URL }}makeup-artist-and-brushes.webp" width="640" height="360" class="img-fluid mb-0 beauty-spotlight-img" alt="Makeup-artist-and-brushes">
     <div class="mb-5 text-center">
       <h5>Makeup Artist and Brushes</h5>
       <h4>
@@ -94,16 +94,16 @@
     </div>
   </div>
   <div class="col-12 col-md-3 ">
-    <img src="{{ MEDIA_URL }}health-and-wellness.webp" aria-label="Go to women health and wellness products page"  class="img-fluid mb-0 beauty-spotlight-img" alt="Health and Wellness">
+    <img src="{{ MEDIA_URL }}health-and-wellness.webp" width="640" height="360" class="img-fluid mb-0 beauty-spotlight-img" alt="Health and Wellness">
     <div class="mb-5 text-center">
       <h5>Health and Wellness</h5>
       <h4>
-          <a href="{% url 'products' %}?category=makeup_polish,eyelashes,lipsticks" aria-label="Go to women makeup, polish, eyelashes, and lipstick page"  class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Beauty</a>
+          <a href="{% url 'products' %}?category=makeup_polish,eyelashes,lipsticks" aria-label="Go to women health and wellness products page"  class="btn home-beauty-btn text-uppercase py-2 border border-dark bg-white">Shop Beauty</a>
       </h4>
     </div>
   </div>
   <div class="col-12 col-md-3 ">
-    <img src="{{ MEDIA_URL }}lipsticks.webp" class="img-fluid mb-0 beauty-spotlight-img" alt="Women Luxury Tops">
+    <img src="{{ MEDIA_URL }}lipsticks.webp" width="640" height="360" class="img-fluid mb-0 beauty-spotlight-img" alt="Women Luxury Tops">
     <div class="mb-5 text-center">
       <h5>Luxury Lipsticks</h5>
       <h4>
@@ -116,7 +116,7 @@
  <!-- Women Accessories  Section  -->
 <div class="row mt-1 mb-2 mx-auto">
   <div class="col-12 col-md-4 ">
-    <img src="{{ MEDIA_URL }}women-sunglasses.webp" class="img-fluid home-img mb-4" alt="Women Sunglasses">
+    <img src="{{ MEDIA_URL }}women-sunglasses.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="Women Sunglasses">
     <div class="mb-5 text-center">
       <h5>Women Sunglasses</h5>
       <h4>
@@ -125,7 +125,7 @@
     </div>
   </div>
   <div class="col-12 col-md-4 ">
-    <img src="{{ MEDIA_URL }}women-luxury-shoes.webp" class="img-fluid home-img mb-4" alt=">Women Luxury Shoes">
+    <img src="{{ MEDIA_URL }}women-luxury-shoes.webp" width="360" height="640" class="img-fluid home-img mb-4" alt=">Women Luxury Shoes">
     <div class="mb-5 text-center">
       <h5>Women Luxury Shoes</h5>
       <h4>
@@ -134,7 +134,7 @@
     </div>
   </div>
   <div class="col-12 col-md-4 ">
-    <img src="{{ MEDIA_URL }}women-top-brands-bags.webp" class="img-fluid home-img mb-4" alt="For the Made Man">
+    <img src="{{ MEDIA_URL }}women-top-brands-bags.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="For the Made Man">
     <div class="mb-5 text-center">
       <h5>Women Top Brands Bags</h5>
       <h4>
@@ -153,14 +153,17 @@
     <div class="d-flex" style="height: 200px;">
       <div class="vr">
         <p>
-          At Bessie + Beau, one of our main priorities is the privacy of our visitors. This Privacy 
-          Policy document contains types of information that is collected and recorded by Bessie + Beau 
-          and how we use it. If you have additional questions or require more information about our 
-          Privacy Policy, do not hesitate to contact us.
+          To many men, the concept of fashion isn't something that holds much importance or interest. 
+          This isn't to say that these men dress poorly, but usually, the basis behind why a certain 
+          outfit might look good doesn't register in their minds, and so a different end result is produced. 
+          While this isnt necessarily a critique on a man's ability to dress himself, it is an unfortunate 
+          side-effect of the gender norms that formulate the idea that fashion is a topic reserved 
+          for women, for whom clothing is more of an art than a tool... 
+          <a href="{% url 'products' %}?category=men_shirts,men_jeans,men_shoes_accessories" aria-label="Go to all men products page">Shop For Him</a>
         </p>
       </div>
     </div>
-    <img src="{{ MEDIA_URL }}men-accessories.webp" class="img-fluid home-img mb-4 py-5" alt="Men Accessories">
+    <img src="{{ MEDIA_URL }}men-accessories.webp" width="640" height="360" class="img-fluid home-img mb-4 py-5" alt="Men Accessories">
       <div class="mb-5 text-center">
         <h5>Men Accessories</h5>
         <h4>
@@ -169,7 +172,7 @@
       </div>
   </div>
   <div class="col-12 col-md-4 ">
-    <img src="{{ MEDIA_URL }}for-the-made-man.webp" class="img-fluid home-img mb-4" alt="For the Made Man">
+    <img src="{{ MEDIA_URL }}for-the-made-man.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="For the Made Man">
     <div class="mb-5">
       <h5>For the Made Man</h5>
       <h4>
@@ -178,7 +181,7 @@
     </div>
   </div>
   <div class="col-12 col-md-4 ">
-    <img src="{{ MEDIA_URL }}men-shirts.webp" class="img-fluid home-img mb-4" alt="Men Shirts">
+    <img src="{{ MEDIA_URL }}men-shirts.webp" width="360" height="640" class="img-fluid home-img mb-4" alt="Men Shirts">
     <div class="mb-5">
       <h5>Men Shirts</h5>
       <h4>
@@ -191,49 +194,49 @@
 <!-- Testimonials section  -->
 <div class="row mt-1 mb-2 mx-auto">
   <div class="col-12 w-50 text-center">
-    <span>
       <h3 class="card-title card-footer">Customer Testimonials</h3>
       <div class="text-left ml-5"> 
         Tell us about <strong>Bessie + Beau.</strong><a href="{% url 'testimonial' %}" aria-label="Go to add your testimonial page"> Add your testimonial</a>
         <hr class="divider bg-dark">
       </div>
   </div>
-  
-  {% for testimonial in testimonials %}
-  <div class="col-12 col-md-3 mx-auto py-5">
-    <div>
-      <div class="card-body mx-auto text center">
-        {% if testimonial.profile_image %}
-          <img src="{{ testimonial.profile_image.url }}" class="img-fluid rounded-circle mx-auto" width="200px" alt="{{ user }}Profile Photo" >
-        {% else %}
-          <img src="{{ MEDIA_URL }}noimage.webp" alt="{{ user }}Profile Photo" class="rounded-circle">
-        {% endif %}
-          <hr>
-          <p class="font-weight-bold py-0">{{ testimonial.name }}</p>
-          <span class=" text-muted font-weight-normal">
-            Wrote on: {{ testimonial.created_on | date:"D, d M Y" }},
-            {{ testimonial.created_on | time:"H:ia" }}
-          </span>
-          <p> {{ testimonial.body }} </p>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row g-2">
+      {% for testimonial in testimonials %}
+      <div class="col-12 col-md-4">
+          <div class="card p-3 text-center px-4 m-2">
+              <div class="user-image">
+                <img src="{{ testimonial.user.userprofile.profile_image.url }}" class="img-fluid mx-auto" width="500px" alt="{{ testimonial.user.username }}Profile Photo" >
+                <hr>
+                <p class="font-weight-bold mb-0">{{ testimonial.name }}</p>
+                <span class=" text-muted font-weight-normal">
+                  Wrote on: {{ testimonial.created_on | date:"D, d M Y" }},
+                  {{ testimonial.created_on | time:"H:ia" }}
+                </span>
+                <p class="py-0"> {{ testimonial.body }} </p>
+              </div>
+              <div class="card-footer text-center">
+                {% if request.user.username %}
+                <small class="ml-3">
+                  {% if request.user.username or request.user.is_superuser == testimonial.user.username %}
+                    <a href="{% url 'edit_testimonial' testimonial.id %}" aria-label="Go to edit testimonial page">Edit</a> |
+                    <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}" aria-label="Go to delete testimonial page">Delete</a>
+                  {% endif %}
+                </small>
+                {% endif %}
+              </div>
+          </div>
+      </div>
+      {% if forloop.counter|divisibleby:3 %}
+    </div>
+    <div class="row">
+      {% endif %}
+    {% endfor %}
+    </div> 
+  </div>
        
-      </div>
-      <div class="card-footer text-center">
-        {% if request.user.username %}
-        <small class="ml-3">
-          {% if request.user.username or request.user.is_superuser == testimonial.user.username %}
-            <a href="{% url 'edit_testimonial' testimonial.id %}" aria-label="Go to edit testimonial page">Edit</a> |
-            <a class="text-danger" href="{% url 'delete_testimonial' testimonial.id %}" aria-label="Go to delete testimonial page">Delete</a>
-          {% endif %}
-        </small>
-        {% endif %}
-      </div>
-  </div>
-  </div>
-  {% if forloop.counter|divisibleby:3 %}
-      </div>
-      <div class="row">
-        {% endif %}
-      {% endfor %}
-      </div> 
+    </div>
 </div>
 {% endblock %}

@@ -1,18 +1,14 @@
 from django.shortcuts import render
 from testimonials.models import Testimonial
-from profiles.models import UserProfile
 
 
 def index(request):
     """ A view to render the home page """
     
     testimonials = Testimonial.objects.all()
-    profile_image = UserProfile.objects.all()
-    print(profile_image)
 
     context = {
         'testimonials': testimonials,
-        'profile': profile_image,
     }
 
     return render(request, 'home/index.html', context)

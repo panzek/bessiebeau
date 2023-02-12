@@ -9,7 +9,7 @@ from products.models import Product
 
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="userprofile" )
     phone_number = models.CharField(max_length=20, null=True, blank=True)
     street_address1 = models.CharField(max_length=80, null=True, blank=True)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)

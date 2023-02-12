@@ -14,7 +14,6 @@ def add_testimonial(request):
     """ A view to render the testimonial contents page """
 
     user = get_object_or_404(UserProfile, user=request.user)
-    # testimonial = Testimonial.objects.filter(approved=True)
     
     if request.method == 'POST':
         form = TestimonialForm(request.POST)
@@ -24,7 +23,6 @@ def add_testimonial(request):
             testimonial = form.save(commit=False)
             testimonial.user = request.user
             testimonial.save()
-            # messages.success(request, 'Successfully added testimonial. Thank You!')
             messages.success(
                 request, "Your testimonial successfully submitted, but awaiting approval. Thank You!"
                 )
@@ -77,10 +75,12 @@ def delete_testimonial(request, testimonial_id):
     
     if request.user != testimonial.user:
         return redirect(reverse('home'))
-
+    
     if request.user.is_superuser:
         testimonial.delete()
         messages.success(request, 'Testimonial successfully deleted!')
-        return redirect(reverse('home'))
+       
     else:
-        messages.error(request, 'Only staff members can delete testimonials')
+        messages.error(request, 'Sorry, only staff members can delete testimonials')
+    
+    return redirect(reverse('home'))
