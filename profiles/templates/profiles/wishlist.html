@@ -1,73 +1,63 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %} Wishlist | Bessie + Beau {% endblock %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends 'base.html' %} {% load static %} {% block title %} Wishlist | Bessie + Beau {% endblock %} {% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-{% endblock %}
-
-{% block content %}
-<div class="main-container h-100 mx-auto">
-    <div class="row h-100 header-container my-5">
-        <div class="col-12 col-lg-6t table-responsive">
+</div>
+{% endblock %} {% block content %}
+<div class="container-fluid">
+    <div class="row h-100 header-container">
+        <div class="col-12 col-md-6 mx-auto text-center table-responsive">
             {% if wish_items %}
             <h3>
                 My Wish List
             </h3>
             <table class="table table-sm table-bordered">
                 <thead>
-                  <tr class="text-center">
-                    <th scope="col">Product Image</th>
-                    <th scope="col">Product</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col"></th>
-                  </tr>
+                    <tr class="text-center">
+                        <th scope="col">Product Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col"></th>
+                    </tr>
                 </thead>
                 <tbody>
-                {% for item in wish_items %}
-                  <tr>
-                    <td>
-                        {% if item.product.image %}
-                            <img src="{{ item.product.image.url }}" width="100px" alt="{{ product.name }}Product Photo">
-                        {% else %}
-                            <img src="{{ MEDIA_URL }}noimage.png" width="100px" alt="{{ user }}Profile Photo">
-                        {% endif %}
-                    </td>
-                    <td>
-                        <p class="font-weight-bold">{{ item.product.name }}</p>
-                        <p>{{ item.product.size }}</p>
-                        <p>€{{ item.get_item_price }}</p>
-                    </td>
-                    <td>
-                        <p class="font-weight-bold">{{ item.quantity }}</p>
-                    </td>
-                    
-                    <td class="form-group w-25">
-                        <div>
-                            {% csrf_token %}
-                            <input type="hidden" name="product_id" value="{{ item.product_id}}">
-                            <a href="{% url 'product_detail' item.product.id %}" class="btn btn-primary btn-sm my-2 btn-block" role="button" aria-pressed="true">
-                                <i class="fa-regular fa-eye" aria-hidden="true"></i> View Product</a>
-                        </div>
-                        <div>
-                            <input type="hidden" name="product_id" value="{{ item.product_id}}">
-                            <a href="{% url 'delete_from_wishlist' item.product.id %}" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">
-                                <i class="fa-regular fa-trash-can" aria-hidden="true"></i> Remove</a>
-                        </div>
-                  
-                    </td>
-                  </tr>
-                  {% endfor %}
+                    {% for item in wish_items %}
+                    <tr>
+                        <td>
+                            {% if item.product.image %}
+                            <img src="{{ item.product.image.url }}" width="100px" alt="{{ product.name }}Product Photo" />
+                            {% else %}
+                            <img src="{{ MEDIA_URL }}noimage.png" width="100px" alt="{{ user }}Profile Photo" />
+                            {% endif %}
+                        </td>
+                        <td>
+                            <p class="font-weight-bold">{{ item.product.name }}</p>
+                            <p>{{ item.product.size }}</p>
+                            <p>€{{ item.get_item_price }}</p>
+                        </td>
+                        <td>
+                            <p class="font-weight-bold">{{ item.quantity }}</p>
+                        </td>
+
+                        <td class="form-group w-25">
+                            <div>
+                                {% csrf_token %}
+                                <input type="hidden" name="product_id" value="{{ item.product_id}}" />
+                                <a href="{% url 'product_detail' item.product.id %}" class="btn btn-dark btn-sm my-2 btn-block" role="button" aria-pressed="true"> <i class="fa-regular fa-eye" aria-hidden="true"></i> View Product</a>
+                            </div>
+                            <div>
+                                <input type="hidden" name="product_id" value="{{ item.product_id}}" />
+                                <a href="{% url 'delete_from_wishlist' item.product.id %}" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true"> <i class="fa-regular fa-trash-can" aria-hidden="true"></i> Remove</a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
                 </tbody>
-              </table>
-              {% else %}
-              <hr>
-                <h3 class="my-5">Your wishlist is empty.</h3>
+            </table>
+            {% else %}
+            <hr />
+            <h3 class="my-5">Your wishlist is empty.</h3>
             {% endif %}
         </div>
     </div>

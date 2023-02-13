@@ -11,5 +11,5 @@ class TestimonialAdmin(admin.ModelAdmin):
     search_fields = ('name', 'email', 'body',)
     actions = ['approve_testimonials']
 
-    def approve_reviews(self, request, queryset):
+    def approve_testimonials(self, request, queryset):
         queryset.update(approved=True)

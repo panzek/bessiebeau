@@ -35,37 +35,45 @@
                <!-- Mailchimp signup form -->
                 <div class="col-12 col-md-3">
                   <h5>Subscribe!</h5>
-                  <p>Get exclusive offers and discount codes</p>
-                  <ul class="list-group list-group-flush my-0 ">
+                  <p>Get exclusive offers and discounts</p>
                     <form action="https://herokuapp.us10.list-manage.com/subscribe/post?u=96f4344c5dba8df65510fef00&amp;id=03219a1290&amp;f_id=0097c8e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <label for="mce-EMAIL"><span class="asterisk"></span>
                       </label>
-                      <input type="email" value="" name="EMAIL" class="required email form-control-sm" id="mce-EMAIL" placeholder="Enter your e-mail" required><input type="submit" value="Subscribe" name="subscribe">
+                      <input type="email" value="" name="EMAIL" class="required email p-1" id="mce-EMAIL" placeholder="Enter your e-mail" required><input type="submit" value="Subscribe" name="subscribe" class="p-1">
                       <div id="mce-responses" >
                     <div class="response" id="mce-error-response" style="display:none"></div>
                       <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>
                     </form>
-                    <!-- Begin Mailchimp Signup Form -->
-                    <li class="list-group-item bg-transparent"></li>
-                  </ul>
                   
                 </div>
                 <div class="col-12 col-md-3">
                   <h5>Customer Service</h5>
                   <ul class="list-group list-group-flush my-0 ">
-                    <a href="{% url 'refund' %}" aria-label="Go to refund policy page" class="list-group-item bg-transparent border-0 p-0">Refund Policy</a>
-                    <a href="{% url 'privacy' %}" aria-label="Go to privacy policy page" class="list-group-item bg-transparent border-0 p-0">Privacy Policy</a>
-                    <a href="{% url 'terms' %}" aria-label="Go to terms and service page" class="list-group-item bg-transparent border-0 p-0">Terms of Service</a>
+                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                      <a href="{% url 'refund' %}" aria-label="Go to refund policy page" class="list-group-item bg-transparent border-0 p-0 text-light">Refund Policy</a>
+                    </li>
+                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                      <a href="{% url 'privacy' %}" aria-label="Go to privacy policy page" class="list-group-item bg-transparent border-0 p-0 text-light">Privacy Policy</a>
+                    </li>
+                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                      <a href="{% url 'terms' %}" aria-label="Go to terms and service page" class="list-group-item bg-transparent border-0 p-0 text-light">Terms of Service</a>
+                    </li>
                     <li class="list-group-item bg-transparent"></li>
                   </ul>
                 </div>
                 <div class="col-12 col-md-3">
                   <h5>Buy on Bessie + Beau</h5>
-                  <ul class="list-group list-group-flush my-0 ">
-                    <a href="{% url 'how_to_shop' %}" aria-label="Go to how to shop on bessie + beau page" class="list-group-item bg-transparent border-0 p-0">How to Shop on Bessie + Beau</a>
-                    <a href="{% url 'delivery_returns' %}" aria-label="Go to delivery and return page" class="list-group-item bg-transparent border-0 p-0">Delivery &amp; Returns</a>
-                    <a href="{% url 'user_guide' %}" aria-label="Go to user guide page" class="list-group-item bg-transparent border-0 p-0">User Guide</a>
+                  <ul class="list-group list-group-flush p-0 border-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                      <a href="{% url 'how_to_shop' %}" aria-label="Go to how to shop on bessie + beau page" class="list-group-item bg-transparent border-0 p-0 text-light">How to Shop on Bessie + Beau</a>
+                    </li>
+                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                      <a href="{% url 'delivery_returns' %}" aria-label="Go to delivery and return page" class="list-group-item bg-transparent border-0 p-0 text-light">Delivery &amp; Returns</a>
+                    </li>
+                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                      <a href="{% url 'user_guide' %}" aria-label="Go to user guide page" class="list-group-item bg-transparent border-0 p-0 text-light">User Guide</a>
+                    </li>
                     <li class="list-group-item bg-transparent"></li>
                   </ul>
                 </div>

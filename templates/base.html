@@ -1,203 +1,156 @@
 {% load static %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    {% block meta %}
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Bessie Beau - luxury fashion and beauty online store in Dublin, Ireland">
-        <meta name="keywords" content="Bessie Beau, women fashion, clothing, shoes, beauty">
-        <meta name="theme-color" content="#FBC">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FBC">
-    {% endblock %}
-    <title>{% block title %} {% endblock %}</title>
+    <head>
+        <!-- Required meta tags -->
+        {% block meta %}
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Bessie Beau - luxury fashion and beauty online store in Dublin, Ireland" />
+        <meta name="keywords" content="Bessie Beau, women fashion, clothing, shoes, beauty" />
+        <meta name="theme-color" content="#FBC" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FBC" />
+        {% endblock %}
+        <title>{% block title %} {% endblock %}</title>
 
-    {% block extra_meta %}
-    {% endblock %}
+        {% block extra_meta %} {% endblock %}
 
-    <!-- Favicon  -->
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ MEDIA_URL }}favicons/android-chrome.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicons/favicon.png">
-        
-    <!-- Mailchimp Signup Form -->
-    {% block mailchimpcss %}
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
-    {% endblock %}
+        <!-- Favicon  -->
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ MEDIA_URL }}favicons/android-chrome.png" />
+        <link rel="icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicons/favicon.png" />
 
-    <!-- Bootstrap CSS -->
-    {% block corecss %}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
+        <!-- Mailchimp Signup Form -->
+        {% block mailchimpcss %}
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css" />
+        {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
+        <!-- Bootstrap CSS -->
+        {% block corecss %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+        {% endblock %} {% block extra_css %} {% endblock %}
 
-    <!-- JavaScript -->
-    {% block corejs%}
+        <!-- JavaScript -->
+        {% block corejs%}
         <script src="https://kit.fontawesome.com/57e22c6356.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         <!-- stripe  -->
         <script src="https://js.stripe.com/v3/"></script>
-    {% endblock %}
-  
-    {% block extra_js %}
-    {% endblock %}
-
-  </head>
-  <body>
-    <header class="container-fluid fixed-top">
-      <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-            <a class="navbar-brand" href="{% url 'home' %}">
-              <img src="{{ MEDIA_URL }}bessie-beau.webp" alt="Bessie + Beau logo">
-            </a>
-          </div>
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <form method="GET" action="{% url 'products' %}">
-                  <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search products">
-                      <div class="input-group-append">
-                          <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                              <span class="icon">
-                                  <i class="fas fa-search"></i>
-                              </span>
-                          </button>
-                      </div>
-                  </div>
-              </form>
-          </div>
-          <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-              <ul class="list-inline list-unstyled text-center text-lg-right mr-5 my-0">
-                  <li class="list-inline-item dropdown">
-                      <a class="text-black nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <div class="text-center">
-                              <div><i class="fas fa-user fa-lg" aria-hidden="true"></i></div>
-                              {% if request.user.is_authenticated %}
-                                <p class="my-0">Hi {{ user | capfirst }}!</p>
-                              {% else %}
-                                <p class="my-0">Account</p>
-                              {% endif %}
-                          </div>
-                      </a>
-                      <div class="dropdown-menu border-1" aria-labelledby="user-options">
-                        {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" aria-label="Go to product management page" class="dropdown-item">Product Management</a>
-                                <hr>
-                                <a href="{% url 'profile' %}" aria-label="Go to my account page" class="dropdown-item">
-                                    <i class="fa-solid fa-user" aria-hidden="true"></i> My Account
-                                </a>
-                                <hr>
-                                <a href="{% url 'account_logout' %}" aria-label="Go to logout page" class="dropdown-item">
-                                    <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout
-                                </a>
-                            {% elif not request.user.is_superuser %}
-                                <a href="{% url 'profile' %}" aria-label="Go to my account page" class="dropdown-item">
-                                    <i class="fa-solid fa-user" aria-hidden="true"></i> My Account
-                                </a>
-                                <hr class="my-0">
-                                <a href="{% url 'account_logout' %}" aria-label="Go to logout page" class="dropdown-item">
-                                    <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout
-                                </a>
-                            {% endif %}
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" aria-label="Go to signup page" class="dropdown-item">
-                                    <i class="fa-solid fa-users" aria-hidden="true"></i> Register
-                                </a>
-                                <hr class="my-0">
-                                <a href="{% url 'account_login' %}" aria-label="Go to login page" class="dropdown-item">
-                                    <i class="fa-solid fa-lock" aria-hidden="true"></i> Login
-                                </a>
-                        {% endif %}
-                      </div>
-                  </li>
-                  {% if request.user.is_authenticated %}
-                  <li class="list-inline-item">
-                    <a class="text-black nav-link" href="{% url 'wishlist' %}" aria-label="Go to product wishlist page">
-                        <div class="text-center">
-                            <div><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
-                            <p class="my-0">
-                              WishList
-                            </p>
-                        </div>
+        {% endblock %} {% block extra_js %} {% endblock %}
+    </head>
+    <body>
+        <header class="container-fluid fixed-top">
+            <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{{ MEDIA_URL }}bessie-beau.webp" alt="Bessie + Beau logo" />
                     </a>
-                </li>
-                {% endif %}
-                  <li class="list-inline-item">
-                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}" aria-label="Go to shopping cart page">
-                          <div class="text-center">
-                              <div><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
-                              <p class="my-0">
-                                {% if grand_total %}
-                                    €{{ grand_total|floatformat:2 }}
+                </div>
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <form method="GET" action="{% url 'products' %}">
+                        <div class="input-group w-100">
+                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search products" />
+                            <div class="input-group-append">
+                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                    <span class="icon">
+                                        <i class="fas fa-search" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="sr-only">Search products</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                    <ul class="list-inline list-unstyled text-center text-lg-right mr-5 my-0">
+                        <li class="list-inline-item dropdown">
+                            <a class="text-black nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center">
+                                    <div><i class="fas fa-user fa-lg" aria-hidden="true"></i></div>
+                                    {% if request.user.is_authenticated %}
+                                    <p class="my-0">Hi {{ user | capfirst }}!</p>
                                     {% else %}
-                                        €0.00
+                                    <p class="my-0">Account</p>
+                                    {% endif %}
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-1" aria-labelledby="user-options">
+                                {% if request.user.is_authenticated %} {% if request.user.is_superuser %}
+                                <a href="{% url 'add_product' %}" aria-label="Go to product management page" class="dropdown-item">Product Management</a>
+                                <hr />
+                                <a href="{% url 'profile' %}" aria-label="Go to my account page" class="dropdown-item"> <i class="fa-solid fa-user" aria-hidden="true"></i> My Account </a>
+                                <hr />
+                                <a href="{% url 'account_logout' %}" aria-label="Go to logout page" class="dropdown-item"> <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout </a>
+                                {% elif not request.user.is_superuser %}
+                                <a href="{% url 'profile' %}" aria-label="Go to my account page" class="dropdown-item"> <i class="fa-solid fa-user" aria-hidden="true"></i> My Account </a>
+                                <hr class="my-0" />
+                                <a href="{% url 'account_logout' %}" aria-label="Go to logout page" class="dropdown-item"> <i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Logout </a>
+                                {% endif %} {% else %}
+                                <a href="{% url 'account_signup' %}" aria-label="Go to signup page" class="dropdown-item"> <i class="fa-solid fa-users" aria-hidden="true"></i> Register </a>
+                                <hr class="my-0" />
+                                <a href="{% url 'account_login' %}" aria-label="Go to login page" class="dropdown-item"> <i class="fa-solid fa-lock" aria-hidden="true"></i> Login </a>
                                 {% endif %}
-                              </p>
-                          </div>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-      <div class="row bg-light">
-          <nav class="navbar navbar-expand-lg navbar-light w-100">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              {% include 'includes/mobile_top_header.html' %}
-              {% include 'includes/main_nav.html' %}
-          </nav>
-      </div>
-      <div id="delivery-banner" class="row text-center">
-          <div class="col bg-dark text-white">
-              <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }} </h4>                
-          </div>            
-      </div>
-    </header>
+                            </div>
+                        </li>
+                        {% if request.user.is_authenticated %}
+                        <li class="list-inline-item">
+                            <a class="text-black nav-link" href="{% url 'wishlist' %}" aria-label="Go to product wishlist page">
+                                <div class="text-center">
+                                    <div><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+                                    <p class="my-0">
+                                        WishList
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        {% endif %}
+                        <li class="list-inline-item">
+                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}" aria-label="Go to shopping cart page">
+                                <div class="text-center">
+                                    <div><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
+                                    <p class="my-0">
+                                        {% if grand_total %} €{{ grand_total|floatformat:2 }} {% else %} €0.00 {% endif %}
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light w-100">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {% include 'includes/mobile_top_header.html' %} {% include 'includes/main_nav.html' %}
+                </nav>
+            </div>
+            <div id="delivery-banner" class="row text-center">
+                <div class="col bg-dark delivery-banner text-white">
+                    <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}</h4>
+                </div>
+            </div>
+        </header>
 
-    {% if messages %}
-    <div class="message-container">
-        {% for message in messages %}
+        {% if messages %}
+        <div class="message-container">
+            {% for message in messages %}
             <!-- Django message levels  -->
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
-        {% endfor %}
-    </div>
-    {% endif %}
-    
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
-
-    {% include 'includes/footer.html' %}
-
-    {% block postloadjs %}
-    <!-- using bootstrap JavaScript to show the toast  -->
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
-    {% endblock %}
-    
-  </body>
+            {% with message.level as level %} {% if level == 40 %} {% include 'includes/toasts/toast_error.html' %} {% elif level == 30 %} {% include 'includes/toasts/toast_warning.html' %} {% elif level == 25 %} {% include
+            'includes/toasts/toast_success.html' %} {% else %} {% include 'includes/toasts/toast_info.html' %} {% endif %} {% endwith %} {% endfor %}
+        </div>
+        {% endif %} {% block page_header %} {% endblock %} {% block content %} {% endblock %} {% include 'includes/footer.html' %} {% block postloadjs %}
+        <!-- using bootstrap JavaScript to show the toast  -->
+        <script type="text/javascript">
+            $(".toast").toast("show");
+        </script>
+        {% endblock %}
+    </body>
 </html>

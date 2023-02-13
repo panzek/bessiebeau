@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,17 +8,11 @@ html {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
-
-/* Header  */
-/* .header-container {
-    margin: 45px 0;
-} */
 
 /* main  */
 .main-container {
@@ -34,7 +28,7 @@ body{
 }
 
 /* homepage  */
-.haute-couture{
+.haute-couture {
     font-size: 2rem;
 }
 
@@ -44,10 +38,19 @@ body{
     cursor: pointer;
 }
 
+.edit-btn {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.btn-wishlist {
+    background: #fbc;
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content {
-    margin-top: 13.5rem;     
+    margin-top: 13.5rem;
 }
 
 .allauth-form-inner-content p {
@@ -60,7 +63,7 @@ body{
     border-radius: 0;
 }
 
-.allauth-form-inner-content label:not([for='id_remember']) {
+.allauth-form-inner-content label:not([for="id_remember"]) {
     display: none;
 }
 
@@ -69,9 +72,8 @@ body{
 }
 
 .allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+.allauth-form-inner-content input[type="submit"] {
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -82,24 +84,24 @@ body{
     user-select: none;
     background-color: #000;
     border: 1px solid #000;
-    padding: .375rem .75rem;
+    padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type="submit"]:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8; /* text-info */
 }
 
 /* Forms  */
@@ -108,36 +110,23 @@ body{
     align-items: center;
     margin: 16px 0;
     padding: 0 12px;
-    
 }
 
-.sign-in-form_or-divider:before, 
+.sign-in-form_or-divider:before,
 .sign-in-form_or-divider:after {
     background-color: lightgray;
-    content: '';
+    content: "";
     height: 1px;
-    width: 35%; 
+    width: 35%;
 }
 
 /* Mailchimp  */
 #mc_embed_signup {
-    background:#fff; 
-    clear:left; 
-    font:14px Helvetica,Arial,sans-serif;  
-    width:600px;
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
 }
-
-/* .form-message {
-    align-items: center;
-    background-color: rgb(241, 248, 233);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 40px;
-    height: 100vh;
-    border-top: 2px solid;
-    margin: 0 auto;
-} */
-
 
 /* End forms  */
 
@@ -174,10 +163,10 @@ a.category-badge > span.badge:hover {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -223,7 +212,12 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-  /* Footer */
+.beauty-spotlight-img {
+    width: 27.5rem;
+    padding: 30px;
+}
+
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -233,62 +227,58 @@ footer {
     width: 100%;
 }
 
-.beauty-spotlight-img {
-    width: 27.5rem;
-    padding: 30px;
-}
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
 
- 
-  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
-
-  /* Portrait  */
-  /* Screen sizes equal to or less than 500px wide */
-  @media (max-width: 540px) {
+/* Portrait  */
+/* Screen sizes equal to or less than 540px wide */
+@media (max-width: 540px) {
     .container {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .container img {
         display: block;
         float: none;
         margin: auto;
     }
 
-     /* Hero image */
-     #hero-image-mobile {
+    /* Hero image */
+    #hero-image-mobile {
         position: relative;
     }
-    
+
     .hero-image-text {
         left: 13.75rem;
         position: absolute;
-        top: 45%;
+        top: 50%;
     }
 
     #hero-image {
         display: none;
-    } 
-
-    .home-img {
-        width: 27.5rem;
     }
 
     .home-beauty-btn {
         width: 200px;
     }
-    
-  }
+
+    .men-section-intro {
+        display: none;
+    }
+
+    .men-section {
+        align-items: center;
+        margin: auto;
+    }
+}
 
 /* Landscape  */
-/* Screen sizes equal to or larger than 760px wide */
-@media screen and (min-width: 760px) 
-and (orientation: landscape) {
-
+/* Screen sizes equal to or larger than 667px wide */
+@media screen and (min-width: 667px) and (orientation: landscape) {
     /* Hero image */
     #hero-image {
         position: relative;
     }
-    
+
     .hero-image-text {
         position: absolute;
         top: 55%;
@@ -297,7 +287,7 @@ and (orientation: landscape) {
 
     #hero-image-mobile {
         display: none;
-    } 
+    }
 
     .home-btn {
         width: 70%;
@@ -310,11 +300,10 @@ and (orientation: landscape) {
     .home-img {
         width: 37.5rem;
     }
-
 }
 
- /* fixed top navbar only on medium and up */
- @media (min-width: 992px) {
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -342,6 +331,6 @@ and (orientation: landscape) {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
+}

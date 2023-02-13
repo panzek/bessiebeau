@@ -14,6 +14,7 @@ def add_testimonial(request):
     """ A view to render the testimonial contents page """
 
     user = get_object_or_404(UserProfile, user=request.user)
+    testimonials = Testimonial.objects.filter(user=request.user, approved=True)
     
     if request.method == 'POST':
         form = TestimonialForm(request.POST)
@@ -34,6 +35,8 @@ def add_testimonial(request):
 
     context = {
         'form': form,
+        'testimonials': testimonials,
+        'reviewed': False,
         'user_profile': user,
     }
 

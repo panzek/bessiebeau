@@ -23,13 +23,11 @@
           <div class="sign-in-form_or-divider">
             <h2 class="login-or mx-auto font-weight-bold">{% trans "Sign In" %}</h2>
           </div>
-        
         <p class="signin-intro text-center">{% blocktrans with site.name as site_name %}
           Log in now to unlock your exclusive access to products and offers.<br>
           Not registered yet? 
           <a href="{{ signup_url }}">Create a {{ site_name }} Account</a>{% endblocktrans %}
         </p>
-        
         <form class="login" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
           {{ form|crispy }}
@@ -41,10 +39,11 @@
           </p>
           <div class="text-center my-3">
             <a class="btn btn-outline-dark rounded-0" style="width: 15rem;" href="{% url 'home' %}">Home</a>
-            <button type="submit" class="btn btn-info rounded-0" style="width: 25rem;">{% trans "Sign In" %}</button>
+            <button type="submit" class="btn btn-dark rounded-0" style="width: 25rem;">{% trans "Sign In" %}</button>
         </div>
         </form>
         </div>
     </div>
 </div>
 {% endblock %}
+

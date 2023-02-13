@@ -1,40 +1,26 @@
-{% extends 'base.html' %}
-{% load static %}
-{% load crispy_forms_tags %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends 'base.html' %} {% load static %} {% load crispy_forms_tags %} {% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-{% endblock %} 
-
-{% block content %}
+</div>
+{% endblock %} {% block content %}
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 mx-auto text-center">
-            <hr>
+            <hr />
             <h2 class="mb-4">Edit Your Testimonial</h2>
-            <hr class="mb-3">
-        </div>  
-    </div>  
+            <hr class="mb-3" />
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-md-6 mx-auto">
             {% if reviewed %}
-                <div class="alert alert-success" role="alert">
-                </div>
-                {% else %}
-                <p class="text-center" >Editing testimonial as: {{ user.username }}</p>
+            <div class="alert alert-success" role="alert"></div>
+            {% else %}
+            <p class="text-center">Editing testimonial as: {{ user.username }}</p>
             <form method="POST" class="form mb-2" enctype="multipart/form-data">
-                {% csrf_token %}
-                {% for field in form %}
-                    {% if field.name != 'image' %}
-                        {{ field|as_crispy_field }}
-                    {% else %}
-                        {{ field }}
-                    {% endif %}
-                {% endfor %}
+                {% csrf_token %} {% for field in form %} {% if field.name != 'image' %} {{ field|as_crispy_field }} {% else %} {{ field }} {% endif %} {% endfor %}
                 <div class="text-right my-3">
                     <a class="btn btn-outline-dark rounded-0" href="{% url 'home' %}">Cancel</a>
                     <button class="btn btn-info rounded-0">Update Testimonial</button>
@@ -45,6 +31,3 @@
     </div>
 </div>
 {% endblock %}
-
-
-

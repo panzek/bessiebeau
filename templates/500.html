@@ -1,25 +1,18 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %} 500 - Server Error | Bessie + Beau  {% endblock %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends 'base.html' %} {% load static %} {% block title %} 500 - Server Error | Bessie + Beau {% endblock %} {% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
-{% endblock %} 
-
-{% block content %}
+</div>
+{% endblock %} {% block content %}
 <div class="container-fluid py-5">
     <div class="row">
         <div class="col-12 col-md-6 mx-auto text-center">
-            <hr>
+            <hr />
             <h2 class="mb-4">500 Page</h2>
-            <hr class="mb-3">
-        </div>  
-    </div>  
+            <hr class="mb-3" />
+        </div>
+    </div>
     <div class="row">
         <div class="col-12 col-md-6 mx-auto">
             <h2 class="mb-4">Aw, Snap!</h2>
@@ -36,4 +29,3 @@
     </div>
 </div>
 {% endblock %}
-

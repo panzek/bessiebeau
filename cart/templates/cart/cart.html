@@ -62,8 +62,9 @@
                                                 <button class="decrement-qty btn btn-sm btn-dark rounded-0" 
                                                     data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                     <span>
-                                                        <i class="fas fa-minus fa-sm"></i>
+                                                        <i class="fas fa-minus fa-sm" aria-hidden="true"></i>
                                                     </span>
+                                                    <span class="sr-only">-</span>
                                                 </button>
                                             </div>
                                             <input class="form-control form-control-sm qty_input" type="number"
@@ -74,8 +75,9 @@
                                                 <button class="increment-qty btn btn-sm btn-dark rounded-0"
                                                     data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                     <span>
-                                                        <i class="fas fa-plus fa-sm"></i>
+                                                        <i class="fas fa-plus fa-sm" aria-hidden="true"></i>
                                                     </span>
+                                                    <span class="sr-only">+</span>
                                                 </button>
                                             </div>
                                             {% if item.product.has_sizes %}

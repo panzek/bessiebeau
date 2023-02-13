@@ -1,84 +1,64 @@
-{% extends 'base.html' %}
-{% load static %}
-{% load crispy_forms_tags %}
-
-{% block title %} Profile | Bessie + Beau {% endblock %}
-
-{% block page_header %}
-    <div class="container header-container mb-5">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+{% extends 'base.html' %} {% load static %} {% load crispy_forms_tags %} {% block title %} Profile | Bessie + Beau {% endblock %} {% block page_header %}
+<div class="container header-container mb-5">
+    <div class="row">
+        <div class="col"></div>
     </div>
-{% endblock %}
-
-{% block content %}
+</div>
+{% endblock %} {% block content %}
 <div class="container">
     <div class="row">
         <div class="col">
-            <hr>
+            <hr />
             <h2 class="logo-font mb-4">My Profile</h2>
-            <hr>
+            <hr />
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-lg-6">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    <a class="text-dark" href="">
-                        <i class="fa-solid fa-address-card" aria-hidden="true"></i> 
-                    My Address
-                    </a>
-                </li>
-                <li class="list-group-item">
                     <a class="text-dark" href="{% url 'edit_profile' profile.id %}">
-                        <i class="fa-solid fa-user" aria-hidden="true"></i> 
+                        <i class="fa-solid fa-user" aria-hidden="true"></i>
                         Account Information
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a class="text-dark" href="">
-                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> 
-                        My Orders
-                    </a>
-                </li>
-                <li class="list-group-item">
                     <a class="text-dark" href="{% url 'wishlist' %}">
-                        <i class="fa-solid fa-credit-card" aria-hidden="true"></i> 
+                        <i class="fa-solid fa-credit-card" aria-hidden="true"></i>
                         My Wishlist
                     </a>
                 </li>
-              </ul>
-              <div class="card-footer">
-                  <a class="text-dark" href="{% url 'account_logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-              </div>
+            </ul>
+            <div class="card-footer">
+                <a class="text-dark" href="{% url 'account_logout' %}"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </div>
         </div>
         <div class="col-12 col-lg-6 py-0">
             <h5 class="text-muted">Account Information</h5>
             <p class="card-text">
                 {% if profile.profile_image %}
-                 <img src="{{ profile.profile_image.url }}" width="205px" alt="{{ user }}Profile Photo">
+                <img src="{{ profile.profile_image.url }}" width="205px" alt="{{ user }}Profile Photo" />
                 {% else %}
-                 <img src="{{ MEDIA_URL }}noimage.png" width="205px" alt="{{ user }}Profile Photo">
+                <img src="{{ MEDIA_URL }}noimage.png" width="205px" alt="{{ user }}Profile Photo" />
                 {% endif %}
-              </p>
-                <div class="btn-group btn-group-justified" style="width: 13rem;">
-                    <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Change Profile Photo</a>
-                </div>               
+            </p>
+            <div class="btn-group btn-group-justified" style="width: 13rem;">
+                <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Change Profile Photo</a>
+            </div>
         </div>
     </div>
-    <hr class="divider bg-dark">
-    <div class="row"> 
+    <hr class="divider bg-dark" />
+    <div class="row">
         <div class="col-12 col-lg-6">
             <h5 class="text-muted">Account Information</h5>
-                <p class="card-text">First Name: {{ profile.first_name }} </p>
-                <p class="card-text">Last Name: {{ profile.last_name }}</p>
-                <p class="card-text">Phone Number: {{ profile.phone_number }}</p> 
-                <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
-                <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
-                <div class="btn-group btn-group-justified" style="width: 20rem;">
-                    <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Edit</a>
-                </div> 
+            <p class="card-text">First Name: {{ profile.first_name }}</p>
+            <p class="card-text">Last Name: {{ profile.last_name }}</p>
+            <p class="card-text">Phone Number: {{ profile.phone_number }}</p>
+            <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
+            <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
+            <div class="btn-group btn-group-justified" style="width: 20rem;">
+                <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Edit</a>
+            </div>
         </div>
         <div class="col-12 col-lg-6">
             <h5 class="text-muted">Order History</h5>
@@ -94,27 +74,24 @@
                     </thead>
                     <tbody>
                         {% for order in orders %}
-                            <tr>
-                                <td>
-                                    <a href="{% url 'order_history' order.order_number %}"
-                                    title="{{ order.order_number }}">
-                                        {{ order.order_number|truncatechars:6 }}
-                                    </a>
-                                </td>
-                                <td>{{ order.date }}</td>
-                                <td>
-                                    <ul class="list-unstyled">
-                                        {% for item in order.lineitems.all %}
-                                            <li class="small">
-                                                {% if item.product.has_sizes %}
-                                                    Size {{ item.product.size|upper }}
-                                                {% endif %}{{ item.product.name }} x{{ item.quantity }}
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </td>
-                                <td>${{ order.grand_total }}</td>
-                            </tr>
+                        <tr>
+                            <td>
+                                <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+                                    {{ order.order_number|truncatechars:6 }}
+                                </a>
+                            </td>
+                            <td>{{ order.date }}</td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                    <li class="small">
+                                        {% if item.product.has_sizes %} Size {{ item.product.size|upper }} {% endif %}{{ item.product.name }} x {{ item.quantity }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td>${{ order.grand_total }}</td>
+                        </tr>
                         {% endfor %}
                     </tbody>
                 </table>
@@ -122,4 +99,6 @@
         </div>
     </div>
 </div>
+{% endblock %} {% block postloadjs %} {{ block.super }}
+<script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
