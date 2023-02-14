@@ -4,7 +4,7 @@
 {% block title %} How to Shop on Bessie + Beau  | Bessie + Beau  {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container pb-5 my-5">
+    <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -12,14 +12,17 @@
 {% endblock %} 
 
 {% block content %}
-<div class="main-container h-100 w-50 mx-auto my-5" >
-    <div class="row h-100 border rounded header-container">
-        <div class="col-12 my-2">
-            <div class="card-header text-center">
-                <h1>How to Shop on Bessie + Beau</h1>
-            </div>
-            <div class="card-body">  
-                <p>This explains how you can buy the product you want on <a href="{% url 'home' %}"><strong>Bessie + Beau</strong></a> luxury fashion and beauty store. </p>
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto text-center">
+            <hr>
+            <h1 class="mb-4">How to Shop on Bessie + Beau</h1>
+            <hr class="mb-3">
+        </div>  
+    </div>  
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+            <p>This explains how you can buy the product you want on <a href="{% url 'home' %}" aria-label="Go to home page"><strong>Bessie + Beau</strong></a> luxury fashion and beauty store. </p>
                 <div >
                     <ul class="ml-5">
                         <ol>
@@ -55,9 +58,7 @@
                         <span>Email Us: <strong>info@bessiebeau.com</strong></span>
                     </ul>
                 </div>
-                
-            </div>
-        </div>  
+        </div>
     </div>
 </div>
 {% endblock %}

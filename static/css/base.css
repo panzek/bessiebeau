@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+/* Global style */
+
+:root {
+
+    /* ------- COLORS ------ */
+    --black: #000000;
+    --hot-pink: #e31c79;
+    --blue: #00f; 
+    --light: #f8f9fa;
+    --white: #ffffff;
+
+    /* TYPOGRAPHY */
+    --content-text: 'Roboto', sans-serif;
+
+    /* Linearly scale font size with CLAMP  */
+    --step--2: clamp(0.69rem, calc(0.59rem + 0.52vw), 0.96rem);
+    --step--1: clamp(0.83rem, calc(0.69rem + 0.72vw), 1.20rem);
+    --step-0: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+    --step-1: clamp(1.20rem, calc(0.94rem + 1.32vw), 1.88rem);
+    --step-2: clamp(1.44rem, calc(1.09rem + 1.76vw), 2.34rem);
+    --step-3: clamp(1.73rem, calc(1.26rem + 2.35vw), 2.93rem);
+    --step-4: clamp(2.07rem, calc(1.45rem + 3.10vw), 3.66rem);
+    --step-5: clamp(2.49rem, calc(1.67rem + 4.08vw), 4.58rem);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +51,7 @@ body {
 }
 
 .text-black {
-    color: black;
+    color: var(--black);
 }
 
 /* homepage  */
@@ -39,12 +66,12 @@ body {
 }
 
 .edit-btn {
-    color: #00f;
+    color: var(--blue);
     text-decoration: underline;
 }
 
 .btn-wishlist {
-    background: #fbc;
+    background: var(--hot-pink);
 }
 
 /* Allauth form formatting */
@@ -126,6 +153,24 @@ body {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     width: 600px;
+}
+
+.mailchimp-input {
+    padding: 7px;
+}
+
+.mailchimp-btn {
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    min-height: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: none;
 }
 
 /* End forms  */

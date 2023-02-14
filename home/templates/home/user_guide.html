@@ -4,7 +4,7 @@
 {% block title %}User Guide | Bessie + Beau  {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container pb-5 my-5">
+    <div class="container header-container">
         <div class="row">
             <div class="col"></div>
         </div>
@@ -12,65 +12,67 @@
 {% endblock %} 
 
 {% block content %}
-<div class="main-container h-100 w-50 mx-auto my-5" >
-    <div class="row h-100 border rounded header-container">
-        <div class="col-12 my-2">
-            <div class="card-header text-center">
-                <h1>User Guide/Manual</h1>
-            </div>
-            <div class="card-body">  
-                <p>This is a Quick User Guide (Manual) for the Customer. This explains to you the 
-                    internal workings or make-up of the <a href="{% url 'home' %}"><strong>Bessie + Beau</strong></a> 
-                    Shopping Mall as a Customer (Buyer). 
-                </p>
-
-                <h2>
-                    Newsletter Sign Up:
-                </h2>
-                <ul class="ml-5">
-                    <li>
-                        Launch the site: <a href="{% url 'home' %}">bessiebeau.com</a> and Sign up to 
-                        <a href="{% url 'home' %}">Bessie + Beau</a> Newsletter on the bottom of the page.
-                    </li>
-                </ul>
-
-                <h2>
-                    Register as a Customer:
-                </h2>
-                <ul class="ml-5">
-                    <li>
-                        <a href="{% url 'account_signup' %}">Register</a> for an account on Bessie + Beau using the Sign Up link at the top menu bar.
-                    </li>
-                </ul>
-
-                <h2>
-                    Login:
-                </h2>
-                <p>
-                    After your registration has been approved, you then <a href="{% url 'account_signup' %}">login</a> to “your account”. You will see the following:
-                </p>
-                <ul class="ml-5">
-                    <li>
-                        Account Information 
-                    </li>
-                    <li>
-                        Address book
-                    </li>
-                    <li>
-                        All other links under “My Account”
-                    </li>
-                </ul>
-
-                <h2>
-                    Make Purchase:
-                </h2>
-                <ul class="ml-5">
-                    <li>
-                        Buy any of the <a href="{% url 'products' %}"><strong>products</strong></a> on display. Happy Days!
-                    </li>
-                </ul>
-            </div>
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto text-center">
+            <hr>
+            <h1 class="mb-4">User Guide/Manual</h1>
+            <hr class="mb-3">
         </div>  
+    </div>  
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+            <p>This is a Quick User Guide (Manual) for the Customer. This explains to you the 
+                internal workings or make-up of the <a href="{% url 'home' %}" aria-label="Go to home page"><strong>Bessie + Beau</strong></a> 
+                Shopping Mall as a Customer (Buyer). 
+            </p>
+
+            <h2>
+                Newsletter Sign Up:
+            </h2>
+            <ul class="ml-5">
+                <li>
+                    Launch the site: <a href="{% url 'home' %}" aria-label="Go to home page">bessiebeau.com</a> and Sign up to 
+                    <a href="{% url 'home' %}" aria-label="Go to home page">Bessie + Beau</a> Newsletter on the bottom of the page.
+                </li>
+            </ul>
+
+            <h2>
+                Register as a Customer:
+            </h2>
+            <ul class="ml-5">
+                <li>
+                    <a href="{% url 'account_signup' %}" aria-label="Go to signup page">Register</a> for an account on Bessie + Beau using the Sign Up link at the top menu bar.
+                </li>
+            </ul>
+
+            <h2>
+                Login:
+            </h2>
+            <p>
+                After your registration has been approved, you then <a href="{% url 'account_login' %}" aria-label="Go to login page">login</a> to “your account”. You will see the following:
+            </p>
+            <ul class="ml-5">
+                <li>
+                    Account Information 
+                </li>
+                <li>
+                    Address book
+                </li>
+                <li>
+                    All other links under “My Account”
+                </li>
+            </ul>
+
+            <h2>
+                Make Purchase:
+            </h2>
+            <ul class="ml-5">
+                <li>
+                    Buy any of the <a href="{% url 'products' %}" aria-label="Go to all products page"><strong>products</strong></a> on display. Happy Days!
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 {% endblock %}

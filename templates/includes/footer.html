@@ -5,19 +5,19 @@
             <li class="nav-item">  
               <h4>Our Social Networks</h4>    
               <a href="https://facebook.com/bessie1beau" target="_blank" rel="noopener" aria-label="Go to Bessie + Beau's Facebook page (opens new tab on third party site)" title="Facebook">
-                <span style="font-size: 2em; color: black;">
+                <span style="font-size: 2em; color: black;" class="p-3">
                   <i class="fab fa-facebook-square" aria-hidden="true"></i>
                 </span>
                 <span class="sr-only">Facebook</span>
               </a>
               <a href="https://instagram.com/bessie1beau" target="_blank" rel="noopener" aria-label="Go to Bessie + Beau's Instagram page (opens new tab on third party site)" title="Instagram">
-                <span style="font-size: 2em; color: black;">
+                <span style="font-size: 2em; color: black;" class="p-3">
                 <i class="fab fa-instagram-square" aria-hidden="true"></i>
               </span>
                 <span class="sr-only">Instagram</span>
               </a>
               <a href="https://twitter.com/bessie1beau" target="_blank" rel="noopener" aria-label="Go to Bessie + Beau's twitter page (opens new tab on third party site)" title="Twitter">
-                <span style="font-size: 2em; color: black;">
+                <span style="font-size: 2em; color: black;" class="p-3">
                   <i class="fab fa-github-square" aria-hidden="true"></i>
                 </span>
                 <span class="sr-only">Twitter</span>
@@ -29,34 +29,35 @@
   <!-- <footer> -->
   <nav class="navbar navbar-expand-lg text-light bg-dark">
     <div class="container-fluid  text-center">
-        <div class="mx-auto w-100">
+        <div class="mx-auto w-100 p-2">
             <section class="footer">
              <div class="row mx-auto">
                <!-- Mailchimp signup form -->
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 my-0">
                   <h5>Subscribe!</h5>
                   <p>Get exclusive offers and discounts</p>
                     <form action="https://herokuapp.us10.list-manage.com/subscribe/post?u=96f4344c5dba8df65510fef00&amp;id=03219a1290&amp;f_id=0097c8e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                       <label for="mce-EMAIL"><span class="asterisk"></span>
                       </label>
-                      <input type="email" value="" name="EMAIL" class="required email p-1" id="mce-EMAIL" placeholder="Enter your e-mail" required><input type="submit" value="Subscribe" name="subscribe" class="p-1">
+                      <div class="mailchimp-btn">
+                        <input type="email" value="" name="EMAIL" class="required email mailchimp-input" id="mce-EMAIL" placeholder="Enter your e-mail" required><input type="submit" value="Subscribe" name="subscribe" class="btn btn-sm btn-light font-weight-bold rounded p-2">
+                      </div>
                       <div id="mce-responses" >
                     <div class="response" id="mce-error-response" style="display:none"></div>
                       <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>
                     </form>
-                  
                 </div>
                 <div class="col-12 col-md-3">
                   <h5>Customer Service</h5>
-                  <ul class="list-group list-group-flush my-0 ">
-                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                  <ul class="list-group list-group-flush my-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-1 border-0">
                       <a href="{% url 'refund' %}" aria-label="Go to refund policy page" class="list-group-item bg-transparent border-0 p-0 text-light">Refund Policy</a>
                     </li>
-                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-1 border-0">
                       <a href="{% url 'privacy' %}" aria-label="Go to privacy policy page" class="list-group-item bg-transparent border-0 p-0 text-light">Privacy Policy</a>
                     </li>
-                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-1 border-0">
                       <a href="{% url 'terms' %}" aria-label="Go to terms and service page" class="list-group-item bg-transparent border-0 p-0 text-light">Terms of Service</a>
                     </li>
                     <li class="list-group-item bg-transparent"></li>
@@ -64,14 +65,14 @@
                 </div>
                 <div class="col-12 col-md-3">
                   <h5>Buy on Bessie + Beau</h5>
-                  <ul class="list-group list-group-flush p-0 border-0">
-                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                  <ul class="list-group list-group-flush p-1 border-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-1 border-0">
                       <a href="{% url 'how_to_shop' %}" aria-label="Go to how to shop on bessie + beau page" class="list-group-item bg-transparent border-0 p-0 text-light">How to Shop on Bessie + Beau</a>
                     </li>
-                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-1 border-0">
                       <a href="{% url 'delivery_returns' %}" aria-label="Go to delivery and return page" class="list-group-item bg-transparent border-0 p-0 text-light">Delivery &amp; Returns</a>
                     </li>
-                    <li class="list-group-item bg-transparent list-group-flush p-0 border-0">
+                    <li class="list-group-item bg-transparent list-group-flush p-1 border-0">
                       <a href="{% url 'user_guide' %}" aria-label="Go to user guide page" class="list-group-item bg-transparent border-0 p-0 text-light">User Guide</a>
                     </li>
                     <li class="list-group-item bg-transparent"></li>
