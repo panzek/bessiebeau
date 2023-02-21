@@ -290,9 +290,13 @@ footer {
     }
 
     .hero-image-text {
-        left: 13.75rem;
         position: absolute;
-        top: 50%;
+        top: 80%;
+    }
+
+    .home-mobile-btn {
+        width: 50%;
+        padding: 0.3rem;
     }
 
     #hero-image {
