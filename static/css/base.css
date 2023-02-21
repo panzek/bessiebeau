@@ -272,6 +272,28 @@ footer {
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
 
 /* Portrait  */
+
+/* Screen sizes equal to or less than 395px wide */
+@media (max-width: 395px) {
+    .mt-5, .my-5 {
+        margin-top: 1rem!important;
+    }
+
+    .home-mobile-btn {
+        width: 50%;
+        padding: 0.3rem;
+    }
+
+    #hero-image {
+        display: none;
+    }
+
+    .men-section-intro {
+        display: none;
+    }
+}
+
+
 /* Screen sizes equal to or less than 540px wide */
 @media (max-width: 540px) {
     .container {
@@ -291,7 +313,7 @@ footer {
 
     .hero-image-text {
         position: absolute;
-        top: 80%;
+        top: 60%;
     }
 
     .home-mobile-btn {

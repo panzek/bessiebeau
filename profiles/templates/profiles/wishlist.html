@@ -49,9 +49,14 @@
                             <div>
                                 <input type="hidden" name="product_id" value="{{ item.product_id}}" />
                                 <a href="{% url 'delete_from_wishlist' item.product.id %}" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true"> <i class="fa-regular fa-trash-can" aria-hidden="true"></i> Remove</a>
+            
+                              
                             </div>
                         </td>
+
+                    
                     </tr>
+
                     {% endfor %}
                 </tbody>
             </table>

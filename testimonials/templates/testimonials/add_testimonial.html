@@ -26,7 +26,7 @@
                 {% csrf_token %} {% for field in form %} {% if field.name != 'image' %} {{ field|as_crispy_field }} {% else %} {{ field }} {% endif %} {% endfor %}
                 <div class="text-right my-3">
                     <a class="btn btn-outline-dark rounded-0" href="{% url 'home' %}">Cancel</a>
-                    <button class="btn btn-info rounded-0">Add Testimonial</button>
+                    <button class="btn btn-dark rounded-0">Add Testimonial</button>
                 </div>
             </form>
             {% endif %}
