@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**Bessie + Beau** is a 
+**Bessie + Beau** is a full-stack e-commerce application for a luxury women fashion and beauty store. The application provides the functionality for a customer to view or search for products, add the product to shopping cart (or to a Wishlist should they need to defer the purchase until a later time), and proceed to a secure checkout to complete purchase by providing their delivery address and making payment with their credit or debit card. At every stage of this process, a confirmation message is displayed on the top right side of the screen to give visual feedback to the user. On completing purchase, Order confirmation email is sent directly to the customer email address for their records. And their Order history and product Wishlist are saved in their profile for them to view and reference. **Happy customers** can leave a testimonial for the store, which they can edit anytime if they want to make some changes.  
 
-* **The Goal of the Quiz**
+### Project Goal
 
-**The goal of this application** is
+**The goal of this e-Commerce application** is to provide a functional and interactive retail store, with authentication system for users to login to access their relevant data and buy items they want, and to logout. It is a **Business-to-Consumer (B2C)**, designed to sell products to individual customers. It processes orders, accepts payments, and manages shipping and delivery. This application is user centred design; it is intuitive, simple, and easy and enjoyable to use, thus, generating positive user experience. However, it is for illustrative purpose only: no actual payment is made and no real purchase is carried out.
 
 ![Bessie + Beau Mockup](/static/docs/img/bessie-beau-mockup.png)
 
@@ -782,4 +782,249 @@ Below is how the sprints were organised:
 
 ### Kanban Board
 
-![Kanban Board](/media/docs/img/kanban-board.wepp)
+![Kanban Board](/media/docs/img/kanban-board.webp)
+
+## The Surface Plane
+
+### Features
+
+#### Homepage
+
+#### Header
+
+The header has two sections arranged horizontally. The top section has the logo, search box, and account-related menus that are arranged horizontally in order of priority of information and features. And the section below it contains mainly products-related menus and a contact page.
+
+* **Logo**
+  
+  **Bessie + Beau logo** is simple and minimalist in representation with a watermark background. Also, the logo has an implicit link to the homepage, following a long-standing web convention and for fluid user experience.
+
+  ![Bessie + Beau Logo](/media/bessie-beau.webp)
+
+* **Product Search Box**  
+  The **Product Search** box provides the functionality that allows Users to quickly search the site for different products by name or category.
+
+* **Navigation Menus**
+  * The navigation menus on the top section are Account, Wishlist (visible to logged in users only) and Shopping Cart menus. The account menu, for unanimous users, is a drop-down with a list of “Register” and to “Login” menus. But for logged in users, Account changes to the username of the user with a drop-down list of “My Account” and “Logout” menus. However, there is a third menu called Product Management, which is visible if the user is a superuser, in order words, a store owner or staff.
+  
+  * Header Navigation
+  ![Header Navigation](/media/docs/img/features/navbar.webp)
+
+  * Header Navigation - Logged in User View
+  ![Header Navigation - Logged in User View](/media/docs/img/features/navbar-login-user.webp)
+
+  * Header Navigation - SuperUser View
+  ![Header Navigation - SuperUser View](/media/docs/img/features/navbar-superuser.webp)
+
+  * The other section below it has Home, All Products category (a drop-down with a list of options to sort products by Price, Rating, Category, and All Products), Clothing (a drop-down with a list of options to sort products by categories: Dresses, Jeans, All Clothing), Shoes and Accessories (a drop-down with a list of options to sort products by categories: Shoes, Bags, Accessories, and All Shoes and Accessories), Beauty category (a drop-down with a list of options to sort products by categories: Makeup and Polish, Eyelashes and Lipsticks, and All Beauty), For Him  (a drop-down with a list of options to sort products by categories: Men Shirts, Mean Jeans, Men Shoes and Accessories, and All menus), Special Offers (a drop-down with a list of options to sort products by categories: Deals, Clearance, and All Specials), and Contact menus.
+
+  * These Menu items let the reader to easily navigate the website without having to rely on the browser’s “forward” and “back” arrows as navigation substitutes. This Full responsive header is fixed and consistent across in all pages (plus the two “hidden” pages) of the website to allow for easy navigation and without the user having to rely on the browser’s “forward” and “back” arrows as navigation substitutes.
+
+#### Hero Image
+
+* The landing includes a hero image of a female model in an elegant dress, with a text overlay that tells boldly that the site is luxury fashion store for women and a Call to Action button that when clicked on the user is taken to the All Products page.
+* Handling the hero images on the homepage, I use the picture element - a technique of changing “image displayed to suit different image display sizes.” I created 2 image files of different picture (same model) and sizes for different viewport widths: one serves viewport of 1024px wide or higher and landscape view larger tablets. And the other serves portrait-view mobile devices and small tablets.
+
+Hero Image - Desktop View             |        Hero Image - Mobile View
+:-------------------------:|:-------------------------:
+![Hero Image Page - Desktop View](/media/docs/img/features/hero-image-desktop.webp)  |  ![Hero Image Page - Mobile View](/media/docs/img/features/hero-image-mobile-view.webp)
+
+* I also use the WebP image formats to maintain both a low file size and high-quality of the hero images, and all other images on the website.
+
+#### **Homepage Main Section**
+
+* The main section introduces the user/customer to the relevant sections of the store, and takes a progressive disclosure approach by revealing to the user the different categories of the store items and encouraging them to go further beyond the homepage to create fluid user experience.
+* This main section is structured in such a way that it enables the visitor on the website to immediately ascertain what Bessie Beau is a high-end fashion store, and more importantly, let the user easily access the information that interest them and also encourage the user to want to view more products, and possibly buy them.
+* The main section is split into five areas: Women Clothing, Beauty spotlight, Women Accessories, Men fashion, and Testimonials
+
+  ![Homepage Main Section](/media/docs/img/features/homepage-main-section.webp)
+
+#### **The Testimonials page**
+
+* This **Testimonials** app is the first of the three custom models critical to this project.
+
+* Customer testimonials feature is about the success story of Bessie + Beau. The testimonials allow our customers to know more about our products and service and our store as a successful e-commerce business.
+
+* The testimonial is implemented with different levels of permission:
+  * **Customer Testimonials - Non-Logged in User View**
+  ![Testimonials - Non-Logged in User View](/media/docs/img/features/testimonial-users-view.webp)
+
+  * All non-login users can view the testimonial page. They can also see the add testimonial link. However, the edit and delete testimonial buttons are not visible to them. And while they can see the add testimonial link, they do not have the permission to access the add testimonial form page. So, a non-logged in user must login first to be able to add testimonial. And when this non-login users attempt to access the page by clicking the “Add Testimonial” link, the user will be directed to the account login page to login or signup first.
+
+  * **Customer Testimonials - Login User View**
+    ![Testimonials - Logged in User View](/media/docs/img/features/testimonials-loginuser-view.webp)
+
+  * All logged in user can see the **edit** and **delete testimonial** buttons on the testimonial page.
+  * The registered users, who has the permission to edit or delete the testimonial, are required to login first to be able to do so.
+  * Only the authors can edit their testimonial. But they cannot delete their testimonial.
+  * Only the Store owner can delete a testimonial from both the frontend and backend.
+
+**Future Enhancement:**
+  
+* At the moment, the functional implementation of this testimonial app only provides the customers a way to add testimonials for the store. In the next iteration, this functionality would be extended to include adding reviews and ratings for products, and these reviews would then be used strategically as customer testimonials along with the ratings.
+
+### **Footer**
+
+![Footer](/media/docs/img/features/footer.webp)
+
+* The footer is divided into two major sections that run horizontally on desktop device, but vertically on mobile device:
+
+* The first section holds the Social networks, with links to the store's three relevant social media accounts: Facebook, Instagram, and Twitter. The social networks links communicate with users and encourage them to keep connected with Bessie Beau via social media. The links will open to a new tab to allow easy navigation for the user. It is carefully placed above for visibility, as social media is critical for e-commerce for brand awareness building, product sells, and extension of customer support.
+
+* The second section is divided into four subsections. These four subsections are arranged horizontally on desktop and vertically when viewed on mobile devices.
+  * The first sub-section is a newsletter sign-up form that allows and encourages the user to subscribe to receive information related to Bessie Beau’s products and services. To keep it simple and encouraging, the user is required to submit email address only. The newsletter signup functionality was provided by Mailchimp.
+  * The second and third sub-sections contain the Customer services information on the policies of the store and how a customer can make purchases on Bessie + Beau. While the fourth sub-section is the copyright information.
+* The footer, like the header, is consistent across the pages for easy navigation and intuitive experience.
+
+#### **Contact Page**
+
+![Contact](/media/docs/img/features/contact-us.webp)
+This **Contact** is the second of the three custom models critical to this project.
+
+The contact form is kept simple and clear without much information being requested from the user; only the name, email address, subject, and message. This is to encourage the user to get in touch with Bessie + Beau for questions on our products and any other issues. Its functional implementation enables the user to send direct email to the store owner and to also receive an acknowledgment directly in their designated email address.
+
+#### Register Page
+
+Account menu has a drop-down list of Register and Login that is visible to a new and non-logged in user. And the new user can click the register menu to sign up to the site. To register, users are required to enter their email address, username, and password. The email address and password have two-pass verification, which means that the user-registrants are required to confirm each of both entries by entering them a second time. This is to make sure they are entered correctly. All signup form fields are required. Users must fill them and correctly too to be able to complete the registration. The signup form uses an Allauth authentication system to verify these entries. And below these fields are a cancel button in case the new user no longer wants to proceed with the registration and a signup button the user has to click on to proceed with the registration.
+
+![Register](/media/docs/img/features/register.webp)
+
+On submission, a verification email and a link are sent directly to the user’s email address for the user to confirm that they provided the email address and still want to register an account on Bessie + Beau with the email address. When the uses clicks on the provided link, they are directed to a confirmation page.
+
+Clicking the Confirm button finalises the registration process as done. Thereafter, confirmed users can login to their account using their verified email address or username and the password provided on registration.
+
+#### **Login**
+
+![Login Page](/media/docs/img/features/login.webp)
+
+Account menu has a drop-down list of Register and Login that is visible to a new and non-logged in user. The login page allows a registered user to gain access to their Bessie + Beau account.  To be able to login, users must enter their verified email address or username and password provided during registration.
+
+The Login form uses an Allauth authentication system to verify these entries and secure login process. And below these fields are a cancel button in case the registered user no longer wants to login at that time and a login button the user has to click on to submit their information to the authentication server. And if there is a match, the system will authenticate users and grant them access to their accounts.
+
+The login page also has a Forgot Password link that users can click on to reset their password in case they have forgotten it or they simply want a new password for security reason. The login page also has a Remember me checkbox option to reduce how often users log in with two-factor authentication on the same system.
+
+#### Logout
+
+![Logout](/media/docs/img/features/logout.webp)
+
+When the user clicks on the logout page they are directed to a confirmation page, where they can either cancel or continue to log out.
+
+Account menu has a drop-down list of My Account and Logout that is visible to a logged in user. The login user can click the logout menu to sign out of their account.
+
+However, the logout has a second level confirmation system. Clicking on the logout redirects the user to a logout confirmation page. The user has to confirm by clicking the signout completely sign out from the account.  
+
+The Logout form and logout confirmation pages uses an Allauth authentication system.
+
+### Products
+
+* **All Products - User's View**
+
+![All Products](/media/docs/img/features/products-users-view.webp)
+
+The products page displays all the products on sale at Bessie + Beau. It is accessed from the call-to-action Shop Now button on the hero image homepage.
+
+The product page can also be accessed using All Products drop-down menu on the navigation bar. On the navigation bar, Users may also choose to filter products by a specific subcategory from the main categories drop-down. Clothing category, for example, has a dropdown Dresses, Jeans, and All Clothing menus. The products subcategory page has a link to return to the All Products page, a count on number of products in the subcategory on the left hand side and a sort selector box on the right hand side.
+
+![Filter Products by a Subcategory](/media/docs/img/features/product-subcategory-page.webp)
+
+The total number of all the products are displayed at the top right side of the product page. And on the far right hand side is a sort selector box with sorting functionality. To enhance user experience, a user can sort all the products displayed by Price (low to high or high to low), by Rating (low to high or high to low), by Name (A-Z or Z-A), or by Category (A-Z or Z-A).
+
+* **All Products - Superuser's View**
+![Products SuperUser View](/media/docs/img/features/products-superuser-views.webp)
+
+Superusers has a different view of the Products from other users. They can see the Edit and Delete buttons and have the permission to edit or delete any products in the store.  
+
+When a user clicks on any of the displayed product, they are taken to the product details page of that specific product to continue with their purchase.
+
+![Products Delete Confirmation](/media/docs/img/features/product-delete-confirmation.webp)
+
+### Product Details
+
+![Product Details](/media/docs/img/features/product-detail.webp)
+
+Product detail page presents the details specific to a given product. The individual Product image is displayed on the left side of the product details area and on the right side are product name, price, labels, rating, product description, a size selector for a product with sizes, quantity selectors to increase and decrease product quantity, Add to Cart, Keep Shopping, and Add to Wishlist buttons. Here a customer can select the quantity of the product to purchase using the displayed quantity selector box, add product to shopping cart by clicking the displayed Add to cart button, or add the product to wishlist to buy later using the Add to wishlist button functionality. There is “keep shopping” button that when click on will return the user to the all product page to continue viewing products.
+
+The superuser also has a different view of the Product details from other users. They can see the Edit and Delete product buttons and have the permission to edit or delete this specific product.  
+
+### Product Wishlist
+
+![Product Wishlist](/media/docs/img/features/products-wishlist.webp)
+
+**Product wishlist** is the third of the three custom models critical to this project.
+
+We can think of a Wishlist as a function of the store, or a function that is part of the user experience. My approach is to put the Wishlist functionality in the Profile app because in Account/Profile we have the dashboard, and the account has to do with user logging in and out and interacting with our application, and this is an important part of user experience. The Wishlist button is on the navbar and visible across the pages for a login user. It is also in the product detail page, and on clicked by non login users, they are directed to login page to either login or first register. A login user can add to Wishlist and remove Wishlist.
+
+A user can view and remove product in wishlist. To view the wishlist, you click the view product button, which takes you to the product detail page. To remove the product from your wishlist, you click the Remove button and the product is removed from your wishlist. A wishlist page without a wishlist item automatically returns “Your wishlist is empty” message.
+
+I’m terms of add product to wish list, we consider the option of delete a product being added if it was already on the wishlist. And the alternative option of allowing the user to add more than one same item to the wishlist. Functionally, I chose and implement the option that allows a user to add same item more than once. The particular goal was to demonstrate the calculation of number of items and total price.
+
+### Add to Cart
+
+![Add to Cart](/media/docs/img/features/add-to-cart.webp)
+
+The Add to Cart is a cart icon on the far right of the navigation bar. When a user adds an item to the cart, the cart icon changes from black to blue colour as an indicator that the item has been added to the shopping cart successfully.
+
+The shopping cart is divided into columns: the product information (image, name, price, quantity, and grant total if there are more than one item), Free delivery offer information that intends to entice the shopper to spend more to avail the free delivery offer if they are below the threshold, a Keep Shopping button incase they are not done shopping yet, and a secure Checkout button that will take them to the Checkout page.
+
+### Shopping Cart
+
+![Shopping Cart](/media/docs/img/features/shopping-cart.webp)
+
+When users add click Go to the Shopping Cart button, they are directed to the Shopping Cart page. Here the user can update the product by increasing or decreasing the product quantity or they may choose to remove products entirely before proceeding to the checkout.
+
+### **Secure Checkout**
+
+![Secure Checkout](/media/docs/img/features/secure-checkout.webp)
+
+When users click on Secure Checkout button on the Shopping Cart page, they are directed to this checkout page. The Checkout page is divided into two columns, sitting side by side.
+
+The left hand side column contains fields for customers personal information such as Full name and Email address, Delivery information such as Phone number and Address, Payment method, and two buttons, one to complete the order and the other button to adjust shopping cart in case the user wants to add more items or remove from the cart. For registered login user the form is pre-filled with their default delivery information for them to fill in other required personal information and their credit or debit card details. For anonymous users, there is a create an account or login to save the information filled into the form.
+
+The form uses Stripe prebuilt credit card input to collect card details: card number, expiry date, and CVC. The stripe payment system is not fully activated and the purchase can only be made with this test card information:
+
+* Card Number - **4242 4242 4242 4242**
+* MM/YY - **2424**
+* CVC - **424**
+
+The right hand side column holds the summary of the order information. This is necessary so that the Shopper can take another look at the order to ensure they have the right order and correct order information before making purchase. 
+
+### Order Confirmation
+
+![Order Confirmation](/media/docs/img/features/order-confirmation.webp)
+
+When users successfully complete their purchase, an Order Confirmation Email is sent directly to their registered email. The email has a subject: Bessie + Beau Confirmation for Order Number, and a message body of the Order information, which is essentially the Order number, order date, order total, delivery costs, and grand total. This functionality is implemented to be triggered by a webhook from Stripe payment.
+
+### **User Profile**
+
+![User Profile](/media/docs/img/features/profile-page.webp)
+
+The user profile holds information associated with a user such as account information, portrait photograph and order history.
+
+* Functional implementation:
+  * Users can only access their profile when they login.
+  * Only the creator of a user profile can access and edit profile details.
+  * Users can upload their image to their profile.
+  * Users can view a record of their product wishlist and order history.
+  * The profile provides users a place to save default delivery information 
+  * Users can delete their profile.
+
+### Product Management
+
+![Product Management](/media/docs/img/features/product-management.webp)
+
+The **Product Management** page is one of the menus in the drop-down Account menu, and it is visible to the superuser/store owner only. The product management page is where the superuser/store owner can add products to the store as alternative to using the admin page. It contains all the necessary fields including the image field to add a product.
+
+### 404 page
+
+![404 page](/media/docs/img/features/404.webp)
+
+404 error page lets the users know that there is an error with their request. This error might be as a result of typing in an incorrect URL, the page is temporarily unavailable, or no longer exists. The 404 page provides helpful links the user may want to click on that will take them to products and home pages.
+
+Error page can harm SEO because too many broken links will make it difficult for search engines to crawl the site. So this effective custom 404 page is important to SEO because it prevents showing broken links and encourages users to further explore Bessie + Beau website and help them find what they are looking for, thereby enhancing user experience by turning potential negative user experience of encountering an error into a positive one.
+
+### 500 page
+
+![500 page](/static/docs/img/features/500-page.webp)
+
+A 500 error code, like the 404 error, creates poor user experience for shoppers because they are unable to access the page they are looking for. It also has negative effect on SEO, as this might prevent search engine crawlers from access the website.
+
+500 page let the users know that the server encountered an unexpected condition that prevented it from fulfilling their request. It then provides helpful links that the user may want to click on that will take them to products and home pages, thereby improving user experience.
