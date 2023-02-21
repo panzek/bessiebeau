@@ -1023,12 +1023,165 @@ Error page can harm SEO because too many broken links will make it difficult for
 
 ### 500 page
 
-![500 page](/static/docs/img/features/500-page.webp)
-
 A 500 error code, like the 404 error, creates poor user experience for shoppers because they are unable to access the page they are looking for. It also has negative effect on SEO, as this might prevent search engine crawlers from access the website.
 
 500 page let the users know that the server encountered an unexpected condition that prevented it from fulfilling their request. It then provides helpful links that the user may want to click on that will take them to products and home pages, thereby improving user experience.
 
+## Marketing and SEO
+
+There are 5 key critical web and SEO marketing strategies deployed to promote the store and gain customers:
+
+### SEO strategy
+
+First, the deployment SEO strategy that uses
+The extensive use of meta tags
+
+sitemap and robots.txt file are used to …
+
+### Newsletter Sign Up Page
+
+There is a newsletter signup at the footer of the page. The newsletter signup form was created with mailchimp and comes with very robust functionality that not only makes it easier for customers to signup conveniently and for ease of deployment of email marketing campaigns.
+
+* Newsletter Sign Up
+  
+  ![Newsletter Sign Up page](/media/docs/img/features/subscribe-mailchimp.webp)
+
+As a digital marketing tool, the newsletter is used as part of a broader email marketing strategy. It represents an opportunity to contact customers with product updates, promotions, and … , thereby helping to build and maintain relationships with the customers and increase brand awareness and engagement
+
+Strategically valuable for marketing purposes, Newsletter provides immense value to the store’s strategic goals such as (a) providing a direct access to potential customers as the newsletters are sent directly to the customer’s inbox, (b) building a subscriber list with customer emails provided by themselves through the signup form. These email addresses will then be used for marketing purposes, and also to track the customers interaction with the site.
+
+#### Future Enhancement
+
+Newsletters help to gain more subscribers when it is used to create exclusive offers exclusive to new or old subscribers. What this feature does not currently provide is the functionality to provide instant special sale codes, discounts, and gifts on signup. So this is a feature that I intend to implement in the next iteration.
+
+### Facebook Business page
+
+We create a Facebook Business page to connect the store with existing and potential customers. As strategic to our Social media marketing campaigns, the Facebook business page provides key information about the e-commerce store and its products and services.
+
+![Facebook Business page](/media/docs/img/features/facebook.webp)
+
+As we continue to manage and improve this Facebook business page going forward, we intend to share Customer Testimonials cross our social channels including Facebook to Increase Acquisition and build more trust with their social audience.
+
+### Customer Testimonials
+
+Customer testimonials feature tells the success story of **Bessie + Beau**. his is strategically positioned at the bottom of the home page and the single product page. The testimonials allow our customers, from the words of other customers who have purchased our items and are pleased with our products and services, to know more about our products and service and our store as a successful e-commerce business.
+
+![Customer Testimonials page](/media/docs/img/features/testimonial-users-view.webp)
+
+We have incorporated our customer testimonials into your marketing and advertising strategy.
+
+Testimonials are a powerful tool of marketing strategy. According to [BigCommerce](https://www.bigcommerce.co.uk/blog/customer-testimonials/#influencer-marketing), “92% of consumers read online reviews and testimonials when considering a purchase. 88% of consumers trust online reviews as much as personal recommendations. 72% of them say positive reviews and testimonials make them trust a business more..”
+
+Search engines are placing more weight than ever on customer testimonials. Again, BigCommerce goes further to reveal that “increasing testimonial volume leads to higher conversion rates and that testimonial content “drives search traffic and keyword rankings.” This is why in the content of the testimonials currently on the page, we have creatively used long-tail keywords that customers are searching for to  improve our search engine optimization (SEO) .
+
+Also to make sure the customer testimonials on our site are optimized for search, they are placed in plain HTML instead of JavaScript so they are readable by search engines. We also add the schema markup tags itemscope and itemtype to help search engines sort and make sense of testimonials, and share relevant information on search engine result pages.
+
+```
+    <div itemscope itemtype=“https://schema.org/Testimonial”> 
+      <h1 itemprop =“name”>
+        Customer Testimonials
+      </h1>
+      <a itemprop =“products” href=“{% url 'products' %}”>
+        Customer Testimonials
+      </a>
+    </div>
+```
+
+## Technology Stack
+
+### Languages
+
+* [Python](https://www.python.org/) is the main programming language used to build the site's backend.
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) is the HTML living standard used for structuring and presentation of the site.
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) was used for styling and formatting our website
+* [JavaScript](https://www.javascript.com/) provides interactivity to different features of the website.
+
+### Python
+
+* The following modules were used in this project:
+  * asgiref==3.6.0
+  * astroid==2.12.13
+  * boto3==1.26.48
+  * botocore==1.29.48
+  * certifi==2022.12.7
+  * cffi==1.15.1
+  * charset-normalizer==2.1.1
+  * colorama==0.4.6
+  * cryptography==39.0.0
+  * db==0.1.1
+  * db-sqlite3==0.0.1
+  * defusedxml==0.7.1
+  * dill==0.3.6
+  * dj-database-url==1.2.0
+  * Django==4.1.5
+  * django-allauth==0.52.0
+  * django-countries==7.5
+  * django-crispy-forms==1.14.0
+  * django-extensions==3.2.1
+  * django-storages==1.13.2
+  * flake8==5.0.4
+  * flake8-django==1.1.5
+  * gunicorn==20.1.0
+  * idna==3.4
+  * isort==5.11.4
+  * jmespath==1.0.1
+  * lazy-object-proxy==1.9.0
+  * mccabe==0.7.0
+  * oauthlib==3.2.2
+  * Pillow==9.4.0
+  * platformdirs==2.6.2
+  * psycopg2==2.9.5
+  * pycodestyle==2.9.1
+  * pycparser==2.21
+  * pyflakes==2.5.0
+  * PyJWT==2.6.0
+  * pylint==2.15.9
+  * python-dateutil==2.8.2
+  * python3-openid==3.2.0
+  * requests==2.28.1
+  * requests-oauthlib==1.3.1
+  * s3transfer==0.6.0
+  * six==1.16.0
+  * sqlparse==0.4.3
+  * stripe==5.0.0
+  * tomli==2.0.1
+  * tomlkit==0.11.6
+  * typing_extensions==4.4.0
+  * tzdata==2022.7
+  * urllib3==1.26.14
+  * wrapt==1.14.1
+
+* Django
+  * [Django==4.1.5](https://www.djangoproject.com/) is the main python framework used to develop this project.
+
+### Development
+
+* [Font Awesome](https://fontawesome.com/)
+* [Git](https://git-scm.com/)
+* [GitHub](https://github.com/)
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+used for debugging
+* [Google Fonts](https://fonts.google.com/)
+* [Material Design](https://material.io/resources/color/#!/)
+* [VSCode](https://www.gitpod.io/)
+
+#### VSCode Extensions Used
+
+* [Jinja template language support for VSCode](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja).
+* [Markdown lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - used For style checking and to maintaining standard.
+* [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) – a language support for python for writing a better code.
+* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) – a language support for python for writing a better code.
+  
+### Database
+
+* [PostgreSQL](https://www.postgresql.org/) is used for data storage during development and in production. This object-relational database system is managed by [ElephantSQL](https://www.elephantsql.com/)  
+  
+### Hosting
+
+* [Amazon AWS S3](https://aws.amazon.com/s3/) hosts our static and media files.
+* [Heroku](https://dashboard.heroku.com/) hosts the deployed website.
+* [ElephantSQL](https://www.elephantsql.com/) hosts and manages our PostgreSQL database
+  
 ## Credits
 
 ### Design
