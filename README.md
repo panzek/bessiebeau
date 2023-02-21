@@ -1028,3 +1028,61 @@ Error page can harm SEO because too many broken links will make it difficult for
 A 500 error code, like the 404 error, creates poor user experience for shoppers because they are unable to access the page they are looking for. It also has negative effect on SEO, as this might prevent search engine crawlers from access the website.
 
 500 page let the users know that the server encountered an unexpected condition that prevented it from fulfilling their request. It then provides helpful links that the user may want to click on that will take them to products and home pages, thereby improving user experience.
+
+## Credits
+
+### Design
+
+[Code Institute](https://codeinstitute.net/) lectures and Boutique Ado walkthrough project help shape the ideas and techniques that frame the UI design of this Portfolio Project 5 for [Diploma the Full Stack Software Development](https://codeinstitute.net/ie/full-stack-software-development-diploma/)
+
+**Bessie + Beau logo** was originally designed as paid service by Digital Aura LLC in [Freelancer](https://www.freelancer.com)
+
+### Messages
+
+The [Bootstrap toasts](https://getbootstrap.com/docs/4.3/components/toasts/) and [Django Message Levels](https://docs.djangoproject.com/en/4.1/ref/contrib/messages/#message-levels) are used in combination to display alert messages and the representation of the message levels.
+
+### All Images
+
+[Techsini](http://techsini.com/multi-mockup/index.php) was used to generate the website mockup.
+
+All static images on the home page are from [Unsplash](https://unsplash.com/). Particular of note are the hero images for [Desktop](https://unsplash.com/photos/F4LCjzFW5Ws) and [Mobile](https://unsplash.com/photos/5AOKgd7umBY) by [Pesce Huang](https://unsplash.com/@pesce) and Testimonial photos by [mina rad](https://unsplash.com/@miinrad)
+
+All products images were pruned from **Param Aggarwal’s** [Product Fashion Images in Kaggle](https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset)
+
+[Convertio](https://convertio.co/) was used to convert all images from jpeg to webp format.
+  
+[Tinypng](https://tinypng.com/) was used to reduce the WEBP file size.
+
+### Colors
+
+[Katy Kelleher](https://www.refinery29.com/en-us/2022/07/11046435/hot-pink-color-trend-fashion-history) whom I referenced in color schema about Hot pink being "a color trend with legs"
+  
+[EightShapes’](https://contrast-grid.eightshapes.com/) is a color contrast grid tool that I used to check color values for accessible contrast.
+
+[CSS Color Converter](http://maettig.com/?page=PHP/CSS_Color_Converter) was used to convert colors.
+  
+[Color Contrast Checker](https://coolors.co/contrast-checker/ffffff-a2b9bc)
+
+### Text
+
+Testimonial text was from [Vine Apparel](https://www.vineapparel.com/pages/customer-testimonials)
+
+Quote on the meaning of blue color was from [The Meaning of the Color Blue](https://www.supercolor.com/blog/the-meaning-of-the-color-blue/)
+
+### Code
+
+[Stackoverflow](https://stackoverflow.com/), always an important resource for answers to almost all knotty coding issues.
+
+[Miniwebtool Django Secret Ky Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate new secret key for this project.
+  
+[Webformatter](https://webformatter.com/html) was used to format an HTML/CSS code
+  
+## Acknowledgements
+
+Exhausting. Challenging. Sometimes intimidating and overwhelming. But the beauty of art of learning, of the studious labour to acquire new knowledge is the exhilaration in beholding that shining light at the end of the tunnel. I made it! No, “we” made it! For there are so many others who were on this journey with me through their support, help, encouragement, guidance, and prayers:
+
+* My family, especially my two lovely daughters, **Onyinye** and **Ogo**, who not only contributed to project two by crafting the Afrobeats questions and providing their answers, but also showed special interest in how I was getting on with the programme.
+* My [Code Institute](https://github.com/Code-Institute-Org) mentor [Akshat Garg](https://github.com/akshatnitd) and cover mentor **Jubril Akolade**;
+* Code Institute Tutors: Ed, Ger, Josh, Gemma, John, Sean, Alex, and Oisin, were all wonderful pillars of support.
+* Rachel and the [Code Institute](https://github.com/Code-Institute-Org) Student care team for their care and understanding.
+* Contributors to different discussions in Slack. Their numerous questions, answers to those questions, and comments on wide range of coding concerns provided me with insights, pointers, and motivation.
