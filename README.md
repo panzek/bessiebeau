@@ -1017,7 +1017,7 @@ The **Product Management** page is one of the menus in the drop-down Account men
 
 ![404 page](/media/docs/img/features/404.webp)
 
-404 error page lets the users know that there is an error with their request. This error might be as a result of typing in an incorrect URL, the page is temporarily unavailable, or no longer exists. The 404 page provides helpful links the user may want to click on that will take them to products and home pages.
+404 error pagewas was implemented to improve overall UX. It lets the users know that there is an error with their request. This error might be as a result of typing in an incorrect URL, the page is temporarily unavailable, or no longer exists. The 404 page provides helpful links the user may want to click on that will take them to products and home pages.
 
 Error page can harm SEO because too many broken links will make it difficult for search engines to crawl the site. So this effective custom 404 page is important to SEO because it prevents showing broken links and encourages users to further explore Bessie + Beau website and help them find what they are looking for, thereby enhancing user experience by turning potential negative user experience of encountering an error into a positive one.
 
@@ -1029,14 +1029,71 @@ A 500 error code, like the 404 error, creates poor user experience for shoppers 
 
 ## Marketing and SEO
 
-There are 5 key critical web and SEO marketing strategies deployed to promote the store and gain customers:
+### Keyword Research
 
-### SEO strategy
+Women Fashion Google Search              |        Wordtracker - keyword volume and competition
+:-------------------------:|:-------------------------:
+![Hero Image Page - Desktop View](/media/docs/img/features/women-fashion-google-search.webp)  |  ![Hero Image Page - Mobile View](/media/docs/img/features/dresses-wordtracker-search.webp)
 
-First, the deployment SEO strategy that uses
-The extensive use of meta tags
+In order to optimize the website for high ranking in search engines, I research to find and analyse search terms that most people enter into search engines. The goal is to use the data collected for my SEO
 
-sitemap and robots.txt file are used to …
+In planning for some possible keywords for a project, I used Google research tool. I entered this phrase, "list of topics relevant to women fashion" and Women’s Fashion Keywords. I also checked the “People also ask” and “Related searches” sections on the google results page for the examples of popular searches on similar topics to the one I entered in your own search. I was particularly interest in finding keywords that are high volume but low in competition.
+
+From the data gathered from my online keyword research, I then came up with a list of these keywords that I think are important to Women’s Fashion customers, separating them into Short-tail keywords and Long-tail phrases.
+
+#### Short-tail Keywords
+
+* women's fashion
+* fashion trends
+* Haute Couture
+* Luxury Fashion
+* clothing stores
+* clothes
+* dresses
+* fashion designer
+* mens fashion
+* dresses for women
+* women's clothing
+* luxury clothing brands
+
+#### Long-tail Phrases
+
+* haute couture fashion
+* women's clothing online
+* online clothing stores
+* designer clothes for women
+* website for designer clothes
+* fashion clothes for women
+* latest fashion styles and trends for women
+* dress to impress with women's clothing
+
+I then assess my choices for relevance and authoritativeness by checking their keyword volume and competition in [Wordtracker](https://www.wordtracker.com/) , selecting Ireland as my territory.
+
+### SEO Implementations in HTML
+
+#### Semantic HTML
+
+All the HTML pages use HTML elements such as headings, main, article, section, header, and footer. From the perspective of SEO, I then creatively incorporated the keywords I had identified and selected into these semantic elements.
+
+#### Metadata and Anchor Tags
+
+I also made effective use of **anchor tags** by creating links that linked to external websites and to different pages within the web application, especially the privacy policy, refund policy, and terms of service.
+
+For accessibility, there is aria-label on all links to pages within the site, and for external sites a further directive that the site being accessed will open a new tab on third party site. I also added rel=“noopener”.
+
+### Image Optimization for SEO
+
+All the images on the site are SEO optimizes to help search engines ranking, speed, storage space, and seamless user experience. I optimizes these images by selecting the image area in focus using photoshop and saving the images by exporting using “export as” rather than using “Save As” to save the images.
+
+I carefully choose all my image descriptions with my select keywords in mind with alt attribute of an **img element**, also taking accessibility requirements into consideration by describing images to visually impaired users.
+
+### sitemap.xml file
+
+To help speed up content discovery for search engines when they crawl and index my web applications, I created a **sitemap.xml** file that has a list of the site’s important page urls, which ensures that search engines can crawl through them and index the web applications.
+
+#### robots.txt file
+
+I also created a **robots.txt** file to tell search engines where they are not allowed to go on a the website. I  listed out folders or files that will not be crawled or indexed by search engine spiders.
 
 ### Newsletter Sign Up Page
 
@@ -1046,9 +1103,12 @@ There is a newsletter signup at the footer of the page. The newsletter signup fo
   
   ![Newsletter Sign Up page](/media/docs/img/features/subscribe-mailchimp.webp)
 
-As a digital marketing tool, the newsletter is used as part of a broader email marketing strategy. It represents an opportunity to contact customers with product updates, promotions, and … , thereby helping to build and maintain relationships with the customers and increase brand awareness and engagement
+As a digital marketing tool, the newsletter is used as part of a broader email marketing strategy. It represents an opportunity to contact customers with product updates and promotions, thus help to build and maintain relationships with the customers and increase brand awareness and engagement.
 
-Strategically valuable for marketing purposes, Newsletter provides immense value to the store’s strategic goals such as (a) providing a direct access to potential customers as the newsletters are sent directly to the customer’s inbox, (b) building a subscriber list with customer emails provided by themselves through the signup form. These email addresses will then be used for marketing purposes, and also to track the customers interaction with the site.
+Strategically valuable for marketing purposes, Newsletter provides immense value to the store’s other strategic goals such as:
+
+1. providing a direct access to potential customers as the newsletters are sent directly to the customer’s inbox
+2. building a subscriber list with customer emails provided by themselves through the signup form. These email addresses will then be used for marketing purposes, and also to track the customers interaction with the site.
 
 #### Future Enhancement
 
@@ -1056,7 +1116,7 @@ Newsletters help to gain more subscribers when it is used to create exclusive of
 
 ### Facebook Business page
 
-We create a Facebook Business page to connect the store with existing and potential customers. As strategic to our Social media marketing campaigns, the Facebook business page provides key information about the e-commerce store and its products and services.
+As core part of Social Media marketing strategy, I created a Facebook Business page to connect the store with existing and potential customers. As strategic to our Social media marketing campaigns, the Facebook business page provides key information about the e-commerce store and its products and services.
 
 ![Facebook Business page](/media/docs/img/features/facebook.webp)
 
@@ -1064,7 +1124,7 @@ As we continue to manage and improve this Facebook business page going forward, 
 
 ### Customer Testimonials
 
-Customer testimonials feature tells the success story of **Bessie + Beau**. his is strategically positioned at the bottom of the home page and the single product page. The testimonials allow our customers, from the words of other customers who have purchased our items and are pleased with our products and services, to know more about our products and service and our store as a successful e-commerce business.
+Customer testimonials feature tells the success story of **Bessie + Beau**. This section is strategically positioned at the bottom of the home page and the single product page. The testimonials allow our customers, from the words of other customers who have purchased our items and are pleased with our products and services, to know more about our products and service and our store as a successful e-commerce business.
 
 ![Customer Testimonials page](/media/docs/img/features/testimonial-users-view.webp)
 
@@ -1072,9 +1132,9 @@ We have incorporated our customer testimonials into your marketing and advertisi
 
 Testimonials are a powerful tool of marketing strategy. According to [BigCommerce](https://www.bigcommerce.co.uk/blog/customer-testimonials/#influencer-marketing), “92% of consumers read online reviews and testimonials when considering a purchase. 88% of consumers trust online reviews as much as personal recommendations. 72% of them say positive reviews and testimonials make them trust a business more..”
 
-Search engines are placing more weight than ever on customer testimonials. Again, BigCommerce goes further to reveal that “increasing testimonial volume leads to higher conversion rates and that testimonial content “drives search traffic and keyword rankings.” This is why in the content of the testimonials currently on the page, we have creatively used long-tail keywords that customers are searching for to  improve our search engine optimization (SEO) .
+Search engines are placing more weight than ever on customer testimonials. Again, BigCommerce goes further to reveal that “increasing testimonial volume leads to higher conversion rates and that testimonial content “drives search traffic and keyword rankings.” This is why in the content of the testimonials currently on the page, we have creatively used **long-tail keywords** that customers are searching for to improve our search engine optimization (SEO) .
 
-Also to make sure the customer testimonials on our site are optimized for search, they are placed in plain HTML instead of JavaScript so they are readable by search engines. We also add the schema markup tags itemscope and itemtype to help search engines sort and make sense of testimonials, and share relevant information on search engine result pages.
+Also to make sure the customer testimonials on our site are optimized for search engines, they are placed in plain HTML instead of JavaScript so they are readable by search engines. We also added the schema markup tags **itemscope** and **itemtype** to help search engines sort and make sense of testimonials, and share relevant information on search engine result pages.
 
 ```
     <div itemscope itemtype=“https://schema.org/Testimonial”> 
@@ -1156,13 +1216,12 @@ Also to make sure the customer testimonials on our site are optimized for search
 
 ### Development
 
-* [Font Awesome](https://fontawesome.com/)
+* All icons were taken from [Font Awesome](https://fontawesome.com/)
 * [Git](https://git-scm.com/)
 * [GitHub](https://github.com/)
-* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/)
-used for debugging
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used for debugging
 * [Google Fonts](https://fonts.google.com/)
-* [Material Design](https://material.io/resources/color/#!/)
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 * [VSCode](https://www.gitpod.io/)
 
 #### VSCode Extensions Used
@@ -1189,6 +1248,14 @@ used for debugging
 [Code Institute](https://codeinstitute.net/) lectures and Boutique Ado walkthrough project help shape the ideas and techniques that frame the UI design of this Portfolio Project 5 for [Diploma the Full Stack Software Development](https://codeinstitute.net/ie/full-stack-software-development-diploma/)
 
 **Bessie + Beau logo** was originally designed as paid service by Digital Aura LLC in [Freelancer](https://www.freelancer.com)
+
+[Xml-Sitemaps](https://www.xml-sitemaps.com/) was used to generate Sitemap.
+
+[Balsamiq Cloud](https://balsamiq.cloud/) was used to design the wireframes.
+
+[Drawio](http://diagrams.net/) was used to design the dababase schema.
+
+[Responsinator](https://www.responsinator.com/) was used to check how the site will look on the most popular devices
 
 ### Messages
 
@@ -1229,6 +1296,14 @@ Quote on the meaning of blue color was from [The Meaning of the Color Blue](http
 [Miniwebtool Django Secret Ky Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate new secret key for this project.
   
 [Webformatter](https://webformatter.com/html) was used to format an HTML/CSS code
+
+[Google Search](https://www.google.com/) was used for keywords research
+
+[Wordtracker](https://www.wordtracker.com/) was used for keywords research.
+
+[NekoCalc](https://nekocalc.com/) was used to convert pixels to the CSS unit REM, EM, and Percentage.
+
+[Private Policy Generator](https://www.privacypolicygenerator.info/) was used to generate the site Private Policy and Terms of Service.
   
 ## Acknowledgements
 

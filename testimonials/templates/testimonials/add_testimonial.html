@@ -7,9 +7,9 @@
 {% endblock %} {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 mx-auto text-center">
+        <div class="col-12 col-md-6 mx-auto text-center" itemscope itemtype=“https://schema.org/Testimonial”>
             <hr />
-            <h2 class="mb-4">Write a testimonial</h2>
+            <h2 class="mb-4" itemprop =“name”>Write a testimonial</h2>
             <h5 class="text-muted">Share your thoughts with other customers</h5>
             <hr class="mb-2" />
         </div>
@@ -26,7 +26,7 @@
                 {% csrf_token %} {% for field in form %} {% if field.name != 'image' %} {{ field|as_crispy_field }} {% else %} {{ field }} {% endif %} {% endfor %}
                 <div class="text-right my-3">
                     <a class="btn btn-outline-dark rounded-0" href="{% url 'home' %}">Cancel</a>
-                    <button class="btn btn-dark rounded-0">Add Testimonial</button>
+                    <button itemprop =“testimonials” class="btn btn-dark rounded-0">Add Testimonial</button>
                 </div>
             </form>
             {% endif %}
