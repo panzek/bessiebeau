@@ -33,7 +33,7 @@
   * [Database Schema](#database-schema)
 * [The Surface Plane](#the-surface-plane)
   * [Features](#features)
-* [SEO and Web Marketing](#seo-and-web-marketing)
+* [Web Marketing and SEO](#web-marketing-seo)
 * [Technology Stack](#technology-stack)
 * [Testing](#testing)
 * [Deployment](#deployment)
@@ -783,6 +783,74 @@ Below is how the sprints were organised:
 ### Kanban Board
 
 ![Kanban Board](/media/docs/img/kanban-board.webp)
+
+## The Skeleton Plane
+
+### User Experience Design
+
+#### header
+
+The header has two sections arranged horizontally. The top section has the logo search box and account related menus arranged horizontally in order of priority of information and features. And the section below it contains mainly products-related menus and a contact page.
+
+* Design
+
+* Typography
+
+  * [Roboto](https://fonts.google.com/specimen/Roboto)
+  * Sans-serif
+    * The main font used for the website is [Roboto](https://fonts.google.com/specimen/Roboto) with sans-serif as the fallback. Friendly and straightforward in appearance, Roboto is a “neo-grotesque” sans-serif typeface family. To keep things simple and clean, Roboto is the only font used throughout the website, but with font weights of bold 700 for headings and lower headings and thin 100 for body text. The beauty of Roboto is that it is modern, contemporary, minimalistic, readable, and serves well for an e-commerce website.
+  
+#### Color Scheme
+
+| Colours             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Dark Colour | ![#332d2d](https://via.placeholder.com/10/332d2d?text=+) #332d2d |
+| Black Pearl Colour | ![#050708](https://via.placeholder.com/10/050708?text=+) #050708 |
+| Hot Pink Colour | ![#e31c79](https://via.placeholder.com/10/#e31c79?text=+) #e31c79 |
+| Blue Colour | ![#0275d8](https://via.placeholder.com/10/0275d8?text=+) #0275d8 |
+| White Colour | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Light Colour | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa?text=+) #f8f9fa |
+| Danger Colour | ![#dc4c64](https://via.placeholder.com/10/dc4c64?text=+) #dc4c64 |
+
+* The colors selected for this website are Dark (#332d2d), Black Pearl (#050708), Hot Pink (#e31c79), Blue (#00f), Light (#f8f9fa), Danger (#dc4c64), and White (#ffffff). These colors were carefully chosen for aesthetic nourishment:
+
+* Bootstrap dark is the primary colour. It is what general shapes the site colour scheme. For many of the buttons’ background colour, I went for Bootstraps dark which gives the site a tone down and calmer shade of black. Although **Bessie + Beau** is a luxury brand stores, it is deliberately represented not to be "shouty", for the beauty of the big is in small things.
+
+* For the first secondary colour, I picked a colour that gives the site a feminine touch with a Hot Pink colour. Hot pink is "a colour trend with legs", writes KATY KELLEHER in “Forget Pantone, Barbiecore Pink Is The Colour Of The Year”. So I choose to “walk” the colour in this project.
+
+* I avoided using the Bootstrap info colour for links because it has insufficient colour contrast between the text and a white background when tested with Accessibility, which creates accessibility issue. I then settled for a touch of deep blue for links. Colour blue represents “both the sky and the sea and is associated with open spaces, freedom, intuition, imagination, inspiration, and sensitivity.”
+
+* Other secondary colours are the bootstrap light for the background colour of the top area of the footer and Bootstrap danger.
+  
+* The primary and secondary Colours combination is used to express the theme of elegance and style.
+
+* Also, extreme care was taken not to sacrifice WCAG 2.0 criteria in the altar of functional needs by checking color values for accessible contrast using [EightShapes’](https://contrast-grid.eightshapes.com/) color contrast grid tool, and using and combining the colors in such a way that they meet compliance with [WCAG 2.0 minimum contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
+
+![Color Scheme](/media/docs/img/features/eightshapes-colour-contrast-grid.webp)
+
+##### Images
+
+#### Wireframes
+
+The wireframes were created using [Balsamiq](https://balsamiq.com/). 
+
+* [Home Page Wireframe](/static/docs/img/wireframes/homepage.png)
+* [Contact Page Wireframe](/static/docs/img/wireframes/contact-form.png)
+* [Review Page Wireframe](/static/docs/img/wireframes/testimonials.png)
+* [Products Page Wireframe](/static/docs/img/wireframes/products-wireframe.png)
+* [Products Detail Page Wireframe](/static/docs/img/wireframes/product-details.png)
+* [Product Management Page Wireframe](/static/docs/img/wireframes/product-management.png)
+* [User Profile Page Wireframe](/static/docs/img/wireframes/profile.png)
+* [Shopping Cart Page Wireframe](/static/docs/img/wireframes/shopping-cart.png)
+* [Wishlist Page Wireframe](/static/docs/img/wireframes/wishlist.png)
+* [Checkout Page Wireframe](/static/docs/img/wireframes/checkout.png)
+* [Registration Page Wireframe](/static/docs/img/wireframes/signup.png)
+* [Login Page Wireframe](/static/docs/img/wireframes/login.png)
+* [Logout Page Wireframe](/static/docs/img/wireframes/logout.png)
+
+#### Database Schema
+
+![Database Schema Diagram](/media/docs/img/database/database-schema.png)
 
 ## The Surface Plane
 

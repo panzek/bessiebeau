@@ -42,10 +42,10 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 py-0">
-            <h5 class="text-muted">Account Information</h5>
+        <h5 class="text-muted">{{ user | capfirst }} Profile Photo</h5>
             <p class="card-text">
                 {% if profile.profile_image %}
-                <img src="{{ profile.profile_image.url }}" width="205" alt="{{ user }}Profile Photo" />
+                <img src="{{ profile.profile_image.url }}" width="205" alt="{{ user | capfirst }}Profile Photo" />
                 {% else %}
                 <img src="{{ MEDIA_URL }}noimage.png" width="205" alt="{{ user }}Profile Photo" />
                 {% endif %}
@@ -84,7 +84,7 @@
                         {% for order in orders %}
                         <tr>
                             <td>
-                                <a href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+                                <a class="order-history-link-color" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
                                     {{ order.order_number|truncatechars:6 }}
                                 </a>
                             </td>

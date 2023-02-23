@@ -10,6 +10,8 @@
     --blue: #00f; 
     --light: #f8f9fa;
     --white: #ffffff;
+    --black-pearl: #050708;
+    
 
     /* TYPOGRAPHY */
     --content-text: 'Roboto', sans-serif;
@@ -70,8 +72,18 @@ body {
     text-decoration: underline;
 }
 
+.edit-link-color,
+.update-cart-link-color,
+.order-history-link-color {
+    color: #006ee5;
+}
+
 .btn-wishlist {
     background: var(--hot-pink);
+}
+
+.add-to-wishlist-color {
+    color: var(--black-pearl);
 }
 
 /* Allauth form formatting */

@@ -31,15 +31,15 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="w-50">
                         <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                            <option value="reset"{% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                            <option value="price_asc"{% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                            <option value="price_desc"{% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                            <option value="rating_asc"{% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                            <option value="rating_desc"{% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
-                            <option value="name_asc"{% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                            <option value="name_desc"{% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                            <option value="category_asc"{% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                            <option value="category_desc"{% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                            <option value="reset"{% if current_sorting == 'None_None' %}selected{% endif %} >Sort by...</option>
+                            <option value="price_asc"{% if current_sorting == 'price_asc' %}selected{% endif %} aria-label="Price (low to high)">Price (low to high)</option>
+                            <option value="price_desc"{% if current_sorting == 'price_desc' %}selected{% endif %} aria-label="Price (high to low)">Price (high to low)</option>
+                            <option value="rating_asc"{% if current_sorting == 'rating_asc' %}selected{% endif %} aria-label="Rating (low to high)">Rating (low to high)</option>
+                            <option value="rating_desc"{% if current_sorting == 'rating_desc' %}selected{% endif %} aria-label="Rating (high to low)">Rating (high to low)</option>
+                            <option value="name_asc"{% if current_sorting == 'name_asc' %}selected{% endif %} aria-label="Name (A-Z)">Name (A-Z)</option>
+                            <option value="name_desc"{% if current_sorting == 'name_desc' %}selected{% endif %} aria-label="Name (Z-A)">Name (Z-A)</option>
+                            <option value="category_asc"{% if current_sorting == 'category_asc' %}selected{% endif %} aria-label="Category (A-Z)">Category (A-Z)</option>
+                            <option value="category_desc"{% if current_sorting == 'category_desc' %}selected{% endif %} aria-label="Category (Z-A)">Category (Z-A)</option>
                         </select>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                                             <small class="text-muted">No Rating</small>
                                         {% endif %}
                                         {% if request.user.is_superuser %}
-                                            <a href="{% url 'edit_product' product.id %}">Edit</a>
+                                            <a href="{% url 'edit_product' product.id %}" class="edit-link-color">Edit</a> |
                                             <!-- Delete Products Button trigger modal -->
                                             <a type="text" href="{{ product.id }}" class="text-danger" data-toggle="modal" data-target="#product_{{ product.id }}" aria-label="Delete this product" >
                                                 Delete

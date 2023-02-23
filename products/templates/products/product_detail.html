@@ -114,7 +114,7 @@
                                 <form action="" method="POST">
                                     {% csrf_token %}
                                     <input type="hidden" name="product-id" value="{{ product.id}}" />
-                                    <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-wishlist rounded-1 text-uppercase mt-2 btn-outline-dark" role="button" aria-pressed="true">
+                                    <a href="{% url 'add_to_wishlist' product.id %}" class="btn btn-wishlist add-to-wishlist-color rounded-1 text-uppercase mt-2 btn-outline-dark" role="button" aria-pressed="true">
                                         <i class="fa-solid fa-heart" aria-hidden="true"></i> Add to Wishlist
                                     </a>
                                 </form>

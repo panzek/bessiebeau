@@ -86,7 +86,7 @@
                                         </div>
                                     </div>
                                 </form>
-                                <a class="update-link text-info"><small>Update</small></a>
+                                <a class="update-link update-cart-link-color"><small>Update</small></a>
                                 <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                             </td>
                             <td class="py-3">
@@ -110,14 +110,14 @@
                         <td colspan="5" class="text-right">
                             <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-1 btn-lg">
                                 <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
+                                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
                             <a href="{% url 'checkout' %}" class="btn btn-dark rounded-1 btn-lg">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
-                                    <i class="fas fa-lock"></i>
+                                    <i class="fas fa-lock" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </td>
