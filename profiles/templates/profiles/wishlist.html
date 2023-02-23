@@ -26,9 +26,9 @@
                     <tr>
                         <td>
                             {% if item.product.image %}
-                            <img src="{{ item.product.image.url }}" width="100px" alt="{{ product.name }}Product Photo" />
+                            <img src="{{ item.product.image.url }}" width="100" alt="{{ product.name }}Product Photo" />
                             {% else %}
-                            <img src="{{ MEDIA_URL }}noimage.png" width="100px" alt="{{ user }}Profile Photo" />
+                            <img src="{{ MEDIA_URL }}noimage.png" width="100" alt="{{ user }}Profile Photo" />
                             {% endif %}
                         </td>
                         <td>

@@ -1240,7 +1240,55 @@ Also to make sure the customer testimonials on our site are optimized for search
 * [Amazon AWS S3](https://aws.amazon.com/s3/) hosts our static and media files.
 * [Heroku](https://dashboard.heroku.com/) hosts the deployed website.
 * [ElephantSQL](https://www.elephantsql.com/) hosts and manages our PostgreSQL database
-  
+
+## Testing
+
+Testing information can be found in this **TESTING.md** file.
+
+### PEP8 Testing
+
+### Accessibility Testing
+
+* [Accessibility Insights](https://accessibilityinsights.io/)
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used to test accessibility.
+
+### Validation Testing
+
+#### W3C Markup Validator
+
+I check the markup validity of the HTML5 for technical quality and correctness using [W3C Markup Validator](https://validator.w3.org/).
+
+#### W3C CSS Validation Service
+
+I check the markup validity of the CSS3 for technical quality and correctness [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+#### JSHint
+
+I validated the following JavaScript files through the [JSHint](https://jshint.com) Validator:
+
+* stripe_elements.js
+* cart script
+* quantity_input_script
+* products script
+* countryfield.js
+
+* [JavaScript Tutor](https://pythontutor.com/javascript.html) – used to Visualize JavaScript code execution.
+
+### Manual Testing
+
+* check site pages manually...
+
+### Test Images & Page Speed
+
+[PageSpeed Insights](https://pagespeed.web.dev)
+[GMetrix](https://gtmetrix.com)
+
+### Fixed Bugs
+
+* Lighthouse detected that a background image displayed with incorrect aspect ratio.
+  * [Accessibility Insights]( https://accessibilityinsights.io/) detected insufficient color contrast of 2.93 between foreground and background colors of button in milestones area of the Biography page. (screenshot)
+  * [Accessibility Insights]( https://accessibilityinsights.io/) detected there were 6 instances of social media links in footer that did not have an accessible name. (screenshot)
+
 ## Credits
 
 ### Design

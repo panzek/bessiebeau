@@ -37,10 +37,14 @@
           <p class="mt-2">
             <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
           </p>
-          <div class="text-center my-3">
-            <a class="btn btn-outline-dark rounded-0" style="width: 15rem;" href="{% url 'home' %}">Home</a>
-            <button type="submit" class="btn btn-dark rounded-0" style="width: 25rem;">{% trans "Sign In" %}</button>
-        </div>
+          <div class="btn-group w-100">
+            <a href="{% url 'home' %}" class="btn btn-outline-dark rounded-1 mt-2">
+                <span class="text-uppercase">Home</span>
+            </a>
+            <button type="submit" class="btn btn-dark rounded-0 text-uppercase text-light font-weight-bold mt-2" aria-pressed="true">
+              {% trans "Sign In" %}
+            </button>
+          </div>
         </form>
         </div>
     </div>

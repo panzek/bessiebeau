@@ -1,10 +1,18 @@
-{% extends 'base.html' %} {% load static %} {% load crispy_forms_tags %} {% block title %} Profile | Bessie + Beau {% endblock %} {% block page_header %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% load crispy_forms_tags %} 
+
+{% block title %} Profile | Bessie + Beau {% endblock %} 
+
+{% block page_header %}
 <div class="container header-container mb-5">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
-{% endblock %} {% block content %}
+{% endblock %} 
+
+{% block content %}
 <div class="container">
     <div class="row">
         <div class="col">
@@ -37,13 +45,13 @@
             <h5 class="text-muted">Account Information</h5>
             <p class="card-text">
                 {% if profile.profile_image %}
-                <img src="{{ profile.profile_image.url }}" width="205px" alt="{{ user }}Profile Photo" />
+                <img src="{{ profile.profile_image.url }}" width="205" alt="{{ user }}Profile Photo" />
                 {% else %}
-                <img src="{{ MEDIA_URL }}noimage.png" width="205px" alt="{{ user }}Profile Photo" />
+                <img src="{{ MEDIA_URL }}noimage.png" width="205" alt="{{ user }}Profile Photo" />
                 {% endif %}
             </p>
             <div class="btn-group btn-group-justified" style="width: 13rem;">
-                <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Change Profile Photo</a>
+                <a href="{% url 'edit_profile' profile.id %}" class="btn btn-dark">Change Profile Photo</a>
             </div>
         </div>
     </div>
@@ -57,7 +65,7 @@
             <p class="card-text">Street Address1: {{ profile.street_address1 }}</p>
             <p class="card-text">Street Address2: {{ profile.street_address2 }}</p>
             <div class="btn-group btn-group-justified" style="width: 20rem;">
-                <a href="{% url 'edit_profile' profile.id %}" class="btn btn-info">Edit</a>
+                <a href="{% url 'edit_profile' profile.id %}" class="btn btn-dark">Edit</a>
             </div>
         </div>
         <div class="col-12 col-lg-6">
@@ -99,6 +107,9 @@
         </div>
     </div>
 </div>
-{% endblock %} {% block postloadjs %} {{ block.super }}
-<script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{% endblock %} 
+
+{% block postloadjs %} 
+{{ block.super }}
+    <script src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}

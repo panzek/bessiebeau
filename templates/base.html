@@ -5,34 +5,34 @@
     <head>
         <!-- Required meta tags -->
         {% block meta %}
-        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Bessie Beau - luxury fashion and beauty online store in Dublin, Ireland" />
-        <meta name="keywords" content="Bessie Beau, women fashion, clothing, shoes, beauty" />
-        <meta name="theme-color" content="#FBC" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#FBC" />
+        <meta name="description" content="Bessie Beau - luxury fashion and beauty online store in Dublin, Ireland">
+        <meta name="keywords" content="Bessie Beau, women fashion, clothing, shoes, beauty">
+        <meta name="theme-color" content="#FBC">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FBC">
         {% endblock %}
         <title>{% block title %} {% endblock %}</title>
 
         {% block extra_meta %} {% endblock %}
 
         <!-- Favicon  -->
-        <link rel="icon" type="image/png" sizes="192x192" href="{{ MEDIA_URL }}favicons/android-chrome.png" />
-        <link rel="icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ MEDIA_URL }}favicons/android-chrome.png">
+        <link rel="icon" type="image/png" sizes="180x180" href="{{ MEDIA_URL }}favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicons/favicon.png" />
 
         <!-- Mailchimp Signup Form -->
         {% block mailchimpcss %}
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css" />
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
         {% endblock %}
 
         <!-- Bootstrap CSS -->
         {% block corecss %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
-        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% endblock %} 
         
         {% block extra_css %} 
@@ -46,20 +46,23 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         <!-- stripe  -->
         <script src="https://js.stripe.com/v3/"></script>
-        {% endblock %} {% block extra_js %} {% endblock %}
+        {% endblock %} 
+        
+        {% block extra_js %} 
+        {% endblock %}
     </head>
     <body>
         <header class="container-fluid fixed-top">
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a class="navbar-brand" href="{% url 'home' %}">
-                        <img src="{{ MEDIA_URL }}bessie-beau.webp" alt="Bessie + Beau logo" />
+                        <img src="{{ MEDIA_URL }}bessie-beau.webp" alt="Bessie + Beau logo">
                     </a>
                 </div>
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                     <form method="GET" action="{% url 'products' %}">
                         <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search products" />
+                            <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search products">
                             <div class="input-group-append">
                                 <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                     <span class="icon">
@@ -170,7 +173,7 @@
 
         {% block postloadjs %}
         <!-- using bootstrap JavaScript to show the toast  -->
-        <script type="text/javascript">
+        <script>
             $(".toast").toast("show");
         </script>
         {% endblock %}

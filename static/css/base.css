@@ -144,7 +144,7 @@ body {
     background-color: lightgray;
     content: "";
     height: 1px;
-    width: 35%;
+    width: 30%;
 }
 
 /* Mailchimp  */
@@ -284,7 +284,6 @@ footer {
     }
 }
 
-
 /* Screen sizes equal to or less than 540px wide */
 @media (max-width: 540px) {
     .container {
@@ -309,7 +308,6 @@ footer {
         width: 100%;
         font-size: 1.5rem;
     }
-
 
     .home-mobile-btn {
         width: 50%;
@@ -344,7 +342,6 @@ footer {
     .hero-image-text {
         position: absolute;
         top: 85%;
-        /* width: 100%; */
     }
 
     .text-uppercase {

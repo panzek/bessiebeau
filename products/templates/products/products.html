@@ -93,11 +93,12 @@
                                         {% endif %}
 
                                           <!-- Delete Products Modal -->
-                                            <div class="modal fade" id="product_{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal fade" id="product_{{ product.id }}" tabindex="-1" role="dialog" 
+                                                aria-labelledby="delete-products-modal_{{ product.id }}" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
+                                                    <h5 class="modal-title" id="delete-products-modal_{{ product.id }}">Delete Product</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -152,8 +153,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-<script type="text/javascript">
-
+<script>
     const btn = document.getElementById('btn-link');
     btn.addEventListener('click', () => window.scrollTo(
         {
@@ -182,6 +182,6 @@
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 {% endblock %}

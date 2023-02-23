@@ -5,6 +5,8 @@
                 Home
             </a>
         </li>
+
+        <!-- All Products  -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-dark mr-5" href="{% url 'products' %}" aria-label="Go to all products page" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -17,6 +19,7 @@
             </div>
         </li>
 
+        <!-- Clothing  -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold text-uppercase nav-link text-dark mr-5" href="{% url 'products' %}?category=dresses,jeans" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Clothing
@@ -28,6 +31,7 @@
             </div>
         </li>
 
+        <!-- Shoes and Accessories  -->
         <li class="nav-item dropdown">
             <a class="font-weight-bold text-uppercase nav-link text-dark mr-5" href="{% url 'products' %}?category=shoes,bags,accessories" id="shoes-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Shoes and Accessories
@@ -39,6 +43,8 @@
                 <a href="{% url 'products' %}?category=shoes,bags,accessories" class="dropdown-item">All Shoes &amp; Accessories</a>
             </div>
         </li>
+
+        <!-- Beauty  -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold text-uppercase nav-link text-dark mr-5" href="{% url 'products' %}?category=makeup_polish,eyelashes,lipsticks" id="beauty-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Beauty
@@ -49,6 +55,7 @@
                 <a href="{% url 'products' %}?category=makeup_polish,eyelashes,lipsticks" aria-label="Go to women all beauty category page" class="dropdown-item">All Beauty</a>
             </div>
         </li>
+        <!-- For Him  -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold text-uppercase nav-link text-dark mr-5" href="{% url 'products' %}?category=men_shirts,men_jeans,men_shoes_accessories" id="mens-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 For Him
@@ -61,6 +68,7 @@
             </div>
         </li>
 
+        <!-- Special Offers  -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold text-uppercase nav-link text-dark" href="{% url 'products' %}?category=deals,clearance" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
@@ -71,8 +79,9 @@
                 <a href="{% url 'products' %}?category=deals,clearance" aria-label="Go to all specials category page" class="dropdown-item">All Specials</a>
             </div>
         </li>
+        <!-- Contact Form  -->
         <li class="nav-item">
-            <a href="{% url 'contact' %}" aria-label="Go to contact bessie beau page" class="logo-font font-weight-bold text-uppercase nav-link text-dark" id="specials-link" >
+            <a href="{% url 'contact' %}" aria-label="Go to contact bessie beau page" class="logo-font font-weight-bold text-uppercase nav-link text-dark" >
                 Contact Us
             </a>
         </li>
