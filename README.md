@@ -8,7 +8,7 @@
 
 **The goal of this e-Commerce application** is to provide a functional and interactive retail store, with authentication system for users to login to access their relevant data and buy items they want, and to logout. It is a **Business-to-Consumer (B2C)**, designed to sell products to individual customers. It processes orders, accepts payments, and manages shipping and delivery. This application is user centred design; it is intuitive, simple, and easy and enjoyable to use, thus, generating positive user experience. However, it is for illustrative purpose only: no actual payment is made and no real purchase is carried out.
 
-![Bessie + Beau Mockup](/static/docs/img/bessie-beau-mockup.png)
+![Bessie + Beau Mockup](/media/docs/img/bessie-beau-mockup.webp)
 
 [View Live Project Here](https://bessiebeau.herokuapp.com/)
 
@@ -1321,7 +1321,19 @@ Testing information can be found in this **TESTING.md** file.
 
 I check the markup validity of the HTML5 for technical quality and correctness using [W3C Markup Validator](https://validator.w3.org/).
 
+* W3C Markup Validator report - login
+![W3C Markup Validator report - login](/media/docs/img/testing/W3C-html-Validator-login.png)
+
+* W3C CSS Validation report - testimonial
+![W3C CSS Validation report - testimonial](/media/docs/img/testing/W3C-html-Validator-testimonial.png)
+* W3C CSS Validation report - footer
+![W3C CSS Validation report - footer](/media/docs/img/testing/W3C-html-Validator-footer.png)
+* W3C CSS Validation report - products
+![W3C CSS Validation report - products](/media/docs/img/testing/W3C-html-Validator-products.png)
+
 #### W3C CSS Validation Service
+
+![W3C CSS Validation Result](/media/docs/img/testing/W3C-CSS-Validator-results.png)
 
 I check the markup validity of the CSS3 for technical quality and correctness [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 
@@ -1337,45 +1349,46 @@ I validated the following JavaScript files through the [JSHint](https://jshint.c
 
 * [JavaScript Tutor](https://pythontutor.com/javascript.html) – used to Visualize JavaScript code execution.
 
-### Manual Testing
-
-* check site pages manually...
-
 ### Fixed Bugs
 
 * Lighthouse detected that a background image displayed with incorrect aspect ratio.
   * [Accessibility Insights]( https://accessibilityinsights.io/) detected insufficient color contrast of 2.93 between foreground and background colors of button in milestones area of the Biography page. (screenshot)
   * [Accessibility Insights]( https://accessibilityinsights.io/) detected there were 6 instances of social media links in footer that did not have an accessible name. (screenshot)
 
-## Clone
+#### HTML - W3 Validator
 
-* Clone from GitHub to VSCode:
-    1. Log in to [GitHub](https://github.com/panzek/portfolio5-bessie-beau)
-    2. Click on the code button beside the green gitpod button.
-    3. Copy the link and go to VSCode
-    4. Press F1 to display the command palette.
-    5. Enter gitcl, select the Git: Clone command, press Enter
-    6. When prompted for the Repository URL, enter the copied GitHub repository url, then press Enter.
-    7. Select (or create) the local directory into which you want to clone the project.
-    8. Repository is now ready for development
+Due to the way Django templates code is presented, the html pages source code threw so many errors when run on W3C Validator. Alternative way to get around this was to inspect the html pages using Google Chrome tools and copy the outerHTML and paste them in the W3C markup validation.
 
-* Virtual Environment:
-  * As shared in Slack community, which I used as a guide in setting mine up:
-    1. Create virtual environment in the project folder - d:\workspaces>python –m venv my_project\venv
-    2. Activate the virtual environment - d:\workspaces>my_project\venv\Scripts\activate.bat
-    3. cd into new project folder - d:\workspaces>cd my_project
-    4. To open in VSCode - d:\workspaces\my_project>code. (or right click the folder itself and select Open in VSCode)
-    5. Open VSCode and Press CONTROL+SHIFT+P, type‘Python Interpreter’ and select it.
-    6. Either select the venv environment from the list or click ‘Enter interpreter path’ and navigate to the venv folder, and proceed into Scripts and select python.exe
-    7. venv\Scripts\python.exe
+Issue: itemprop attribute error for Testimonials. And the possible cause was lack of an itemscope attribute defining the item. I then changed the itemprop attribute from testimonials to discription, and moved the the itemprop attribute closer to the item being defined.
 
-* Environment Variable:
-  
-    1. Create Environment Variable in the project folder to hide your secrets
+On the Footer it raised the error that the type attribute is unnecessary for JavaScript resources. I fixed it by removing the type attribute
+
+Also on the Login and Register page, it raised the issue of the button role as  unnecessary for element button. I fixed the issue by deleting it.
+
+On Product and product details Pages, it raised the issue of duplicate Id and type attribute for JavaScript resources. I fixed the buy by renaming id from “exampleModalLabel@ to “delete-products-modal_{{ product.id}} and deleted the type attribute from JavaScript script tag.
+
+#### Accessibility Insights report:
+
+Two issues were detected in the Wishlist button on the product detail page:
+
+* One is that the button has insufficient color contrast of 2.57 (foreground color: #343a40, background color: #e31c79, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1.
+* The second issue is that the form has an id: id="id_qty_1", but no label.
+
+Solution:
+I fixed the issues by changing the foreground color from #343a40 to #050708, keeping the original background color: #e31c79 to meet the expected contrast ratio of 4.5:1. I explicitly added the label: **label for=" id_qty_1"** Shipping instructions:</label>
+
+#### Lighthouse Test Report
+
+It raised the issue of Heading elements not in a sequentially-descending order
+In homepage, the Shop Now button on the hero image had a h1 tag and the Men Accesseries heading in men section has h5 tag and immediately below it, the men accessories link has an h4 tag.  
+
+Because underlying purpose of headers is to convey the structure of the page, I find the use of heading levels here as unnecessary. So I completely removed them and used font size to increase the fonts and bold them to achieve similar result.
 
 ## Deployment
 
 Here is the deployed website: - <https://bessiebeau.herokuapp.com/>
+
+(This section was done with credit to Code Institute Coutique Ado walkthrough project and Simi)
 
 ### Create External Database on Elepahant SQL
 

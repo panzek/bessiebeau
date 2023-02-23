@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from testimonials.models import Testimonial
 
-# Register your models here.
+# Register models here.
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):
     """ Add Testimonial model to admin page"""
