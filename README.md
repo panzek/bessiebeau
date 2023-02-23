@@ -834,19 +834,16 @@ The header has two sections arranged horizontally. The top section has the logo 
 
 The wireframes were created using [Balsamiq](https://balsamiq.com/). 
 
-* [Home Page Wireframe](/static/docs/img/wireframes/homepage.png)
-* [Contact Page Wireframe](/static/docs/img/wireframes/contact-form.png)
-* [Review Page Wireframe](/static/docs/img/wireframes/testimonials.png)
-* [Products Page Wireframe](/static/docs/img/wireframes/products-wireframe.png)
-* [Products Detail Page Wireframe](/static/docs/img/wireframes/product-details.png)
-* [Product Management Page Wireframe](/static/docs/img/wireframes/product-management.png)
-* [User Profile Page Wireframe](/static/docs/img/wireframes/profile.png)
-* [Shopping Cart Page Wireframe](/static/docs/img/wireframes/shopping-cart.png)
-* [Wishlist Page Wireframe](/static/docs/img/wireframes/wishlist.png)
-* [Checkout Page Wireframe](/static/docs/img/wireframes/checkout.png)
-* [Registration Page Wireframe](/static/docs/img/wireframes/signup.png)
-* [Login Page Wireframe](/static/docs/img/wireframes/login.png)
-* [Logout Page Wireframe](/static/docs/img/wireframes/logout.png)
+* [Home Page Wireframe](/media/docs/img/wireframes/homepage.)
+* [Contact Page Wireframe](/media/docs/img/wireframes/contact-page.png)
+* [Products Page Wireframe](/media/docs/img/wireframes/product-page.png)
+* [Products Detail Page Wireframe](/media/docs/img/wireframes/product-detail-page.png)
+* [User Profile Page Wireframe](/media/docs/img/wireframes/userprofile-page.png)
+* [Shopping Cart Page Wireframe](/media/docs/img/wireframes/shopping-cart.png)
+* [Wishlist Page Wireframe](/media/docs/img/wireframes/wishlist-page.png)
+* [Registration Page Wireframe](/media/docs/img/wireframes/signup-page.png)
+* [Login Page Wireframe](/media/docs/img/wireframes/signin-page.png)
+* [Logout Page Wireframe](/media/docs/img/wireframes/signup-page.png)
 
 #### Database Schema
 
@@ -986,7 +983,7 @@ The Logout form and logout confirmation pages uses an Allauth authentication sys
 
 * **All Products - User's View**
 
-![All Products](/media/docs/img/features/products-users-view.webp)
+![All Products](/media/docs/img/features/products-user-view.png)
 
 The products page displays all the products on sale at Bessie + Beau. It is accessed from the call-to-action Shop Now button on the hero image homepage.
 
@@ -1003,8 +1000,6 @@ Superusers has a different view of the Products from other users. They can see t
 
 When a user clicks on any of the displayed product, they are taken to the product details page of that specific product to continue with their purchase.
 
-![Products Delete Confirmation](/media/docs/img/features/product-delete-confirmation.webp)
-
 ### Product Details
 
 ![Product Details](/media/docs/img/features/product-detail.webp)
@@ -1015,7 +1010,7 @@ The superuser also has a different view of the Product details from other users.
 
 ### Product Wishlist
 
-![Product Wishlist](/media/docs/img/features/products-wishlist.webp)
+![Product Wishlist](/media/docs/img/features/wishlist.webp)
 
 **Product wishlist** is the third of the three custom models critical to this project.
 
@@ -1063,7 +1058,7 @@ When users successfully complete their purchase, an Order Confirmation Email is 
 
 ### **User Profile**
 
-![User Profile](/media/docs/img/features/profile-page.webp)
+![User Profile](/media/docs/img/features/profile.png)
 
 The user profile holds information associated with a user such as account information, portrait photograph and order history.
 
@@ -1101,7 +1096,7 @@ A 500 error code, like the 404 error, creates poor user experience for shoppers 
 
 Women Fashion Google Search              |        Wordtracker - keyword volume and competition
 :-------------------------:|:-------------------------:
-![Hero Image Page - Desktop View](/media/docs/img/features/women-fashion-google-search.webp)  |  ![Hero Image Page - Mobile View](/media/docs/img/features/dresses-wordtracker-search.webp)
+![Women Fashion Google Search](/media/docs/img/features/women-fashion-Google-Search.png)  |  ![Wordtracker - keyword volume and competition](/media/docs/img/features/dresses-wordtracker-search.png)
 
 In order to optimize the website for high ranking in search engines, I research to find and analyse search terms that most people enter into search engines. The goal is to use the data collected for my SEO
 
@@ -1186,7 +1181,7 @@ Newsletters help to gain more subscribers when it is used to create exclusive of
 
 As core part of Social Media marketing strategy, I created a Facebook Business page to connect the store with existing and potential customers. As strategic to our Social media marketing campaigns, the Facebook business page provides key information about the e-commerce store and its products and services.
 
-![Facebook Business page](/media/docs/img/features/facebook.webp)
+![Facebook Business page](/media/docs/img/features/bessie-beau-facebook.png)
 
 As we continue to manage and improve this Facebook business page going forward, we intend to share Customer Testimonials cross our social channels including Facebook to Increase Acquisition and build more trust with their social audience.
 
@@ -1345,11 +1340,6 @@ I validated the following JavaScript files through the [JSHint](https://jshint.c
 ### Manual Testing
 
 * check site pages manually...
-
-### Test Images & Page Speed
-
-[PageSpeed Insights](https://pagespeed.web.dev)
-[GMetrix](https://gtmetrix.com)
 
 ### Fixed Bugs
 

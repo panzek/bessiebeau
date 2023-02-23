@@ -15,8 +15,15 @@
 <div>
   <!-- Hero Image  -->
   <div class="pt-0 text-center"> 
-      <img src="{{ MEDIA_URL }}hero-image-mobile.webp" id="hero-image-mobile" class="img-fluid" alt="Bessie + Beau Hero Image">
+      <img src="{{ MEDIA_URL }}hero-image-mobile-lg.webp" id="hero-image-mobile" class="img-fluid" alt="Bessie + Beau Hero Image">
       <img src="{{ MEDIA_URL }}hero-image.webp" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image">
+      <!-- <picture>
+        <source media="(max-width: 540px)" srcset="{{ MEDIA_URL }}hero-image-mobile.webp" id="hero-image-mobile" class="img-fluid" alt="Bessie + Beau Hero Image" />
+        <source media="(min-width: 1201px)" srcset="{{ MEDIA_URL }}hero-image.webp" id="hero-image-mobile-big" class="img-fluid" alt="Bessie + Beau Hero Image" />
+        <source media="(max-width: 820px)" srcset="{{ MEDIA_URL }}hero-image-lg.webp" id="hero-image-mobile-lg" class="img-fluid" alt="Bessie + Beau Hero Image" />
+        <source media="(max-width: 1200px)" srcset="{{ MEDIA_URL }}hero-image-big.webp" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image" />
+        <img src="{{ MEDIA_URL }}hero-image-mobile.webp" id="hero-image" class="img-fluid" alt="Bessie + Beau Hero Image" />
+      </picture> -->
   </div>
 
   <!-- Hero image text  -->
@@ -33,9 +40,9 @@
                 </h1>
             </div>
             <div class="mt-2">
-                <h4>
+                <h2>
                     <a href="{% url 'products' %}" aria-label="Go to all products page" class="btn home-btn home-mobile-btn btn-dark text-uppercase py-3">Shop Now</a>
-                </h4>
+                </h2>
             </div>
         </div>
       </div>

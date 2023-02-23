@@ -281,6 +281,10 @@ footer {
     width: 100%;
 }
 
+.social-networks-title {
+    font-size: 1.5rem;
+}
+
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
 
 /* Portrait  */
