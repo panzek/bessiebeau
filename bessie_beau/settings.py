@@ -14,8 +14,10 @@ import os
 from pathlib import Path
 import dj_database_url
 
-if os.path.isfile('env.py'):
-    import env # noqa
+from dotenv import load_dotenv
+
+if os.path.isfile('.env'):
+    load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['bessiebeau.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['bessiebeau.com', 'localhost', '127.0.0.1']
 
 # Tells Django to store messages in the session 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
@@ -133,7 +135,7 @@ WSGI_APPLICATION = 'bessie_beau.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.config(default=os.environ.get('DATABASE_URL')),
         }
 else:
     DATABASES = {

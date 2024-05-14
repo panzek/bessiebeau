@@ -14,6 +14,8 @@
 #
 # See the README file for information on usage and redistribution.
 #
+from __future__ import annotations
+
 import olefile
 
 from . import Image, ImageFile
@@ -48,7 +50,6 @@ def _accept(prefix):
 
 
 class FpxImageFile(ImageFile.ImageFile):
-
     format = "FPX"
     format_description = "FlashPix"
 
@@ -98,16 +99,15 @@ class FpxImageFile(ImageFile.ImageFile):
 
         s = prop[0x2000002 | id]
 
-        colors = []
         bands = i32(s, 4)
         if bands > 4:
             msg = "Invalid number of bands"
             raise OSError(msg)
-        for i in range(bands):
-            # note: for now, we ignore the "uncalibrated" flag
-            colors.append(i32(s, 8 + i * 4) & 0x7FFFFFFF)
 
-        self.mode, self.rawmode = MODES[tuple(colors)]
+        # note: for now, we ignore the "uncalibrated" flag
+        colors = tuple(i32(s, 8 + i * 4) & 0x7FFFFFFF for i in range(bands))
+
+        self._mode, self.rawmode = MODES[colors]
 
         # load JPEG tables, if any
         self.jpeg = {}
@@ -157,7 +157,6 @@ class FpxImageFile(ImageFile.ImageFile):
         self.tile = []
 
         for i in range(0, len(s), length):
-
             x1 = min(xsize, x + xtile)
             y1 = min(ysize, y + ytile)
 
@@ -174,7 +173,6 @@ class FpxImageFile(ImageFile.ImageFile):
                 )
 
             elif compression == 1:
-
                 # FIXME: the fill decoder is not implemented
                 self.tile.append(
                     (
@@ -186,7 +184,6 @@ class FpxImageFile(ImageFile.ImageFile):
                 )
 
             elif compression == 2:
-
                 internal_color_conversion = s[14]
                 jpeg_tables = s[15]
                 rawmode = self.rawmode
@@ -231,14 +228,22 @@ class FpxImageFile(ImageFile.ImageFile):
                     break  # isn't really required
 
         self.stream = stream
+        self._fp = self.fp
         self.fp = None
 
     def load(self):
-
         if not self.fp:
             self.fp = self.ole.openstream(self.stream[:2] + ["Subimage 0000 Data"])
 
         return ImageFile.ImageFile.load(self)
+
+    def close(self):
+        self.ole.close()
+        super().close()
+
+    def __exit__(self, *args):
+        self.ole.close()
+        super().__exit__()
 
 
 #

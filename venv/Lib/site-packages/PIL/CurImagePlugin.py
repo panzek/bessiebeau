@@ -15,6 +15,8 @@
 #
 # See the README file for information on usage and redistribution.
 #
+from __future__ import annotations
+
 from . import BmpImagePlugin, Image
 from ._binary import i16le as i16
 from ._binary import i32le as i32
@@ -32,12 +34,10 @@ def _accept(prefix):
 
 
 class CurImageFile(BmpImagePlugin.BmpImageFile):
-
     format = "CUR"
     format_description = "Windows Cursor"
 
     def _open(self):
-
         offset = self.fp.tell()
 
         # check magic
@@ -65,8 +65,6 @@ class CurImageFile(BmpImagePlugin.BmpImageFile):
         self._size = self.size[0], self.size[1] // 2
         d, e, o, a = self.tile[0]
         self.tile[0] = d, (0, 0) + self.size, o, a
-
-        return
 
 
 #

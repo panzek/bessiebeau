@@ -15,6 +15,7 @@
 #
 # See the README file for information on usage and redistribution.
 #
+from __future__ import annotations
 
 import io
 
@@ -23,6 +24,7 @@ from ._binary import i8
 from ._binary import i16be as i16
 from ._binary import i32be as i32
 from ._binary import si16be as si16
+from ._binary import si32be as si32
 
 MODES = {
     # (photoshop mode, bits) -> (pil mode, required channels)
@@ -51,13 +53,11 @@ def _accept(prefix):
 
 
 class PsdImageFile(ImageFile.ImageFile):
-
     format = "PSD"
     format_description = "Adobe Photoshop"
     _close_exclusive_fp_after_loading = False
 
     def _open(self):
-
         read = self.fp.read
 
         #
@@ -81,7 +81,7 @@ class PsdImageFile(ImageFile.ImageFile):
             mode = "RGBA"
             channels = 4
 
-        self.mode = mode
+        self._mode = mode
         self._size = i32(s, 18), i32(s, 14)
 
         #
@@ -148,7 +148,7 @@ class PsdImageFile(ImageFile.ImageFile):
         # seek to given layer (1..max)
         try:
             name, mode, bbox, tile = self.layers[layer - 1]
-            self.mode = mode
+            self._mode = mode
             self.tile = tile
             self.frame = layer
             self.fp = self._fp
@@ -177,21 +177,22 @@ def _layerinfo(fp, ct_bytes):
         raise SyntaxError(msg)
 
     for _ in range(abs(ct)):
-
         # bounding box
-        y0 = i32(read(4))
-        x0 = i32(read(4))
-        y1 = i32(read(4))
-        x1 = i32(read(4))
+        y0 = si32(read(4))
+        x0 = si32(read(4))
+        y1 = si32(read(4))
+        x1 = si32(read(4))
 
         # image info
         mode = []
         ct_types = i16(read(2))
-        types = list(range(ct_types))
-        if len(types) > 4:
+        if ct_types > 4:
+            fp.seek(ct_types * 6 + 12, io.SEEK_CUR)
+            size = i32(read(4))
+            fp.seek(size, io.SEEK_CUR)
             continue
 
-        for _ in types:
+        for _ in range(ct_types):
             type = i16(read(2))
 
             if type == 65535:
@@ -238,21 +239,18 @@ def _layerinfo(fp, ct_bytes):
         layers.append((name, mode, (x0, y0, x1, y1)))
 
     # get tiles
-    i = 0
-    for name, mode, bbox in layers:
+    for i, (name, mode, bbox) in enumerate(layers):
         tile = []
         for m in mode:
             t = _maketile(fp, m, bbox, 1)
             if t:
                 tile.extend(t)
         layers[i] = name, mode, bbox, tile
-        i += 1
 
     return layers
 
 
 def _maketile(file, mode, bbox, channels):
-
     tile = None
     read = file.read
 

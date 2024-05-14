@@ -8,6 +8,7 @@
 #
 # See the README file for information on usage and redistribution.
 #
+from __future__ import annotations
 
 from . import Image, ImageFile
 
@@ -33,12 +34,10 @@ def _accept(prefix):
 
 
 class GribStubImageFile(ImageFile.StubImageFile):
-
     format = "GRIB"
     format_description = "GRIB"
 
     def _open(self):
-
         offset = self.fp.tell()
 
         if not _accept(self.fp.read(8)):
@@ -48,7 +47,7 @@ class GribStubImageFile(ImageFile.StubImageFile):
         self.fp.seek(offset)
 
         # make something up
-        self.mode = "F"
+        self._mode = "F"
         self._size = 1, 1
 
         loader = self._load()

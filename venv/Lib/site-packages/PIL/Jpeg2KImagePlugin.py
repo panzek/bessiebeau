@@ -13,11 +13,13 @@
 #
 # See the README file for information on usage and redistribution.
 #
+from __future__ import annotations
+
 import io
 import os
 import struct
 
-from . import Image, ImageFile
+from . import Image, ImageFile, ImagePalette, _binary
 
 
 class BoxReader:
@@ -99,20 +101,16 @@ def _parse_codestream(fp):
     count from the SIZ marker segment, returning a PIL (size, mode) tuple."""
 
     hdr = fp.read(2)
-    lsiz = struct.unpack(">H", hdr)[0]
+    lsiz = _binary.i16be(hdr)
     siz = hdr + fp.read(lsiz - 2)
     lsiz, rsiz, xsiz, ysiz, xosiz, yosiz, _, _, _, _, csiz = struct.unpack_from(
         ">HHIIIIIIIIH", siz
     )
-    ssiz = [None] * csiz
-    xrsiz = [None] * csiz
-    yrsiz = [None] * csiz
-    for i in range(csiz):
-        ssiz[i], xrsiz[i], yrsiz[i] = struct.unpack_from(">BBB", siz, 36 + 3 * i)
 
     size = (xsiz - xosiz, ysiz - yosiz)
     if csiz == 1:
-        if (yrsiz[0] & 0x7F) > 8:
+        ssiz = struct.unpack_from(">B", siz, 38)
+        if (ssiz[0] & 0x7F) + 1 > 8:
             mode = "I;16"
         else:
             mode = "L"
@@ -160,6 +158,7 @@ def _parse_jp2_header(fp):
     bpc = None
     nc = None
     dpi = None  # 2-tuple of DPI info, or None
+    palette = None
 
     while header.has_next_box():
         tbox = header.next_box_type()
@@ -177,6 +176,14 @@ def _parse_jp2_header(fp):
                 mode = "RGB"
             elif nc == 4:
                 mode = "RGBA"
+        elif tbox == b"pclr" and mode in ("L", "LA"):
+            ne, npc = header.read_fields(">HB")
+            bitdepths = header.read_fields(">" + ("B" * npc))
+            if max(bitdepths) <= 8:
+                palette = ImagePalette.ImagePalette()
+                for i in range(ne):
+                    palette.getcolor(header.read_fields(">" + ("B" * npc)))
+                mode = "P" if mode == "L" else "PA"
         elif tbox == b"res ":
             res = header.read_boxes()
             while res.has_next_box():
@@ -193,7 +200,7 @@ def _parse_jp2_header(fp):
         msg = "Malformed JP2 header"
         raise SyntaxError(msg)
 
-    return size, mode, mimetype, dpi
+    return size, mode, mimetype, dpi, palette
 
 
 ##
@@ -208,16 +215,18 @@ class Jpeg2KImageFile(ImageFile.ImageFile):
         sig = self.fp.read(4)
         if sig == b"\xff\x4f\xff\x51":
             self.codec = "j2k"
-            self._size, self.mode = _parse_codestream(self.fp)
+            self._size, self._mode = _parse_codestream(self.fp)
         else:
             sig = sig + self.fp.read(8)
 
             if sig == b"\x00\x00\x00\x0cjP  \x0d\x0a\x87\x0a":
                 self.codec = "jp2"
                 header = _parse_jp2_header(self.fp)
-                self._size, self.mode, self.custom_mimetype, dpi = header
+                self._size, self._mode, self.custom_mimetype, dpi, self.palette = header
                 if dpi is not None:
                     self.info["dpi"] = dpi
+                if self.fp.read(12).endswith(b"jp2c\xff\x4f\xff\x51"):
+                    self._parse_comment()
             else:
                 msg = "not a JPEG 2000 file"
                 raise SyntaxError(msg)
@@ -253,6 +262,28 @@ class Jpeg2KImageFile(ImageFile.ImageFile):
                 (self.codec, self._reduce, self.layers, fd, length),
             )
         ]
+
+    def _parse_comment(self):
+        hdr = self.fp.read(2)
+        length = _binary.i16be(hdr)
+        self.fp.seek(length - 2, os.SEEK_CUR)
+
+        while True:
+            marker = self.fp.read(2)
+            if not marker:
+                break
+            typ = marker[1]
+            if typ in (0x90, 0xD9):
+                # Start of tile or end of codestream
+                break
+            hdr = self.fp.read(2)
+            length = _binary.i16be(hdr)
+            if typ == 0x64:
+                # Comment
+                self.info["comment"] = self.fp.read(length - 2)[2:]
+                break
+            else:
+                self.fp.seek(length - 2, os.SEEK_CUR)
 
     @property
     def reduce(self):
@@ -310,10 +341,7 @@ def _save(im, fp, filename):
     if quality_layers is not None and not (
         isinstance(quality_layers, (list, tuple))
         and all(
-            [
-                isinstance(quality_layer, (int, float))
-                for quality_layer in quality_layers
-            ]
+            isinstance(quality_layer, (int, float)) for quality_layer in quality_layers
         )
     ):
         msg = "quality_layers must be a sequence of numbers"
@@ -327,8 +355,12 @@ def _save(im, fp, filename):
     cinema_mode = info.get("cinema_mode", "no")
     mct = info.get("mct", 0)
     signed = info.get("signed", False)
-    fd = -1
+    comment = info.get("comment")
+    if isinstance(comment, str):
+        comment = comment.encode()
+    plt = info.get("plt", False)
 
+    fd = -1
     if hasattr(fp, "fileno"):
         try:
             fd = fp.fileno()
@@ -350,6 +382,8 @@ def _save(im, fp, filename):
         mct,
         signed,
         fd,
+        comment,
+        plt,
     )
 
     ImageFile._save(im, fp, [("jpeg2k", (0, 0) + im.size, 0, kind)])

@@ -32,11 +32,13 @@
 # Details about the Spider image format:
 # https://spider.wadsworth.org/spider_doc/spider/docs/image_doc.html
 #
+from __future__ import annotations
+
 import os
 import struct
 import sys
 
-from PIL import Image, ImageFile
+from . import Image, ImageFile
 
 
 def isInt(f):
@@ -91,7 +93,6 @@ def isSpiderImage(filename):
 
 
 class SpiderImageFile(ImageFile.ImageFile):
-
     format = "SPIDER"
     format_description = "Spider 2D image"
     _close_exclusive_fp_after_loading = False
@@ -150,7 +151,7 @@ class SpiderImageFile(ImageFile.ImageFile):
             self.rawmode = "F;32BF"
         else:
             self.rawmode = "F;32F"
-        self.mode = "F"
+        self._mode = "F"
 
         self.tile = [("raw", (0, 0) + self.size, offset, (self.rawmode, 0, 1))]
         self._fp = self.fp  # FIXME: hack
@@ -192,13 +193,14 @@ class SpiderImageFile(ImageFile.ImageFile):
 
     # returns a ImageTk.PhotoImage object, after rescaling to 0..255
     def tkPhotoImage(self):
-        from PIL import ImageTk
+        from . import ImageTk
 
         return ImageTk.PhotoImage(self.convert2byte(), palette=256)
 
 
 # --------------------------------------------------------------------
 # Image series
+
 
 # given a list of filenames, return a list of images
 def loadImageSeries(filelist=None):
@@ -238,9 +240,7 @@ def makeSpiderHeader(im):
     if nvalues < 23:
         return []
 
-    hdr = []
-    for i in range(nvalues):
-        hdr.append(0.0)
+    hdr = [0.0] * nvalues
 
     # NB these are Fortran indices
     hdr[1] = 1.0  # nslice (=1 for an image)
@@ -289,7 +289,6 @@ Image.register_open(SpiderImageFile.format, SpiderImageFile)
 Image.register_save(SpiderImageFile.format, _save_spider)
 
 if __name__ == "__main__":
-
     if len(sys.argv) < 2:
         print("Syntax: python3 SpiderImagePlugin.py [infile] [outfile]")
         sys.exit()
