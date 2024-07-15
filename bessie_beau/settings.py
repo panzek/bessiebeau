@@ -35,7 +35,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['bessiebeau.com', 'localhost', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://bessiebeau.com']
+CSRF_TRUSTED_ORIGINS = ['https://bessiebeau.com','http://bessiebeau.com']
 CSRF_ALLOWED_ORIGINS = ['https://bessiebeau.com']
 CORS_ORIGINS_WHITELIST = ['https://bessiebeau.com']
 
