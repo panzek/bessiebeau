@@ -35,6 +35,8 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['bessiebeau.com', 'localhost', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = ['https://bessiebeau.com']
+
 # Tells Django to store messages in the session 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
