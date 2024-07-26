@@ -79,8 +79,6 @@ INSTALLED_APPS = [
     'testimonials',
 ]
 
-SITE_ID = 1
-SITE_ID = 2
 SITE_ID = 3
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'

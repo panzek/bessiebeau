@@ -1,7 +1,11 @@
 core.Microsoft*
 core.mongo*
 core.python*
+setup_env.sh
 .env
+.venv
+env/
+venv/
 __pycache__/
 *.py[cod]
 node_modules/
